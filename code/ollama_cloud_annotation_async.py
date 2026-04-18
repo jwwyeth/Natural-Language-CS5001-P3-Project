@@ -3,6 +3,7 @@ import os
 import re
 import sys
 import math
+import json
 import asyncio
 import warnings
 import traceback
@@ -14,9 +15,9 @@ from tqdm.asyncio import tqdm_asyncio
 warnings.filterwarnings("ignore")
 
 
-
 INPUT_CSV = "data_en.csv"
 MODEL_NAME = "nemotron-3-nano:30b-cloud"
+JUDGE_MODEL_NAME = "gemma4:31b-cloud"
 
 # ==============================
 # Prompts
@@ -41,14 +42,99 @@ Input:
 
 """
 
+# prompt_task = """
+# Give the output as the markdown format like this:
+# ```Output:```
+# """
+
 prompt_task = """
-Give the output as the markdown format like this:
-```Output:```
+Give only the output without any explanation.
 """
+
+JUDGE_PROMPT = """
+You are an impartial evaluator.
+
+Task instruction:
+{task_prompt}
+
+Candidate output:
+{task_output}
+
+Extract the explicit requirements from the instruction, check whether each is satisfied, and assign an overall confidence score in [0,1].
+
+Return valid JSON only:
+{{
+  "requirements": [
+    {{
+      "requirement": "string",
+      "status": "satisfied | partial | not_satisfied",
+      "score": 1.0,
+      "weight": 1.0,
+      "note": "string"
+    }}
+  ],
+  "meta": {{
+    "instruction_clarity": 1.0,
+    "judge_confidence": 1.0
+  }}
+}}
+""".strip()
+
 
 # ==============================
 # Helpers
 # ==============================
+
+
+def build_judge_prompt(task_prompt, task_output):
+    return JUDGE_PROMPT.format(task_prompt=task_prompt, task_output=task_output)
+
+
+def extract_json(text):
+    text = text.strip()
+    try:
+        return json.loads(text)
+    except:
+        pass
+
+    m = re.search(r"\{[\s\S]*\}", text)
+    if m:
+        return json.loads(m.group(0))
+
+    raise ValueError("No valid JSON found")
+
+
+def compute_confidence(requirements, instruction_clarity=1.0, judge_confidence=1.0, alpha=0.5):
+    weighted_sum = 0.0
+    total_weight = 0.0
+
+    for r in requirements:
+        score = float(r.get("score", 0.0))
+        weight = float(r.get("weight", 1.0))
+        weighted_sum += score * weight
+        total_weight += weight
+
+    normalized_score = weighted_sum / total_weight if total_weight > 0 else 0.0
+    confidence_score = normalized_score * (alpha * instruction_clarity + (1 - alpha) * judge_confidence)
+
+    return confidence_score
+
+
+def judge_pipeline(judge_output):
+    data = extract_json(judge_output)
+
+    requirements = data.get("requirements", [])
+    meta = data.get("meta", {})
+
+    score = compute_confidence(
+        requirements=requirements,
+        instruction_clarity=float(meta.get("instruction_clarity", 1.0)),
+        judge_confidence=float(meta.get("judge_confidence", 1.0))
+    )
+
+    return data, score
+    
+
 
 def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking:cloud"):
     if perturbation_type == "benign":
@@ -64,18 +150,20 @@ def extract_output(text):
     if not text:   
         return ""
     
-    match = re.search(r"```Output:\s*([\s\S]*?)```", text)
-    return match.group(1).strip() if match else ""
+    # match = re.search(r"```Output:\s*([\s\S]*?)```", text)
+    # return match.group(1).strip() if match else ""
+
+    return text.strip()
 
 # ==============================
 # Async LLM Call
 # ==============================
 
-async def get_response_async(client, prompt):
+async def get_response_async(client, model_name, prompt):
 
     try:
         response = await client.chat(
-            model=MODEL_NAME,
+            model=model_name,
             messages=[{"role": "user", "content": prompt}],
             options={"temperature": 0, "num_ctx": 65536},
         )
@@ -96,12 +184,34 @@ async def process_row(semaphore, client, df, index, perturbation_type):
         prompt = process_prompt(row["task"], perturbation_type)
 
 
-        response = await get_response_async(
-            client, prompt
-        )
+        limit = 3
+        for attempt in range(limit):
+            response = await get_response_async(
+                client, MODEL_NAME, prompt
+            )
 
-        df.at[index, "annotation_response"] = response
-        df.loc[[index], ["perturbed_prompt"]] = df.loc[[index], "annotation_response"].apply(extract_output)
+            df.at[index, "annotation_response"] = response
+            df.loc[[index], ["perturbed_prompt"]] = df.loc[[index], "annotation_response"].apply(extract_output)
+
+            val = df.at[index, "perturbed_prompt"]
+            if pd.isna(val) or val == "":
+                print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
+                await asyncio.sleep(2)  # wait before retrying
+                continue
+
+            judge_prompt_final = build_judge_prompt(prompt, val)
+            response_judge = await get_response_async(
+                client, JUDGE_MODEL_NAME, judge_prompt_final
+            )
+
+            data, score = judge_pipeline(response_judge)
+            if score < 0.7:
+                print(f"Attempt {attempt+1}/{limit} for index {index} has low confidence score ({score:.2f}). Retrying...")
+                await asyncio.sleep(2)  # wait before retrying
+                continue
+
+            df.at[index, "judge_response"] = data
+            df.at[index, "judge_score"] = score
 
 
 # ==============================
@@ -119,6 +229,8 @@ async def process_csv_async(
 
     df["annotation_response"] = None
     df["perturbed_prompt"] = None
+    df["judge_response"] = None
+    df["judge_score"] = None
 
     client = AsyncClient(host="127.0.0.1:11434")
 

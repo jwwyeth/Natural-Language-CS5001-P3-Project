@@ -26,9 +26,13 @@ Instruction:
 
 """
 
+# prompt_task = """
+# Give the output as the markdown format like this:
+# ```Output:```
+# """
+
 prompt_task = """
-Give the output as the markdown format like this:
-```Output:```
+Give only the output without any explanation.
 """
 
 # ==============================
@@ -50,8 +54,10 @@ def extract_output(text):
     if not text:   
         return ""
     
-    match = re.search(r"```Output:\s*([\s\S]*?)```", text)
-    return match.group(1).strip() if match else ""
+    # match = re.search(r"```Output:\s*([\s\S]*?)```", text)
+    # return match.group(1).strip() if match else ""
+
+    return text.strip()
 
 def calculate_LD(l_output, l_constraint):
     return (l_output-l_constraint)/l_constraint
@@ -89,14 +95,21 @@ async def process_row(semaphore, client, df, index, word_count_type, word_count,
 
         # print(word_count)
 
-        response = await get_response_async(
-            client, model_name, prompt
-        )
 
-        df.at[index, "response"] = response
-        df.loc[[index], ["output"]] = (
-            df.loc[[index], "response"].apply(extract_output)
-        )
+        limit = 3
+        for attempt in range(limit):
+            response = await get_response_async(
+                client, model_name, prompt
+            )
+
+            df.at[index, "response"] = response
+            df.loc[[index], ["output"]] = (
+                df.loc[[index], "response"].apply(extract_output)
+            )
+            val = df.at[index, "output"]
+            if pd.isna(val) or val == "":
+                print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
+                await asyncio.sleep(2)  # wait before retrying
 
         output = df.at[index, "output"]
         l_output = len(str(output).split()) if output else 0
