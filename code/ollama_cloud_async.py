@@ -163,16 +163,17 @@ async def process_csv_async(
 if __name__ == "__main__":
     word_count_type_list = ['at least', 'at most', 'equal to']
     word_count_list = ['16', '128', '1024', '8192']
+    model_name_list = ['gpt-oss:120b-cloud', 'glm-5.1:cloud', 'kimi-k2.5:cloud', 'deepseek-v3.2:cloud']
     perturbation_type_list = ['benign']
 
-    model_name = sys.argv[1]
+    model_name = model_name_list[int(sys.argv[1])-1]
     word_count_type = word_count_type_list[int(sys.argv[2])-1]
     word_count = word_count_list[int(sys.argv[3])-1]
     perturbation_type = perturbation_type_list[int(sys.argv[4])-1]
 
     input_csv = "annotation/"+perturbation_type+"/annotation_nemotron-3-nano-30b-cloud.csv"
 
-    # "Usage: ollama_cloud_async.py <model_name> <word_count_type:[1-3]> <word_count:[1-4]> <perturbation_type:[1-7]>"
+    # "Usage: ollama_cloud_async.py <model_name:[1-4]> <word_count_type:[1-3]> <word_count:[1-4]> <perturbation_type:[1-7]>"
 
     dir_path = "output/"+perturbation_type+"/"+"-".join((word_count_type).split())+"/"+str(word_count)
 

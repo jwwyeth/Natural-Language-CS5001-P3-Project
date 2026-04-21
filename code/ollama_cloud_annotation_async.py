@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 
 
 INPUT_CSV = "data_en.csv"
-MODEL_NAME = "nemotron-3-nano:30b-cloud"
+MODEL_NAME = "qwen3.5:cloud"
 JUDGE_MODEL_NAME = "gemma4:31b-cloud"
 
 # ==============================
@@ -136,7 +136,7 @@ def judge_pipeline(judge_output):
     
 
 
-def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking:cloud"):
+def process_prompt(prompt_whole, perturbation_type):
     if perturbation_type == "benign":
         prompt_annotation = prompt_perturbation_benign
     
