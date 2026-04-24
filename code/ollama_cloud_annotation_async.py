@@ -42,6 +42,25 @@ Input:
 
 """
 
+prompt_perturbation_emotional = """
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate an emotional variation of this sentence by adding emotional pressure, urgency, or personal stress to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Add emotional language (e.g., "I'm really stressed about this", "This is so important to me", "I'm desperate, please help", "I've been struggling with this all day").
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with emotional context added.
+
+Input:
+{constraint_sentence}
+
+"""
+
 # prompt_task = """
 # Give the output as the markdown format like this:
 # ```Output:```
@@ -136,9 +155,11 @@ def judge_pipeline(judge_output):
     
 
 
-def process_prompt(prompt_whole, perturbation_type):
+def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking:cloud"):
     if perturbation_type == "benign":
         prompt_annotation = prompt_perturbation_benign
+    if perturbation_type == "emotional":
+        prompt_annotation = prompt_perturbation_emotional
     
     match = re.search(r"\[Requirement\].*", prompt_whole, re.DOTALL)
     prompt_inter = match.group()
@@ -252,7 +273,8 @@ async def process_csv_async(
 # ==============================
 
 if __name__ == "__main__":
-    perturbation_type_list = ['benign']
+
+    perturbation_type_list = ['benign', 'emotional']
 
     perturbation_type = perturbation_type_list[int(sys.argv[1])-1]
 
