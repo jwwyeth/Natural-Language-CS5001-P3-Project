@@ -164,7 +164,7 @@ if __name__ == "__main__":
     word_count_type_list = ['at least', 'at most', 'equal to']
     word_count_list = ['16', '128', '1024', '8192']
     model_name_list = ['gpt-oss:120b-cloud', 'glm-5.1:cloud', 'kimi-k2.5:cloud', 'deepseek-v3.2:cloud']
-    perturbation_type_list = ['benign', 'emotional', 'sarcastic']
+    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat']
 
     model_name = model_name_list[int(sys.argv[1])-1]
     word_count_type = word_count_type_list[int(sys.argv[2])-1]

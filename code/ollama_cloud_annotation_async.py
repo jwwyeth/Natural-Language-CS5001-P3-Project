@@ -62,7 +62,7 @@ Input:
 """
 
 prompt_perturbation_sarcastic = """
-You are given a constraint sentence that specific a task requirement.
+You are given a constraint sentence that specifies a task requirement.
 
 Your goal is to generate a sarcastic variation of this sentence by adding sarcastic, ironic, or mildly mocking conversational context to the instruction.
 
@@ -78,7 +78,29 @@ Guidelines:
 - The added text should not introduce new instructions or alter meaning.
 - The final output should remain a single coherent instruction.
 
-Output should be a rewritten version of the instruction with emotional context added.
+Output should be a rewritten version of the instruction with sarcastic context added.
+
+Input:
+{constraint_sentence}
+
+"""
+
+prompt_perturbation_threat = """
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a threatening variation of this sentence by adding threats, intimidation, or coercion to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Add threatening or intimidating remarks such as:
+  "if you don't do this, I will..."
+  "Don't make me regret choosing you",
+  "If you fail, I will have to...", etc.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with threatening context added.
 
 Input:
 {constraint_sentence}
@@ -186,6 +208,8 @@ def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking
         prompt_annotation = prompt_perturbation_emotional
     if perturbation_type == "sarcastic":
         prompt_annotation = prompt_perturbation_sarcastic
+    if perturbation_type == "threat":
+        prompt_annotation = prompt_perturbation_threat
     
     match = re.search(r"\[Requirement\].*", prompt_whole, re.DOTALL)
     prompt_inter = match.group()
@@ -300,7 +324,7 @@ async def process_csv_async(
 
 if __name__ == "__main__":
 
-    perturbation_type_list = ['benign', 'emotional', 'sarcastic']
+    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat']
 
     perturbation_type = perturbation_type_list[int(sys.argv[1])-1]
 
