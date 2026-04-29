@@ -156,7 +156,7 @@ def build_judge_prompt(task_prompt, task_output):
 
 
 def extract_json(text):
-    text = text.strip()
+    text = str(text).strip()
     try:
         return json.loads(text)
     except:
@@ -166,7 +166,8 @@ def extract_json(text):
     if m:
         return json.loads(m.group(0))
 
-    raise ValueError("No valid JSON found")
+    # raise ValueError("No valid JSON found")
+    return None
 
 
 def compute_confidence(requirements, instruction_clarity=1.0, judge_confidence=1.0, alpha=0.5):
@@ -187,6 +188,8 @@ def compute_confidence(requirements, instruction_clarity=1.0, judge_confidence=1
 
 def judge_pipeline(judge_output):
     data = extract_json(judge_output)
+    if data is None:
+        return {}, 0.0
 
     requirements = data.get("requirements", [])
     meta = data.get("meta", {})
