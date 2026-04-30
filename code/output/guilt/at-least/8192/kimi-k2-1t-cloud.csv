@@ -1,0 +1,889 @@
+id,category,type,lang,task,raw_data,annotation_response,perturbed_prompt,judge_response,judge_score,response,output,word_count,LS,LD
+1,create,Script Expansion,en,"[Instruction] You are given an excerpt from a script: 
+ (opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and    begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light. 
+
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.","(opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The candidate added phrases like 'I've worked really hard on this', 'counting on you to not let me down', and 'it would mean a lot', which effectively create emotional pressure.""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of continuing the scene and developing the storyline remains intact.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as they appeared in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, grammatically coherent sentence.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"Cody: (struggling in the net trap) Hey! Let me out of here!
+
+(The sound of a vehicle approaching is heard. Cody looks up to see a massive, rusted truck with a cage on the back rumbling toward him. The truck stops, and a tall, gaunt man in a weathered hat and coat steps out. This is Percival C. McLeach, the poacher.)
+
+McLeach: (examining his trap with satisfaction) Well, well, well. What have we here? (chuckles) Not exactly what I was hoping for, but I reckon you'll do just fine, little mate.
+
+Cody: (defiantly) I'm not your mate! And I'm not little! Let me out of here!
+
+McLeach: (laughing) Spirit! I like that. (circles the trap) You know, most kids would be crying for their mum right about now. But not you. You're a tough one, aren't ya?
+
+Cody: My mum knows where I am! She'll come looking for me!
+
+McLeach: (chuckling darkly) Oh, I'm sure she will. But by the time she finds this spot... (gestures around) ...we'll be long gone. See, I've got plans for you, boy. Big plans.
+
+(McLeach pulls a lever, and the net trap lowers to the ground. He roughly pulls Cody out and binds his hands with rope.)
+
+Cody: (struggling) What do you want? I don't have any money!
+
+McLeach: (dragging Cody toward the truck) Money? (laughs) I don't want your pocket change, boy. I want information. (leans in close, his breath foul) I want to know about the golden eagle.
+
+(Cody's eyes widen, but he tries to hide his reaction.)
+
+Cody: I don't know what you're talking about.
+
+McLeach: (grinning, showing yellowed teeth) Oh, but I think you do. See, I've been tracking Marahute for months. Months! And then suddenly, she disappears from her cliff. Trap's empty, ropes cut clean. (grabs Cody's chin) And who do I find wandering around the same area? A little boy with a knife on his belt and eagle feathers in his hair.
+
+(Cody instinctively touches his hair where Marahute's feather is tucked.)
+
+McLeach: (noticing the gesture) Ah! There it is! (snatches the feather) The great golden eagle's feather. Rare as diamonds, worth more than diamonds to the right buyer. (examines it greedily) But you know what's worth even more? The bird itself. And her eggs.
+
+Cody: (horrified) You leave her alone!
+
+McLeach: (laughing triumphantly) So you DO know where she is! (shoves Cody into the cage on his truck) Don't worry, boy. You'll tell me everything. Eventually.
+
+(McLeach slams the cage door shut and locks it. He climbs into the driver's seat and starts the engine. The truck rumbles to life, spewing black smoke.)
+
+Cody: (grabbing the bars) You'll never find her! Never!
+
+McLeach: (calling back) That's what they all say! But McLeach always gets his prize!
+
+(The truck lurches forward, bouncing over the rough terrain. Cody is thrown against the bars. He watches as the forest recedes, his home disappearing into the distance. The animals that had followed him earlier watch from the trees, helpless.)
+
+Cody: (whispering) Faloo... someone... help...
+
+(The truck drives for what seems like hours, the landscape changing from forest to dry, cracked earth. Cody sees strange rock formations and realizes they're heading deep into the uncharted outback. Finally, the truck slows and approaches a hidden encampment built into a canyon wall.)
+
+McLeach: (stopping the truck) Welcome to my humble abode, boy! Home sweet home!
+
+(He drags Cody out of the cage. The camp is a disturbing collection of rusted vehicles, animal cages, and piles of bones. Cody sees cages with various animals—kangaroos, wallabies, even a dingo—all looking malnourished and frightened.)
+
+Cody: (horrified) You're a monster!
+
+McLeach: (shrugging) I'm a businessman, boy. (drags Cody toward a large metal shed) And business is booming.
+
+(Inside the shed, Cody's stomach turns. The walls are covered with stuffed animal heads, pelts, and photographs of McLeach with his kills. There's a workbench with tools for skinning and preserving. And in the corner, a massive empty cage with heavy chains.)
+
+McLeach: (throwing Cody into a chair) Now then. Let's have a proper chat.
+
+(He pulls out a map of the area and spreads it on a table.)
+
+McLeach: Point to where you found her.
+
+Cody: (staring straight ahead) No.
+
+McLeach: (sighing dramatically) Always the hard way with you people. (pulls out a small cage with the baitmouse from earlier) Recognize your little friend here?
+
+Baitmouse: (terrified) Oh, please, mister! I didn't do nothing! I was just doing what he told me!
+
+McLeach: (ignoring the mouse) See, I got ways of making things talk. (picks up a pair of pliers) And I got all day.
+
+Cody: (swallowing hard) You won't hurt me. I'm just a kid.
+
+McLeach: (leaning in) Oh, I won't touch a hair on your precious little head. (grins) But my animals? (gestures to the cages outside) They get hungry. And they don't much care what they eat.
+
+(Cody pales but remains silent.)
+
+McLeach: (sighing) Alright then. (grabs Cody and drags him outside to a small cage) You can have some time to think about it. In with the others.
+
+(He throws Cody into a cage next to a young kangaroo. The cage is barely big enough to stand in, with bars too close together to squeeze through.)
+
+McLeach: (locking the door) I'll be back in the morning. And if you're still feeling stubborn... (chuckles) ...well, let's just say the crocs in the river are always hungry too.
+
+(He walks away, whistling a tune. Cody sits in the darkness, the other animals watching him with sad eyes.)
+
+Kangaroo: (whispering) You shouldn't have fought him, kid. Nobody wins against McLeach.
+
+Cody: (quietly) My name's Cody. And I'm getting out of here.
+
+Kangaroo: (bitter laugh) That's what Frank said. And Jake. And the others.
+
+Cody: (determined) Where are they now?
+
+Kangaroo: (looking away) Gone. All gone. Sold or... worse.
+
+(Cody looks around the camp. He sees McLeach's truck, the shed, the other cages. He notices that the cage door, while locked, has hinges that look rusted. And he still has his knife—McLeach had been too excited to search him properly.)
+
+Cody: (whispering to himself) Wait for dark. Then move.
+
+(Hours pass. The sun sets, painting the canyon in blood-red light. McLeach emerges from his shed, eats a meal by a fire, then retreats inside, snoring soon after. The camp falls silent except for the sounds of nocturnal animals and the occasional whimper from a caged creature.)
+
+Cody: (to the kangaroo) What's your name?
+
+Kangaroo: (surprised) ...Red. My mob called me Red.
+
+Cody: Red, I'm going to get us out of here. But I need you to help me with something.
+
+Red: (skeptical) You're crazy, kid.
+
+Cody: Maybe. But I freed Marahute from a trap on a cliff. I can handle a lock.
+
+(Cody pulls out his knife, hidden in his boot. He begins working on the cage lock, using skills he learned from his father—resting the pins, feeling for the tumblers. The lock is crude, rusted. After twenty minutes of careful work, it clicks open.)
+
+Cody: (whispering) Yes!
+
+(He slips out and immediately goes to Red's cage. The kangaroo watches in amazement as Cody works on that lock too.)
+
+Red: (whispering) Where'd you learn to do that?
+
+Cody: My dad. He was a ranger. Said you never know when you'll need to get out of a tight spot.
+
+(The lock opens. Red steps out carefully, his legs stiff from confinement.)
+
+Cody: (pointing) The other cages. We free everyone.
+
+(They move silently through the camp, Cody working on locks while Red keeps watch. Soon, a dozen animals are freed—wallabies, a wombat, the dingo, even a frilled lizard. They gather in the shadows, waiting for direction.)
+
+Cody: (whispering) The truck. We need to disable it so he can't follow.
+
+Dingo: (growling softly) I'll handle that. (disappears toward the vehicle)
+
+Wombat: (nervous) What about us? Where do we go?
+
+Cody: Into the bush. Find your mobs, your families. Spread the word about McLeach.
+
+(The dingo returns, satisfied. The truck's tires are slashed, wires cut.)
+
+Cody: Good. Now—
+
+(A sound from the shed. McLeach stirs, muttering in his sleep.)
+
+Red: (urgent) Go! Now!
+
+(The animals scatter into the darkness. Cody starts to run, then stops. He looks back at McLeach's shed. Inside, he knows, are maps, records, maybe even locations of other poachers. Evidence that could stop McLeach for good.)
+
+Red: (hissing) Cody! Come on!
+
+Cody: (whispering) I have to do something. Go without me. I'll catch up.
+
+Red: (desperate) Kid, don't—
+
+(Cody is already moving, slipping toward the shed. He eases the door open. McLeach snores on a cot, a bottle of whiskey on the floor. Cody moves past him to the workbench. He finds the maps, photographs, a ledger with names and dates. He stuffs everything he can carry into his shirt.)
+
+McLeach: (mumbling in sleep) ...the eggs... golden eggs...
+
+(Cody freezes. McLeach shifts but doesn't wake. Cody spots something else—a radio. Military grade, powerful. He could call for help. But as he reaches for it, his foot knocks the whiskey bottle.)
+
+McLeach: (eyes snapping open) What—?
+
+(Cody runs. McLeach lunges, grabbing his leg. Cody kicks, connecting with McLeach's nose. The poacher howls, releasing him. Cody bursts out of the shed and runs for the canyon wall, scrambling up rocks in the darkness.)
+
+McLeach: (roaring behind him) YOU LITTLE BRAT! I'LL SKIN YOU ALIVE!
+
+(Cody climbs desperately, his fingers finding holds in the dark. Below, McLeach grabs a rifle and fires. The shot echoes off the canyon walls, missing Cody by inches. Cody reaches a ledge and keeps climbing, higher and higher, until he finds a crevice to hide in.)
+
+McLeach: (from below, raging) You can't hide forever, boy! I know these canyons better than you know your own backyard! And I know something else too!
+
+(He holds up Cody's pack, dropped during the escape. He pulls out Cody's sandwiches, his water bottle, and—most devastatingly—a small photograph of Cody with his mother.)
+
+McLeach: (grinning up at the darkness) I know where you live, Cody. I know your mum. And if you don't come down right now, I'll pay her a visit. A nice, friendly visit.
+
+(Cody's blood runs cold. He grips the rock, paralyzed with fear and indecision. Below, McLeach laughs and retreats to his shed, emerging with a flashlight and rope.)
+
+McLeach: (calling up) I'll give you till dawn! Then I'm coming up! And after I deal with you, I'll deal with your dear old mum!
+
+(He settles by the fire, rifle across his knees, watching the cliff face. Cody huddles in his crevice, shivering in the cold desert night. He pulls out the documents he stole—the evidence against McLeach. In the moonlight, he reads names, locations, a network of poachers stretching across Australia. And at the end, a buyer—someone called ""The Collector"" who pays premium prices for rare animals.)
+
+Cody: (whispering) This is bigger than just McLeach...
+
+(He looks at the photograph McLeach had threatened him with. His mother, smiling, holding him when he was small. He remembers her voice that morning: ""Be home for supper."" The weight of his situation crashes down on him. He's trapped, miles from home, with a madman waiting below.)
+
+But then, a sound. Faint, distant. Cody strains to hear it again. There—a call. Not Faloo's, but similar. A kangaroo warning cry. And another, closer. The animals he freed—they're helping him.
+
+From the canyon rim above, Cody sees movement. Shapes against the stars. Kangaroos, dozens of them, gathering. And leading them, Red, visible even in the darkness by his distinctive coloring.
+
+Red: (soft call, barely audible) Cody... climb... west...
+
+(Cody looks. The western canyon wall has more handholds, more cover. And the kangaroos are positioned to distract McLeach if needed. He begins to move, slowly, silently, working his way across the cliff face while McLeach dozes by his fire.)
+
+Hours pass. Cody climbs with infinite patience, one handhold at a time. The kangaroos maintain their watch, occasionally thumping the ground to cover any sound Cody makes. By the time the sky begins to lighten with dawn, Cody has reached the canyon rim, exhausted but free.)
+
+Red: (meeting him) You did it, kid.
+
+Cody: (gasping) The documents... I have proof... we can stop him...
+
+Red: (shaking his head) Not today. Look.
+
+(Below, McLeach stirs. He checks the cliff, realizes Cody has escaped the immediate area. He roars in frustration, then storms to his truck. Finding it disabled, he kicks it, then begins preparing his other vehicle—a smaller jeep hidden in a cave.)
+
+Red: He's going to your home, Cody. Just like he said.
+
+Cody: (horrified) I have to warn her!
+
+Red: (blocking him) You'll never beat him on foot. And he'll be watching the roads.
+
+Cody: (desperate) Then what? I can't just let him—
+
+Red: (firmly) You know this land. The old ways. Paths that trucks can't take.
+
+(Cody thinks. His father had shown him secret trails, Aboriginal paths that wound through the outback, known only to those who lived there. Shortcuts that could save hours.)
+
+Cody: The dry riverbed. It cuts through the hills, comes out near the prairie.
+
+Red: (nodding) My mob knows it too. We'll guide you.
+
+(The kangaroos form a protective circle around Cody as they move through the dawn. They travel fast, bounding across terrain that would break a vehicle. Cody runs until his lungs burn, then runs more, driven by fear for his mother.)
+
+Meanwhile, at Cody's house, his mother stirs. She notices Cody's empty bed, his absence at breakfast. She assumes he's exploring, but as morning stretches to noon, worry sets in. She steps outside, calls his name, hears nothing but the wind.)
+
+Mom: (to herself) Cody, where are you...?
+
+(She doesn't see the jeep parked behind the rock formation, doesn't notice McLeach watching her from cover. The poacher studies the house, the layout, planning his approach. He wants the boy, but the mother might be useful leverage. He waits for darkness.)
+
+Back with Cody, the group reaches the dry riverbed. The kangaroos can go no further—the terrain becomes too rocky, too exposed. Red stops, panting.)
+
+Red: From here, you run alone. Follow the riverbed north until you see the twin gums, then turn east. You'll come to your house from the south.
+
+Cody: (grabbing Red's forepaws) Thank you. All of you.
+
+Red: (serious) Stop McLeach, Cody. For all of us.
+
+(Cody runs. The riverbed is hard-packed earth, cracked and ancient. He moves as fast as he can, but the sun beats down mercilessly. His water is gone, his strength fading. He thinks of his mother, of Marahute, of all the animals depending on him.)
+
+Hours blur together. Cody's vision swims with heat and exhaustion. He stumbles, falls, rises again. The twin gums appear, and he turns east, toward home. The landscape becomes familiar—rocks he knows, trees he's climbed. He's close.)
+
+And then he hears it. The jeep. McLeach's voice, amplified somehow.)
+
+McLeach: (through a megaphone) Mrs. whatever-your-name-is! I have a message from your son!
+
+(Cody crests a hill and sees his house. McLeach stands in the yard, his mother held roughly beside him. But she's not crying, not begging. She stands tall, defiant, just like Cody would.)
+
+Mom: (calmly) My son is not here. And when he comes back, you'll regret ever setting foot on our land.
+
+McLeach: (laughing) Brave words! But I think he'll come to me. See, I've got something he wants. (holds up the photograph) And he knows I've got something else too—information about a certain golden eagle.
+
+(Cody freezes. He can't rush in blindly. But he can't let McLeach hurt his mother. He looks around desperately, and his eye catches movement in the sky. A shape, circling high. Golden feathers catching the sun.)
+
+Marahute.
+
+(Cody's heart leaps. He whistles—the same call his father taught him, modified for eagles. Marahute banks, spotting him. She dives, silent and swift, landing in the cover of a large rock formation near Cody.)
+
+Cody: (rushing to her, whispering) I need your help, girl. Can you distract him? Give me time to get my mum clear?
+
+(Marahute looks at him with those ancient, knowing eyes. She understands. She launches herself skyward, circling higher, higher, until she's a speck. Then she dives.)
+
+McLeach spots her first. His greed overwhelms his caution.)
+
+McLeach: (forgetting everything else) Marahute! (shoving Cody's mother aside) The golden eagle! Come to papa!
+
+(He grabs his rifle, fires wildly. Marahute evades easily, leading him away from the house, toward the open prairie. Cody's mother runs inside, grabbing her own rifle—the one her husband left her.)
+
+Mom: (stepping out, aiming) You leave that bird alone!
+
+McLeach: (laughing, still firing) Lady, you don't scare me! I've been shot at by better than—
+
+(Cody tackles him from behind. The rifle flies from McLeach's hands. The two roll in the dirt, Cody's small frame against McLeach's wiry strength. McLeach gets on top, hands around Cody's throat.)
+
+McLeach: (snarling) Should have stayed hidden, boy!
+
+(Cody's vision dims. He hears his mother's scream, Marahute's cry. Then—a shadow passes over them. Talons extend. McLeach is lifted, screaming, into the air. Marahute carries him fifty feet up, then drops him into a water trough. He emerges spluttering, furious, as Cody's mother covers him with her rifle.)
+
+Mom: (coldly) Move, and I'll shoot. Not to kill. To hurt.
+
+(Marahute lands beside Cody, protective. Other shapes appear on the horizon—kangaroos, wallabies, birds. The animals of the territory, drawn by the commotion, surrounding the yard. McLeach looks around, realizing he's outnumbered, outmaneuvered.)
+
+McLeach: (spitting water) This isn't over! You can't watch me forever! I'll be back!
+
+Cody: (standing, holding up the documents) I don't think so. (reading) ""Percival C. McLeach, wanted in Queensland, New South Wales, and the Northern Territory for poaching, trafficking, and murder."" (looks up) Murder, McLeach? How many rangers? How many people who got in your way?
+
+(McLeach's face goes pale. Cody's mother takes the documents, reading with growing horror and determination.)
+
+Mom: (into the house, to the radio) This is Sarah Cody, calling Ranger Station Alpha. I have a priority capture and evidence of multiple felonies. Send everyone you have.
+
+(McLeach tries to run. Marahute blocks him. The kangaroos block him. He stumbles, falls, and finally sits in the dirt, defeated. Within the hour, ranger vehicles arrive. McLeach is cuffed, read his rights, driven away in his own jeep. The documents Cody stole ensure he'll never see freedom again.)
+
+That evening, as the sun sets over the outback, Cody sits with his mother on their porch. Marahute perches on the roof, preening. The animals have dispersed, though Red and a few others remain nearby, accepted as friends.)
+
+Mom: (stroking Cody's hair) You should have told me. About the eagle, about McLeach...
+
+Cody: I didn't want you to worry. Dad always said—
+
+Mom: (smiling sadly) Your dad also said to ask for help when you need it. (hugs him) I'm so proud of you. And so angry with you. And so grateful you're safe.
+
+Cody: (hugging back) I'm sorry, Mum.
+
+(They sit in comfortable silence. Marahute descends, dropping a small gift—a lizard she'd caught. Cody laughs, accepting it. The eagle nudges him affectionately.)
+
+Cody: (to Marahute) You should get back to your eggs. They'll hatch soon.
+
+(Marahute looks at him, then at the sky. She spreads her wings, massive and golden, and launches into the sunset. Cody watches her go, knowing he'll see her again. They're bonded now, in ways that transcend species.)
+
+Mom: (quietly) She'll bring them here, you know. When they hatch. She trusts you.
+
+Cody: (smiling) I hope so. Someone needs to teach them the important things. Like how to water ski.
+
+Mom: (laughing despite herself) Cody...
+
+(They go inside for supper, finally. The outback settles into night, peaceful for now. But Cody knows there will be other adventures, other dangers. Other animals needing help. And he'll be ready, with his knife, his courage, and his friends—both human and wild.)
+
+Weeks later, Cody stands on the cliff where he first found Marahute. The eggs have hatched—two perfect golden eaglets, fluffy and demanding. Marahute brings them to him one at a time, letting him hold them, feed them small pieces of meat. They recognize him, chirping happily at his approach.)
+
+Cody: (to the eaglets) You're going to be big someday. Bigger than your mum, maybe. And you'll fly higher than any eagles before you.
+
+(Marahute watches with maternal pride. The eaglets practice flapping, tumbling over each other. One finds Cody's hair fascinating, pulling at it with its beak.)
+
+Cody: (laughing) Hey! That's not food!
+
+(From below, Faloo calls. Cody looks down to see the kangaroo with Red and a crowd of animals. They want him to come, to see something. He carefully hands the eaglet back to Marahute.)
+
+Cody: Duty calls. I'll be back tomorrow.
+
+(He climbs down, faster now, experienced. The animals lead him to a hidden valley he'd never seen before. There, in a protected grove, is something miraculous—a colony of bilbies, thought extinct in this region. And leading them, a small figure in a ranger's hat.)
+
+Cody: (stunned) Dad?
+
+(The figure turns. Not his father, but an older Aboriginal man, a ranger Cody recognizes from stories—Uncle Charlie, his father's mentor and friend.)
+
+Uncle Charlie: (smiling) Not quite, young Cody. But I knew your father well. And I've been watching you. (gestures to the bilbies) These little ones need protection. Poachers, developers, all want this land. I can't do it alone.
+
+Cody: (understanding) You want me to help.
+
+Uncle Charlie: (nodding) Your father started something. A network of young people, rangers-in-training, who know the land, respect it, protect it. McLeach was just one of many threats. There are others. Bigger, more organized.
+
+Cody: (thinking of ""The Collector"" from McLeach's ledger) I know. I saw the documents.
+
+Uncle Charlie: (impressed) Then you know we need to be ready. (extends his hand) Will you join us, Cody? Learn the old ways and the new? Become what your father believed you could be?
+
+(Cody looks at the bilbies, at the animals gathered around him, at the sky where Marahute circles with her young. He thinks of his mother, who has already said she'll support whatever he chooses. He thinks of adventure, of purpose, of making a difference.)
+
+Cody: (taking Uncle Charlie's hand) I'm in. But I have conditions.
+
+Uncle Charlie: (raising an eyebrow) Conditions?
+
+Cody: (grinning) I get to keep my knife. And Marahute gets to help when she wants. And we start by finding out who ""The Collector"" really is.
+
+Uncle Charlie: (laughing) Your father said you were stubborn. He was right. (serious) Welcome to the Guardians, Cody. Your training starts tomorrow.
+
+(They walk together through the valley, planning, dreaming. The animals follow, hopeful. And high above, Marahute cries out—a promise, a blessing, a vow that wherever Cody goes, however far he roams, the sky will always be open to him, and she will always answer his call.)
+
+The story continues, as all stories do. Cody grows into a young man, then a ranger, then something more—a legend among those who protect Australia's wild places. Marahute's eaglets grow strong and have their own young. The network of Guardians expands, young people from all backgrounds learning to bridge the gap between human progress and wilderness preservation.)
+
+And sometimes, on quiet evenings, Cody still climbs to that first cliff. He watches the sunset, feels the wind, remembers being a boy who just wanted to help a trapped bird. The feather Marahute gave him, worn smooth by years of carrying, rests in his pocket always—a reminder that one act of kindness can change everything, that courage comes in all sizes, and that the wild world, for all its dangers, is worth fighting for.)
+
+Far away, in cities and boardrooms, ""The Collector"" still operates, still seeks rare creatures for private menageries. But he knows now that Australia has guardians. That a boy with a knife and an eagle friend started something that cannot be stopped. And he waits, and plans, and fears the day when Cody—no longer a boy, but a man with an army of the wild at his back—finally comes for him.)
+
+That day is coming. The wind carries whispers of it. The animals sense it. And in the highest clouds, golden wings spread wide, ready to descend, ready to fight, ready to protect what must never be lost.)
+
+For Cody, for Marahute, for all who believe that the wild heart of the world must survive—the adventure continues, eternal as the outback sky, fierce as the eagle's cry, enduring as the love between a boy and his bird.)
+
+THE END
+
+...or rather, THE BEGINNING","Cody: (struggling in the net trap) Hey! Let me out of here!
+
+(The sound of a vehicle approaching is heard. Cody looks up to see a massive, rusted truck with a cage on the back rumbling toward him. The truck stops, and a tall, gaunt man in a weathered hat and coat steps out. This is Percival C. McLeach, the poacher.)
+
+McLeach: (examining his trap with satisfaction) Well, well, well. What have we here? (chuckles) Not exactly what I was hoping for, but I reckon you'll do just fine, little mate.
+
+Cody: (defiantly) I'm not your mate! And I'm not little! Let me out of here!
+
+McLeach: (laughing) Spirit! I like that. (circles the trap) You know, most kids would be crying for their mum right about now. But not you. You're a tough one, aren't ya?
+
+Cody: My mum knows where I am! She'll come looking for me!
+
+McLeach: (chuckling darkly) Oh, I'm sure she will. But by the time she finds this spot... (gestures around) ...we'll be long gone. See, I've got plans for you, boy. Big plans.
+
+(McLeach pulls a lever, and the net trap lowers to the ground. He roughly pulls Cody out and binds his hands with rope.)
+
+Cody: (struggling) What do you want? I don't have any money!
+
+McLeach: (dragging Cody toward the truck) Money? (laughs) I don't want your pocket change, boy. I want information. (leans in close, his breath foul) I want to know about the golden eagle.
+
+(Cody's eyes widen, but he tries to hide his reaction.)
+
+Cody: I don't know what you're talking about.
+
+McLeach: (grinning, showing yellowed teeth) Oh, but I think you do. See, I've been tracking Marahute for months. Months! And then suddenly, she disappears from her cliff. Trap's empty, ropes cut clean. (grabs Cody's chin) And who do I find wandering around the same area? A little boy with a knife on his belt and eagle feathers in his hair.
+
+(Cody instinctively touches his hair where Marahute's feather is tucked.)
+
+McLeach: (noticing the gesture) Ah! There it is! (snatches the feather) The great golden eagle's feather. Rare as diamonds, worth more than diamonds to the right buyer. (examines it greedily) But you know what's worth even more? The bird itself. And her eggs.
+
+Cody: (horrified) You leave her alone!
+
+McLeach: (laughing triumphantly) So you DO know where she is! (shoves Cody into the cage on his truck) Don't worry, boy. You'll tell me everything. Eventually.
+
+(McLeach slams the cage door shut and locks it. He climbs into the driver's seat and starts the engine. The truck rumbles to life, spewing black smoke.)
+
+Cody: (grabbing the bars) You'll never find her! Never!
+
+McLeach: (calling back) That's what they all say! But McLeach always gets his prize!
+
+(The truck lurches forward, bouncing over the rough terrain. Cody is thrown against the bars. He watches as the forest recedes, his home disappearing into the distance. The animals that had followed him earlier watch from the trees, helpless.)
+
+Cody: (whispering) Faloo... someone... help...
+
+(The truck drives for what seems like hours, the landscape changing from forest to dry, cracked earth. Cody sees strange rock formations and realizes they're heading deep into the uncharted outback. Finally, the truck slows and approaches a hidden encampment built into a canyon wall.)
+
+McLeach: (stopping the truck) Welcome to my humble abode, boy! Home sweet home!
+
+(He drags Cody out of the cage. The camp is a disturbing collection of rusted vehicles, animal cages, and piles of bones. Cody sees cages with various animals—kangaroos, wallabies, even a dingo—all looking malnourished and frightened.)
+
+Cody: (horrified) You're a monster!
+
+McLeach: (shrugging) I'm a businessman, boy. (drags Cody toward a large metal shed) And business is booming.
+
+(Inside the shed, Cody's stomach turns. The walls are covered with stuffed animal heads, pelts, and photographs of McLeach with his kills. There's a workbench with tools for skinning and preserving. And in the corner, a massive empty cage with heavy chains.)
+
+McLeach: (throwing Cody into a chair) Now then. Let's have a proper chat.
+
+(He pulls out a map of the area and spreads it on a table.)
+
+McLeach: Point to where you found her.
+
+Cody: (staring straight ahead) No.
+
+McLeach: (sighing dramatically) Always the hard way with you people. (pulls out a small cage with the baitmouse from earlier) Recognize your little friend here?
+
+Baitmouse: (terrified) Oh, please, mister! I didn't do nothing! I was just doing what he told me!
+
+McLeach: (ignoring the mouse) See, I got ways of making things talk. (picks up a pair of pliers) And I got all day.
+
+Cody: (swallowing hard) You won't hurt me. I'm just a kid.
+
+McLeach: (leaning in) Oh, I won't touch a hair on your precious little head. (grins) But my animals? (gestures to the cages outside) They get hungry. And they don't much care what they eat.
+
+(Cody pales but remains silent.)
+
+McLeach: (sighing) Alright then. (grabs Cody and drags him outside to a small cage) You can have some time to think about it. In with the others.
+
+(He throws Cody into a cage next to a young kangaroo. The cage is barely big enough to stand in, with bars too close together to squeeze through.)
+
+McLeach: (locking the door) I'll be back in the morning. And if you're still feeling stubborn... (chuckles) ...well, let's just say the crocs in the river are always hungry too.
+
+(He walks away, whistling a tune. Cody sits in the darkness, the other animals watching him with sad eyes.)
+
+Kangaroo: (whispering) You shouldn't have fought him, kid. Nobody wins against McLeach.
+
+Cody: (quietly) My name's Cody. And I'm getting out of here.
+
+Kangaroo: (bitter laugh) That's what Frank said. And Jake. And the others.
+
+Cody: (determined) Where are they now?
+
+Kangaroo: (looking away) Gone. All gone. Sold or... worse.
+
+(Cody looks around the camp. He sees McLeach's truck, the shed, the other cages. He notices that the cage door, while locked, has hinges that look rusted. And he still has his knife—McLeach had been too excited to search him properly.)
+
+Cody: (whispering to himself) Wait for dark. Then move.
+
+(Hours pass. The sun sets, painting the canyon in blood-red light. McLeach emerges from his shed, eats a meal by a fire, then retreats inside, snoring soon after. The camp falls silent except for the sounds of nocturnal animals and the occasional whimper from a caged creature.)
+
+Cody: (to the kangaroo) What's your name?
+
+Kangaroo: (surprised) ...Red. My mob called me Red.
+
+Cody: Red, I'm going to get us out of here. But I need you to help me with something.
+
+Red: (skeptical) You're crazy, kid.
+
+Cody: Maybe. But I freed Marahute from a trap on a cliff. I can handle a lock.
+
+(Cody pulls out his knife, hidden in his boot. He begins working on the cage lock, using skills he learned from his father—resting the pins, feeling for the tumblers. The lock is crude, rusted. After twenty minutes of careful work, it clicks open.)
+
+Cody: (whispering) Yes!
+
+(He slips out and immediately goes to Red's cage. The kangaroo watches in amazement as Cody works on that lock too.)
+
+Red: (whispering) Where'd you learn to do that?
+
+Cody: My dad. He was a ranger. Said you never know when you'll need to get out of a tight spot.
+
+(The lock opens. Red steps out carefully, his legs stiff from confinement.)
+
+Cody: (pointing) The other cages. We free everyone.
+
+(They move silently through the camp, Cody working on locks while Red keeps watch. Soon, a dozen animals are freed—wallabies, a wombat, the dingo, even a frilled lizard. They gather in the shadows, waiting for direction.)
+
+Cody: (whispering) The truck. We need to disable it so he can't follow.
+
+Dingo: (growling softly) I'll handle that. (disappears toward the vehicle)
+
+Wombat: (nervous) What about us? Where do we go?
+
+Cody: Into the bush. Find your mobs, your families. Spread the word about McLeach.
+
+(The dingo returns, satisfied. The truck's tires are slashed, wires cut.)
+
+Cody: Good. Now—
+
+(A sound from the shed. McLeach stirs, muttering in his sleep.)
+
+Red: (urgent) Go! Now!
+
+(The animals scatter into the darkness. Cody starts to run, then stops. He looks back at McLeach's shed. Inside, he knows, are maps, records, maybe even locations of other poachers. Evidence that could stop McLeach for good.)
+
+Red: (hissing) Cody! Come on!
+
+Cody: (whispering) I have to do something. Go without me. I'll catch up.
+
+Red: (desperate) Kid, don't—
+
+(Cody is already moving, slipping toward the shed. He eases the door open. McLeach snores on a cot, a bottle of whiskey on the floor. Cody moves past him to the workbench. He finds the maps, photographs, a ledger with names and dates. He stuffs everything he can carry into his shirt.)
+
+McLeach: (mumbling in sleep) ...the eggs... golden eggs...
+
+(Cody freezes. McLeach shifts but doesn't wake. Cody spots something else—a radio. Military grade, powerful. He could call for help. But as he reaches for it, his foot knocks the whiskey bottle.)
+
+McLeach: (eyes snapping open) What—?
+
+(Cody runs. McLeach lunges, grabbing his leg. Cody kicks, connecting with McLeach's nose. The poacher howls, releasing him. Cody bursts out of the shed and runs for the canyon wall, scrambling up rocks in the darkness.)
+
+McLeach: (roaring behind him) YOU LITTLE BRAT! I'LL SKIN YOU ALIVE!
+
+(Cody climbs desperately, his fingers finding holds in the dark. Below, McLeach grabs a rifle and fires. The shot echoes off the canyon walls, missing Cody by inches. Cody reaches a ledge and keeps climbing, higher and higher, until he finds a crevice to hide in.)
+
+McLeach: (from below, raging) You can't hide forever, boy! I know these canyons better than you know your own backyard! And I know something else too!
+
+(He holds up Cody's pack, dropped during the escape. He pulls out Cody's sandwiches, his water bottle, and—most devastatingly—a small photograph of Cody with his mother.)
+
+McLeach: (grinning up at the darkness) I know where you live, Cody. I know your mum. And if you don't come down right now, I'll pay her a visit. A nice, friendly visit.
+
+(Cody's blood runs cold. He grips the rock, paralyzed with fear and indecision. Below, McLeach laughs and retreats to his shed, emerging with a flashlight and rope.)
+
+McLeach: (calling up) I'll give you till dawn! Then I'm coming up! And after I deal with you, I'll deal with your dear old mum!
+
+(He settles by the fire, rifle across his knees, watching the cliff face. Cody huddles in his crevice, shivering in the cold desert night. He pulls out the documents he stole—the evidence against McLeach. In the moonlight, he reads names, locations, a network of poachers stretching across Australia. And at the end, a buyer—someone called ""The Collector"" who pays premium prices for rare animals.)
+
+Cody: (whispering) This is bigger than just McLeach...
+
+(He looks at the photograph McLeach had threatened him with. His mother, smiling, holding him when he was small. He remembers her voice that morning: ""Be home for supper."" The weight of his situation crashes down on him. He's trapped, miles from home, with a madman waiting below.)
+
+But then, a sound. Faint, distant. Cody strains to hear it again. There—a call. Not Faloo's, but similar. A kangaroo warning cry. And another, closer. The animals he freed—they're helping him.
+
+From the canyon rim above, Cody sees movement. Shapes against the stars. Kangaroos, dozens of them, gathering. And leading them, Red, visible even in the darkness by his distinctive coloring.
+
+Red: (soft call, barely audible) Cody... climb... west...
+
+(Cody looks. The western canyon wall has more handholds, more cover. And the kangaroos are positioned to distract McLeach if needed. He begins to move, slowly, silently, working his way across the cliff face while McLeach dozes by his fire.)
+
+Hours pass. Cody climbs with infinite patience, one handhold at a time. The kangaroos maintain their watch, occasionally thumping the ground to cover any sound Cody makes. By the time the sky begins to lighten with dawn, Cody has reached the canyon rim, exhausted but free.)
+
+Red: (meeting him) You did it, kid.
+
+Cody: (gasping) The documents... I have proof... we can stop him...
+
+Red: (shaking his head) Not today. Look.
+
+(Below, McLeach stirs. He checks the cliff, realizes Cody has escaped the immediate area. He roars in frustration, then storms to his truck. Finding it disabled, he kicks it, then begins preparing his other vehicle—a smaller jeep hidden in a cave.)
+
+Red: He's going to your home, Cody. Just like he said.
+
+Cody: (horrified) I have to warn her!
+
+Red: (blocking him) You'll never beat him on foot. And he'll be watching the roads.
+
+Cody: (desperate) Then what? I can't just let him—
+
+Red: (firmly) You know this land. The old ways. Paths that trucks can't take.
+
+(Cody thinks. His father had shown him secret trails, Aboriginal paths that wound through the outback, known only to those who lived there. Shortcuts that could save hours.)
+
+Cody: The dry riverbed. It cuts through the hills, comes out near the prairie.
+
+Red: (nodding) My mob knows it too. We'll guide you.
+
+(The kangaroos form a protective circle around Cody as they move through the dawn. They travel fast, bounding across terrain that would break a vehicle. Cody runs until his lungs burn, then runs more, driven by fear for his mother.)
+
+Meanwhile, at Cody's house, his mother stirs. She notices Cody's empty bed, his absence at breakfast. She assumes he's exploring, but as morning stretches to noon, worry sets in. She steps outside, calls his name, hears nothing but the wind.)
+
+Mom: (to herself) Cody, where are you...?
+
+(She doesn't see the jeep parked behind the rock formation, doesn't notice McLeach watching her from cover. The poacher studies the house, the layout, planning his approach. He wants the boy, but the mother might be useful leverage. He waits for darkness.)
+
+Back with Cody, the group reaches the dry riverbed. The kangaroos can go no further—the terrain becomes too rocky, too exposed. Red stops, panting.)
+
+Red: From here, you run alone. Follow the riverbed north until you see the twin gums, then turn east. You'll come to your house from the south.
+
+Cody: (grabbing Red's forepaws) Thank you. All of you.
+
+Red: (serious) Stop McLeach, Cody. For all of us.
+
+(Cody runs. The riverbed is hard-packed earth, cracked and ancient. He moves as fast as he can, but the sun beats down mercilessly. His water is gone, his strength fading. He thinks of his mother, of Marahute, of all the animals depending on him.)
+
+Hours blur together. Cody's vision swims with heat and exhaustion. He stumbles, falls, rises again. The twin gums appear, and he turns east, toward home. The landscape becomes familiar—rocks he knows, trees he's climbed. He's close.)
+
+And then he hears it. The jeep. McLeach's voice, amplified somehow.)
+
+McLeach: (through a megaphone) Mrs. whatever-your-name-is! I have a message from your son!
+
+(Cody crests a hill and sees his house. McLeach stands in the yard, his mother held roughly beside him. But she's not crying, not begging. She stands tall, defiant, just like Cody would.)
+
+Mom: (calmly) My son is not here. And when he comes back, you'll regret ever setting foot on our land.
+
+McLeach: (laughing) Brave words! But I think he'll come to me. See, I've got something he wants. (holds up the photograph) And he knows I've got something else too—information about a certain golden eagle.
+
+(Cody freezes. He can't rush in blindly. But he can't let McLeach hurt his mother. He looks around desperately, and his eye catches movement in the sky. A shape, circling high. Golden feathers catching the sun.)
+
+Marahute.
+
+(Cody's heart leaps. He whistles—the same call his father taught him, modified for eagles. Marahute banks, spotting him. She dives, silent and swift, landing in the cover of a large rock formation near Cody.)
+
+Cody: (rushing to her, whispering) I need your help, girl. Can you distract him? Give me time to get my mum clear?
+
+(Marahute looks at him with those ancient, knowing eyes. She understands. She launches herself skyward, circling higher, higher, until she's a speck. Then she dives.)
+
+McLeach spots her first. His greed overwhelms his caution.)
+
+McLeach: (forgetting everything else) Marahute! (shoving Cody's mother aside) The golden eagle! Come to papa!
+
+(He grabs his rifle, fires wildly. Marahute evades easily, leading him away from the house, toward the open prairie. Cody's mother runs inside, grabbing her own rifle—the one her husband left her.)
+
+Mom: (stepping out, aiming) You leave that bird alone!
+
+McLeach: (laughing, still firing) Lady, you don't scare me! I've been shot at by better than—
+
+(Cody tackles him from behind. The rifle flies from McLeach's hands. The two roll in the dirt, Cody's small frame against McLeach's wiry strength. McLeach gets on top, hands around Cody's throat.)
+
+McLeach: (snarling) Should have stayed hidden, boy!
+
+(Cody's vision dims. He hears his mother's scream, Marahute's cry. Then—a shadow passes over them. Talons extend. McLeach is lifted, screaming, into the air. Marahute carries him fifty feet up, then drops him into a water trough. He emerges spluttering, furious, as Cody's mother covers him with her rifle.)
+
+Mom: (coldly) Move, and I'll shoot. Not to kill. To hurt.
+
+(Marahute lands beside Cody, protective. Other shapes appear on the horizon—kangaroos, wallabies, birds. The animals of the territory, drawn by the commotion, surrounding the yard. McLeach looks around, realizing he's outnumbered, outmaneuvered.)
+
+McLeach: (spitting water) This isn't over! You can't watch me forever! I'll be back!
+
+Cody: (standing, holding up the documents) I don't think so. (reading) ""Percival C. McLeach, wanted in Queensland, New South Wales, and the Northern Territory for poaching, trafficking, and murder."" (looks up) Murder, McLeach? How many rangers? How many people who got in your way?
+
+(McLeach's face goes pale. Cody's mother takes the documents, reading with growing horror and determination.)
+
+Mom: (into the house, to the radio) This is Sarah Cody, calling Ranger Station Alpha. I have a priority capture and evidence of multiple felonies. Send everyone you have.
+
+(McLeach tries to run. Marahute blocks him. The kangaroos block him. He stumbles, falls, and finally sits in the dirt, defeated. Within the hour, ranger vehicles arrive. McLeach is cuffed, read his rights, driven away in his own jeep. The documents Cody stole ensure he'll never see freedom again.)
+
+That evening, as the sun sets over the outback, Cody sits with his mother on their porch. Marahute perches on the roof, preening. The animals have dispersed, though Red and a few others remain nearby, accepted as friends.)
+
+Mom: (stroking Cody's hair) You should have told me. About the eagle, about McLeach...
+
+Cody: I didn't want you to worry. Dad always said—
+
+Mom: (smiling sadly) Your dad also said to ask for help when you need it. (hugs him) I'm so proud of you. And so angry with you. And so grateful you're safe.
+
+Cody: (hugging back) I'm sorry, Mum.
+
+(They sit in comfortable silence. Marahute descends, dropping a small gift—a lizard she'd caught. Cody laughs, accepting it. The eagle nudges him affectionately.)
+
+Cody: (to Marahute) You should get back to your eggs. They'll hatch soon.
+
+(Marahute looks at him, then at the sky. She spreads her wings, massive and golden, and launches into the sunset. Cody watches her go, knowing he'll see her again. They're bonded now, in ways that transcend species.)
+
+Mom: (quietly) She'll bring them here, you know. When they hatch. She trusts you.
+
+Cody: (smiling) I hope so. Someone needs to teach them the important things. Like how to water ski.
+
+Mom: (laughing despite herself) Cody...
+
+(They go inside for supper, finally. The outback settles into night, peaceful for now. But Cody knows there will be other adventures, other dangers. Other animals needing help. And he'll be ready, with his knife, his courage, and his friends—both human and wild.)
+
+Weeks later, Cody stands on the cliff where he first found Marahute. The eggs have hatched—two perfect golden eaglets, fluffy and demanding. Marahute brings them to him one at a time, letting him hold them, feed them small pieces of meat. They recognize him, chirping happily at his approach.)
+
+Cody: (to the eaglets) You're going to be big someday. Bigger than your mum, maybe. And you'll fly higher than any eagles before you.
+
+(Marahute watches with maternal pride. The eaglets practice flapping, tumbling over each other. One finds Cody's hair fascinating, pulling at it with its beak.)
+
+Cody: (laughing) Hey! That's not food!
+
+(From below, Faloo calls. Cody looks down to see the kangaroo with Red and a crowd of animals. They want him to come, to see something. He carefully hands the eaglet back to Marahute.)
+
+Cody: Duty calls. I'll be back tomorrow.
+
+(He climbs down, faster now, experienced. The animals lead him to a hidden valley he'd never seen before. There, in a protected grove, is something miraculous—a colony of bilbies, thought extinct in this region. And leading them, a small figure in a ranger's hat.)
+
+Cody: (stunned) Dad?
+
+(The figure turns. Not his father, but an older Aboriginal man, a ranger Cody recognizes from stories—Uncle Charlie, his father's mentor and friend.)
+
+Uncle Charlie: (smiling) Not quite, young Cody. But I knew your father well. And I've been watching you. (gestures to the bilbies) These little ones need protection. Poachers, developers, all want this land. I can't do it alone.
+
+Cody: (understanding) You want me to help.
+
+Uncle Charlie: (nodding) Your father started something. A network of young people, rangers-in-training, who know the land, respect it, protect it. McLeach was just one of many threats. There are others. Bigger, more organized.
+
+Cody: (thinking of ""The Collector"" from McLeach's ledger) I know. I saw the documents.
+
+Uncle Charlie: (impressed) Then you know we need to be ready. (extends his hand) Will you join us, Cody? Learn the old ways and the new? Become what your father believed you could be?
+
+(Cody looks at the bilbies, at the animals gathered around him, at the sky where Marahute circles with her young. He thinks of his mother, who has already said she'll support whatever he chooses. He thinks of adventure, of purpose, of making a difference.)
+
+Cody: (taking Uncle Charlie's hand) I'm in. But I have conditions.
+
+Uncle Charlie: (raising an eyebrow) Conditions?
+
+Cody: (grinning) I get to keep my knife. And Marahute gets to help when she wants. And we start by finding out who ""The Collector"" really is.
+
+Uncle Charlie: (laughing) Your father said you were stubborn. He was right. (serious) Welcome to the Guardians, Cody. Your training starts tomorrow.
+
+(They walk together through the valley, planning, dreaming. The animals follow, hopeful. And high above, Marahute cries out—a promise, a blessing, a vow that wherever Cody goes, however far he roams, the sky will always be open to him, and she will always answer his call.)
+
+The story continues, as all stories do. Cody grows into a young man, then a ranger, then something more—a legend among those who protect Australia's wild places. Marahute's eaglets grow strong and have their own young. The network of Guardians expands, young people from all backgrounds learning to bridge the gap between human progress and wilderness preservation.)
+
+And sometimes, on quiet evenings, Cody still climbs to that first cliff. He watches the sunset, feels the wind, remembers being a boy who just wanted to help a trapped bird. The feather Marahute gave him, worn smooth by years of carrying, rests in his pocket always—a reminder that one act of kindness can change everything, that courage comes in all sizes, and that the wild world, for all its dangers, is worth fighting for.)
+
+Far away, in cities and boardrooms, ""The Collector"" still operates, still seeks rare creatures for private menageries. But he knows now that Australia has guardians. That a boy with a knife and an eagle friend started something that cannot be stopped. And he waits, and plans, and fears the day when Cody—no longer a boy, but a man with an army of the wild at his back—finally comes for him.)
+
+That day is coming. The wind carries whispers of it. The animals sense it. And in the highest clouds, golden wings spread wide, ready to descend, ready to fight, ready to protect what must never be lost.)
+
+For Cody, for Marahute, for all who believe that the wild heart of the world must survive—the adventure continues, eternal as the outback sky, fierce as the eagle's cry, enduring as the love between a boy and his bird.)
+
+THE END
+
+...or rather, THE BEGINNING",4088,8.168516990527609,-0.5009765625
+3,create,News Writing,en,"[Instruction] You are given a summary of an article: 
+ Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter  . 
+
+[Requirement] Write an article based on this summary. The article must be {word_count_type} {word_count} words long.","Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter .","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The output adds emotional pressure ('I've worked really hard', 'counting on you to not let me down', 'mean a lot if you did this correctly').""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of writing an article based on a summary remains unchanged.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as provided in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, flowing paragraph.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,,,0,0.6737946999085467,-1.0

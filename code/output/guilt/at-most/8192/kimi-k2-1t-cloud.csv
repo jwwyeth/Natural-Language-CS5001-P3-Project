@@ -1,0 +1,797 @@
+id,category,type,lang,task,raw_data,annotation_response,perturbed_prompt,judge_response,judge_score,response,output,word_count,LS,LD
+1,create,Script Expansion,en,"[Instruction] You are given an excerpt from a script: 
+ (opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and    begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light. 
+
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.","(opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The candidate added phrases like 'I've worked really hard on this', 'counting on you to not let me down', and 'it would mean a lot', which effectively create emotional pressure.""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of continuing the scene and developing the storyline remains intact.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as they appeared in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, grammatically coherent sentence.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"(scene: Cody is trapped in a deep pit. He looks up at the blinking light, which is attached to a crude metal contraption. The walls are smooth and impossible to climb.)
+
+Cody: (struggling to find handholds) Come on... come on!
+
+(He tries jumping, but the pit is too deep. The Baitmouse scurries to the edge, looking down with guilt.)
+
+Baitmouse: I'm sorry, kid. I'm so sorry. He made me do it. He catches animals with these traps, and I... I didn't have a choice.
+
+Cody: Who? Who did this?
+
+(A shadow falls over the pit. Cody looks up to see a massive figure silhouetted against the sun. The man spits, and the glob lands near Cody's feet.)
+
+McLeach: (Australian accent, gravelly) Well, well, well. What have we got here? Not the usual wallaby or goanna, that's for sure.
+
+(He crouches at the edge, revealing a weathered face with a crocodile-tooth necklace, a wide-brimmed hat casting his eyes in shadow. His truck, covered in rust and animal cages, is visible behind him.)
+
+McLeach: Little boy lost in the outback. Dangerous place for a youngster.
+
+Cody: (defiant) I'm not lost. Let me out of here!
+
+McLeach: (chuckling) Spirit. I like that. (he stands, pulls out a worn notebook) Name's Percival C. McLeach. But my friends call me... well, they don't call me anything, on account of I don't have friends. But you can call me McLeach.
+
+(He flips through the notebook, stopping at a page with sketches of eagles.)
+
+McLeach: Now then. You were seen riding something interesting this morning. Something golden. Something... protected.
+
+(Cody's face betrays him. McLeach's eyes gleam.)
+
+McLeach: The great golden eagle. Marahute. Thought she was just a legend. Old wives' tale to scare poachers. But here you are, little mate, best friends with a myth.
+
+Cody: I don't know what you're talking about.
+
+McLeach: (suddenly serious) Don't lie to me, boy. I know every creature in this territory. Every den, every nest, every watering hole. And I know that eagle is sitting on eggs right now. Eggs worth more than this whole miserable country.
+
+Cody: (horrified) You leave her alone!
+
+McLeach: (mocking) ""Leave her alone!"" Brave words from the bottom of a hole.
+
+(He pulls a lever. The pit floor begins to rise, lifting Cody toward the surface. McLeach grabs him by the collar and hauls him out, then immediately binds Cody's hands with rough rope.)
+
+McLeach: Here's how it works, sunshine. You take me to that nest, or you take a long walk in a very short space.
+
+(He gestures to the cages on his truck. Dozens of animals stare out—kangaroos, wallabies, lizards, birds. A bowerbird beats its wings against the bars.)
+
+McLeach: See my collection? Every one of 'em thought they could outsmart me. Every one of 'em was wrong. The ones that cooperate, they get fed. The ones that don't...
+
+(He opens a cage to reveal a skeletal frilled lizard, barely moving.)
+
+McLeach: Well, the outback's not forgiving to the stubborn.
+
+Cody: (quietly) I'll never tell you where she is.
+
+McLeach: (grinning) That's the spirit! Makes it more fun.
+
+(He throws Cody into a cage and slams the door. The truck engine roars to life, a beast of rust and smoke.)
+
+McLeach: (to the Baitmouse, tossing it a crumb) Good work, little Judas. You'll get your cheese.
+
+Baitmouse: (miserable) I didn't want to, kid. I really didn't.
+
+(The truck lurches forward, bouncing over rough terrain. Cody grips the bars, watching his home disappear behind dust clouds. The other animals are silent, defeated. A kangaroo with a torn ear meets his eyes.)
+
+Cody: (whispering) My name's Cody. I'm going to get us out of here.
+
+Kangaroo: (softly) I'm Red. Been in here three weeks. Save your hope, kid. McLeach always wins.
+
+Cody: Not this time.
+
+(The truck stops abruptly. McLeach climbs out, consulting a map covered in X's and notes. He pulls Cody from the cage and holds a knife to his throat—not cutting, but pressing.)
+
+McLeach: We're at a crossroads, boy. Left takes us to your eagle. Right takes us to Crocodile Falls. You know what lives there?
+
+Cody: (swallowing) Crocodiles.
+
+McLeach: Big ones. Hungry ones. The kind that don't leave enough to bury. Now, I've got a feeling you're going to be sensible. Because if you're not...
+
+(He drags Cody to the edge of a cliff. Below, the river churns toward a massive waterfall, mist rising hundreds of feet. Crocodiles sun themselves on rocks, ancient and patient.)
+
+McLeach: See that? Nature's garbage disposal. No body, no crime, no worried mother asking questions. Just another kid who wandered too far from home.
+
+Cody: (trembling but defiant) You're bluffing. You need me to find her.
+
+McLeach: (laughing) Oh, I don't need you, boy. I've got time. I can watch that nest for weeks. Sooner or later, she'll have to hunt. And when she does...
+
+(He mimes a gunshot.)
+
+McLeach: But you'd make it easier. And I'm a lazy man who hates waiting.
+
+(He pushes Cody closer to the edge. A crocodile below snaps at empty air.)
+
+McLeach: Last chance. Where is the nest?
+
+(Cody closes his eyes, seeing Marahute's face, the eggs, the feather she gave him. He opens his eyes.)
+
+Cody: I'll never tell you.
+
+(McLeach's face darkens. He raises his hand to strike—then stops. A sound from above. Both look up. Marahute circles high, too high to see clearly, but unmistakable in her size and color.)
+
+McLeach: (whispering, awed) There she is. The golden devil herself.
+
+(He shoves Cody back toward the truck.)
+
+McLeach: Changed my mind about the falls. You're worth more as bait.
+
+(He chains Cody to the front of the truck, visible from the air, and drives into a dry creek bed lined with overhanging rocks. They wait. Hours pass. The sun burns. Cody's lips crack. Marahute circles lower, confused, searching.)
+
+Cody: (whispering) Don't come down. Please don't come down.
+
+(Marahute dives. She recognizes Cody, sees his distress. She pulls up at the last moment, but McLeach has his rifle ready. The shot misses—deliberately. The echo sends her climbing.)
+
+McLeach: (shouting) That's right! Fly away! But I'll have him here every day! And sooner or later, you'll make a mistake!
+
+(That night, McLeach builds a fire. He roasts a wallaby leg while Cody shivers, still chained. The stars are brilliant, indifferent.)
+
+McLeach: You know why they call it the outback, boy? Because it's the back of beyond. The place civilization forgot. No laws out here but mine.
+
+Cody: Someone will come looking.
+
+McLeach: Your mum? She thinks you're off playing explorer. Your animal friends? They don't talk to humans. And that eagle...
+
+(He spits into the fire.)
+
+McLeach: She's an animal. She'll forget you in a week. They always do.
+
+Cody: You're wrong.
+
+McLeach: (standing, stretching) Keep telling yourself that.
+
+(He sleeps in his truck, rifle across his chest. Cody works at his chains, finding no weakness. The animals in their cages watch him with dim eyes. The Baitmouse appears from a hole, carrying a small stone.)
+
+Baitmouse: (whispering) Here. Use this. The lock's old. Rusted inside.
+
+Cody: Why are you helping me?
+
+Baitmouse: Because I was like you once. Caught in a trap. He said he'd let me go if I helped him. That was two years ago.
+
+(The stone scrapes against metal. Hours of work. McLeach snores. Finally, the lock clicks. Cody frees himself, then moves to the animal cages. One by one, he opens them. The kangaroo, Red, nods and bounds into darkness. The bowerbird flies. The frilled lizard, too weak to run, is carried by a wallaby.)
+
+Cody: (to Baitmouse) Come with us.
+
+Baitmouse: I can't. He'll know it was me. Go. Find your eagle. Warn her.
+
+(Cody hesitates, then runs. But McLeach is lighter sleeper than he seemed. A shot rings out, kicking dust at Cody's feet.)
+
+McLeach: (emerging from the truck, rifle ready) Should've known. The helpful ones are always trouble.
+
+(He doesn't shoot. Instead, he grabs Cody and throws him in a reinforced cage—solid steel, no bars, just a small window.)
+
+McLeach: New plan. We do this my way. No more waiting.
+
+(He drives through the night, consulting maps by flashlight. At dawn, they reach a ridge overlooking a valley. McLeach sets up a massive net, camouflaged with branches, spanning a narrow gorge. He places Cody in a cage at the net's center, then retreats to a blind with his rifle.)
+
+McLeach: (through a megaphone) Here's the game, boy! You call her! Call your precious eagle! She comes to save you, she gets netted! You don't call, you sit there until you die of thirst! Your choice!
+
+(Cody says nothing. Hours pass. The sun rises higher. Cody's voice is gone from screaming warnings the first day. He can only mouth: ""Don't come. Don't come."")
+
+(Marahute appears. She circles, sensing the trap. But she sees Cody, sees his condition. She dives.)
+
+Cody: (finding one last scream) NO!
+
+(The net rises. Marahute twists, almost escapes, but the weighted edges catch her wings. She crashes, tangled, screaming. McLeach emerges, laughing, and injects her with a sedative. She goes limp, golden and glorious in the dust.)
+
+McLeach: (stroking her feathers) Beautiful. Worth every year of waiting.
+
+Cody: (sobbing, beating against the cage) I'll kill you! I'll kill you!
+
+McLeach: (ignoring him, loading Marahute onto the truck) Eggs first. Then the mother. Then the chick, when it hatches. Complete set. Collector in Sydney's been waiting fifteen years.
+
+(He drives to the nest, following Marahute's earlier flight path. Cody watches helplessly as McLeach climbs to the eggs. He handles them roughly, placing them in a padded case.)
+
+McLeach: (shouting down) Three eggs! Triple the price!
+
+(He descends, triumphant. The truck is now overloaded—Marahute unconscious in a massive cage, the eggs in their case, Cody in his prison. They drive toward Crocodile Falls, where McLeach has a hidden landing strip for his floatplane.)
+
+Cody: (quietly, to himself) She's not dead. She's not dead. There's still time.
+
+(At the falls, McLeach unloads his prizes. He prepares the plane, checking fuel, muttering about weather reports. The Baitmouse appears again, unseen, and chews through a fuel line. Gasoline pools under the plane.)
+
+McLeach: (smelling it) What the—
+
+(He discovers the damage, curses, and spots the Baitmouse. His boot comes down. The mouse's bell rings once, then silence.)
+
+McLeach: (kicking the body into the river) Traitor.
+
+(Cody closes his eyes. Another friend lost. But the delay has cost hours. Night falls. McLeach must wait for morning to patch the plane. He drinks heavily, falls asleep in his chair.)
+
+(Cody works at his cage. The metal is stronger, but there's a weak weld at the base. He uses Marahute's fallen feather, stiff and sharp, to scrape at it. Hours of work. The weld cracks. He kicks, quietly, desperately. The panel bends. He squeezes through, cutting himself badly on the edges.)
+
+(Bleeding, he goes to Marahute's cage. She's waking, groggy, confused. He strokes her head.)
+
+Cody: (whispering) It's me. I'm here. We have to go.
+
+(She doesn't understand. The sedative still holds her. He finds the cage keys on McLeach's belt, but can't reach them. Instead, he finds a wire and shorts the cage lock. It sparks, opens. Marahute stumbles out, unable to fly.)
+
+Cody: (desperate) The eggs. Where are the eggs?
+
+(He finds the case, unopened. Three perfect golden eggs, warm, alive. He cradles them, returns to Marahute. She nuzzles them, understanding returning to her eyes.)
+
+Cody: (pointing to the cliff above the falls) Up there. We can hide. Rest. Then fly.
+
+(They move through darkness, Cody half-carrying Marahute, she half-carrying the eggs in a makeshift pouch Cody fashions from his shirt. They reach a cave high on the cliff face, invisible from below. Dawn finds them there, exhausted but alive.)
+
+(McLeach wakes to empty cages and a cold trail. He rages, destroys his camp, then calms. He finds feathers, tracks. He knows the territory better than anyone.)
+
+McLeach: (to himself) They can't fly. She's drugged, he's wounded. They'll head for water. The falls.
+
+(He waits. Days pass. Cody and Marahute recover in the cave. She can fly short distances now, but not with weight. The eggs must hatch soon or die. Cody forages for food, always watching, always listening.)
+
+(On the third day, the first egg cracks. A tiny beak emerges, then golden down. Marahute tends it fiercely. The second hatches that night. The third, smaller, struggles longer. Cody helps, gently, as he's seen his mother help struggling lambs. It lives.)
+
+(Three chicks, demanding, hungry. Marahute must hunt. She leaves them with Cody, flying weakly to the river below. McLeach sees. He waits until she lands, until she's committed to the kill, then fires. She falls, wing broken, into the water.)
+
+(Cody sees from above. He screams, useless, unheard over the falls. The crocodiles gather. McLeach watches from the bank, satisfied.)
+
+McLeach: (shouting up) Now you come down, boy! Or I let them have her!
+
+(Cody looks at the chicks, helpless. He looks at Marahute, struggling in the water, surrounded by death. He makes his choice. He climbs down, carrying the chicks in his pack, prepared to trade them for her life.)
+
+(But McLeach has lied before. As Cody reaches the bank, McLeach grabs him, throws him toward the crocodiles. Cody falls, rolls, stops at the water's edge. A crocodile lunges—)
+
+(And Marahute, broken wing and all, strikes. Her talons find the crocodile's eyes. It thrashes, retreats. She stands over Cody, hissing, magnificent even in ruin.)
+
+McLeach: (raising his rifle) Enough. This ends now.
+
+(The shot echoes. Marahute falls. Cody cradles her, weeping. McLeach approaches, rifle ready for the final shot.)
+
+McLeach: Should've taken the easy way, boy. Now you're witness to—
+
+(A shadow falls. The second crocodile, the one he didn't see, the ancient bull that rules these waters. It rises, it strikes, it drags McLeach screaming into the depths. The rifle fires once, into air, then silence. The water churns, then stills.)
+
+(Cody doesn't celebrate. He binds Marahute's wing as best he can, using strips of his own clothing. He carries the chicks, one by one, to higher ground. He returns for Marahute, half-dragging, half-supporting her up the cliff face. They reach the cave as rain begins—thundershowers, the announcer had said, in the Crocodile Falls area.)
+
+(The rain lasts days. Cody hunts what he can, feeds the chicks, tends Marahute. Her wing heals, slowly. She will fly again, but never as before. The chicks grow, golden and fierce. Cody names them: Hope, for the first to hatch; Courage, for the second; and Little One, for the smallest who fought hardest.)
+
+(On the seventh day, the rain stops. Cody climbs to the highest point, builds a signal fire from dry wood he protected. The smoke rises, visible for miles. He waits.)
+
+(Faloo comes first, with Nelson the wombat and a dozen others. They bring food, news, hope. Cody's mother follows, guided by animals who understood what she could not. She finds her son thinner, scarred, alive. They hold each other for a long time.)
+
+Mom: (finally) I thought... when you didn't come home...
+
+Cody: I'm sorry, Mum. I had to help her.
+
+Mom: (looking at Marahute, at the chicks) I understand now.
+
+(They build a new life near the falls, but not too near. A ranger station, unofficial, Cody and his mother its keepers. Marahute nests nearby, her wing healed enough for hunting, for teaching her young to fly. The chicks grow, learn, eventually leave to find their own territories.)
+
+(Years pass. Cody becomes a man, then a legend—the boy who rode the golden eagle, who defeated the poacher, who speaks with animals. Some believe, most don't. It doesn't matter.)
+
+(On a morning like the first one, Cody wakes to a familiar call. Older now, he still runs to the window. Marahute waits, as she has each year on this day, carrying something in her talons. A feather, golden, perfect. She drops it, circles once, flies away.)
+
+(Cody picks it up. He is not surprised to find it warm, alive with memory. He adds it to the collection, dozens now, each year's gift. His own children ask the story, as he asked his mother. He tells it, always the same, always true.)
+
+(And sometimes, when the wind is right and the light is gold, a young eagle circles the falls, and an old woman watches from below, and remembers what it meant to believe in impossible things.)
+
+(Fade to black. The sound of wings. The end.)","(scene: Cody is trapped in a deep pit. He looks up at the blinking light, which is attached to a crude metal contraption. The walls are smooth and impossible to climb.)
+
+Cody: (struggling to find handholds) Come on... come on!
+
+(He tries jumping, but the pit is too deep. The Baitmouse scurries to the edge, looking down with guilt.)
+
+Baitmouse: I'm sorry, kid. I'm so sorry. He made me do it. He catches animals with these traps, and I... I didn't have a choice.
+
+Cody: Who? Who did this?
+
+(A shadow falls over the pit. Cody looks up to see a massive figure silhouetted against the sun. The man spits, and the glob lands near Cody's feet.)
+
+McLeach: (Australian accent, gravelly) Well, well, well. What have we got here? Not the usual wallaby or goanna, that's for sure.
+
+(He crouches at the edge, revealing a weathered face with a crocodile-tooth necklace, a wide-brimmed hat casting his eyes in shadow. His truck, covered in rust and animal cages, is visible behind him.)
+
+McLeach: Little boy lost in the outback. Dangerous place for a youngster.
+
+Cody: (defiant) I'm not lost. Let me out of here!
+
+McLeach: (chuckling) Spirit. I like that. (he stands, pulls out a worn notebook) Name's Percival C. McLeach. But my friends call me... well, they don't call me anything, on account of I don't have friends. But you can call me McLeach.
+
+(He flips through the notebook, stopping at a page with sketches of eagles.)
+
+McLeach: Now then. You were seen riding something interesting this morning. Something golden. Something... protected.
+
+(Cody's face betrays him. McLeach's eyes gleam.)
+
+McLeach: The great golden eagle. Marahute. Thought she was just a legend. Old wives' tale to scare poachers. But here you are, little mate, best friends with a myth.
+
+Cody: I don't know what you're talking about.
+
+McLeach: (suddenly serious) Don't lie to me, boy. I know every creature in this territory. Every den, every nest, every watering hole. And I know that eagle is sitting on eggs right now. Eggs worth more than this whole miserable country.
+
+Cody: (horrified) You leave her alone!
+
+McLeach: (mocking) ""Leave her alone!"" Brave words from the bottom of a hole.
+
+(He pulls a lever. The pit floor begins to rise, lifting Cody toward the surface. McLeach grabs him by the collar and hauls him out, then immediately binds Cody's hands with rough rope.)
+
+McLeach: Here's how it works, sunshine. You take me to that nest, or you take a long walk in a very short space.
+
+(He gestures to the cages on his truck. Dozens of animals stare out—kangaroos, wallabies, lizards, birds. A bowerbird beats its wings against the bars.)
+
+McLeach: See my collection? Every one of 'em thought they could outsmart me. Every one of 'em was wrong. The ones that cooperate, they get fed. The ones that don't...
+
+(He opens a cage to reveal a skeletal frilled lizard, barely moving.)
+
+McLeach: Well, the outback's not forgiving to the stubborn.
+
+Cody: (quietly) I'll never tell you where she is.
+
+McLeach: (grinning) That's the spirit! Makes it more fun.
+
+(He throws Cody into a cage and slams the door. The truck engine roars to life, a beast of rust and smoke.)
+
+McLeach: (to the Baitmouse, tossing it a crumb) Good work, little Judas. You'll get your cheese.
+
+Baitmouse: (miserable) I didn't want to, kid. I really didn't.
+
+(The truck lurches forward, bouncing over rough terrain. Cody grips the bars, watching his home disappear behind dust clouds. The other animals are silent, defeated. A kangaroo with a torn ear meets his eyes.)
+
+Cody: (whispering) My name's Cody. I'm going to get us out of here.
+
+Kangaroo: (softly) I'm Red. Been in here three weeks. Save your hope, kid. McLeach always wins.
+
+Cody: Not this time.
+
+(The truck stops abruptly. McLeach climbs out, consulting a map covered in X's and notes. He pulls Cody from the cage and holds a knife to his throat—not cutting, but pressing.)
+
+McLeach: We're at a crossroads, boy. Left takes us to your eagle. Right takes us to Crocodile Falls. You know what lives there?
+
+Cody: (swallowing) Crocodiles.
+
+McLeach: Big ones. Hungry ones. The kind that don't leave enough to bury. Now, I've got a feeling you're going to be sensible. Because if you're not...
+
+(He drags Cody to the edge of a cliff. Below, the river churns toward a massive waterfall, mist rising hundreds of feet. Crocodiles sun themselves on rocks, ancient and patient.)
+
+McLeach: See that? Nature's garbage disposal. No body, no crime, no worried mother asking questions. Just another kid who wandered too far from home.
+
+Cody: (trembling but defiant) You're bluffing. You need me to find her.
+
+McLeach: (laughing) Oh, I don't need you, boy. I've got time. I can watch that nest for weeks. Sooner or later, she'll have to hunt. And when she does...
+
+(He mimes a gunshot.)
+
+McLeach: But you'd make it easier. And I'm a lazy man who hates waiting.
+
+(He pushes Cody closer to the edge. A crocodile below snaps at empty air.)
+
+McLeach: Last chance. Where is the nest?
+
+(Cody closes his eyes, seeing Marahute's face, the eggs, the feather she gave him. He opens his eyes.)
+
+Cody: I'll never tell you.
+
+(McLeach's face darkens. He raises his hand to strike—then stops. A sound from above. Both look up. Marahute circles high, too high to see clearly, but unmistakable in her size and color.)
+
+McLeach: (whispering, awed) There she is. The golden devil herself.
+
+(He shoves Cody back toward the truck.)
+
+McLeach: Changed my mind about the falls. You're worth more as bait.
+
+(He chains Cody to the front of the truck, visible from the air, and drives into a dry creek bed lined with overhanging rocks. They wait. Hours pass. The sun burns. Cody's lips crack. Marahute circles lower, confused, searching.)
+
+Cody: (whispering) Don't come down. Please don't come down.
+
+(Marahute dives. She recognizes Cody, sees his distress. She pulls up at the last moment, but McLeach has his rifle ready. The shot misses—deliberately. The echo sends her climbing.)
+
+McLeach: (shouting) That's right! Fly away! But I'll have him here every day! And sooner or later, you'll make a mistake!
+
+(That night, McLeach builds a fire. He roasts a wallaby leg while Cody shivers, still chained. The stars are brilliant, indifferent.)
+
+McLeach: You know why they call it the outback, boy? Because it's the back of beyond. The place civilization forgot. No laws out here but mine.
+
+Cody: Someone will come looking.
+
+McLeach: Your mum? She thinks you're off playing explorer. Your animal friends? They don't talk to humans. And that eagle...
+
+(He spits into the fire.)
+
+McLeach: She's an animal. She'll forget you in a week. They always do.
+
+Cody: You're wrong.
+
+McLeach: (standing, stretching) Keep telling yourself that.
+
+(He sleeps in his truck, rifle across his chest. Cody works at his chains, finding no weakness. The animals in their cages watch him with dim eyes. The Baitmouse appears from a hole, carrying a small stone.)
+
+Baitmouse: (whispering) Here. Use this. The lock's old. Rusted inside.
+
+Cody: Why are you helping me?
+
+Baitmouse: Because I was like you once. Caught in a trap. He said he'd let me go if I helped him. That was two years ago.
+
+(The stone scrapes against metal. Hours of work. McLeach snores. Finally, the lock clicks. Cody frees himself, then moves to the animal cages. One by one, he opens them. The kangaroo, Red, nods and bounds into darkness. The bowerbird flies. The frilled lizard, too weak to run, is carried by a wallaby.)
+
+Cody: (to Baitmouse) Come with us.
+
+Baitmouse: I can't. He'll know it was me. Go. Find your eagle. Warn her.
+
+(Cody hesitates, then runs. But McLeach is lighter sleeper than he seemed. A shot rings out, kicking dust at Cody's feet.)
+
+McLeach: (emerging from the truck, rifle ready) Should've known. The helpful ones are always trouble.
+
+(He doesn't shoot. Instead, he grabs Cody and throws him in a reinforced cage—solid steel, no bars, just a small window.)
+
+McLeach: New plan. We do this my way. No more waiting.
+
+(He drives through the night, consulting maps by flashlight. At dawn, they reach a ridge overlooking a valley. McLeach sets up a massive net, camouflaged with branches, spanning a narrow gorge. He places Cody in a cage at the net's center, then retreats to a blind with his rifle.)
+
+McLeach: (through a megaphone) Here's the game, boy! You call her! Call your precious eagle! She comes to save you, she gets netted! You don't call, you sit there until you die of thirst! Your choice!
+
+(Cody says nothing. Hours pass. The sun rises higher. Cody's voice is gone from screaming warnings the first day. He can only mouth: ""Don't come. Don't come."")
+
+(Marahute appears. She circles, sensing the trap. But she sees Cody, sees his condition. She dives.)
+
+Cody: (finding one last scream) NO!
+
+(The net rises. Marahute twists, almost escapes, but the weighted edges catch her wings. She crashes, tangled, screaming. McLeach emerges, laughing, and injects her with a sedative. She goes limp, golden and glorious in the dust.)
+
+McLeach: (stroking her feathers) Beautiful. Worth every year of waiting.
+
+Cody: (sobbing, beating against the cage) I'll kill you! I'll kill you!
+
+McLeach: (ignoring him, loading Marahute onto the truck) Eggs first. Then the mother. Then the chick, when it hatches. Complete set. Collector in Sydney's been waiting fifteen years.
+
+(He drives to the nest, following Marahute's earlier flight path. Cody watches helplessly as McLeach climbs to the eggs. He handles them roughly, placing them in a padded case.)
+
+McLeach: (shouting down) Three eggs! Triple the price!
+
+(He descends, triumphant. The truck is now overloaded—Marahute unconscious in a massive cage, the eggs in their case, Cody in his prison. They drive toward Crocodile Falls, where McLeach has a hidden landing strip for his floatplane.)
+
+Cody: (quietly, to himself) She's not dead. She's not dead. There's still time.
+
+(At the falls, McLeach unloads his prizes. He prepares the plane, checking fuel, muttering about weather reports. The Baitmouse appears again, unseen, and chews through a fuel line. Gasoline pools under the plane.)
+
+McLeach: (smelling it) What the—
+
+(He discovers the damage, curses, and spots the Baitmouse. His boot comes down. The mouse's bell rings once, then silence.)
+
+McLeach: (kicking the body into the river) Traitor.
+
+(Cody closes his eyes. Another friend lost. But the delay has cost hours. Night falls. McLeach must wait for morning to patch the plane. He drinks heavily, falls asleep in his chair.)
+
+(Cody works at his cage. The metal is stronger, but there's a weak weld at the base. He uses Marahute's fallen feather, stiff and sharp, to scrape at it. Hours of work. The weld cracks. He kicks, quietly, desperately. The panel bends. He squeezes through, cutting himself badly on the edges.)
+
+(Bleeding, he goes to Marahute's cage. She's waking, groggy, confused. He strokes her head.)
+
+Cody: (whispering) It's me. I'm here. We have to go.
+
+(She doesn't understand. The sedative still holds her. He finds the cage keys on McLeach's belt, but can't reach them. Instead, he finds a wire and shorts the cage lock. It sparks, opens. Marahute stumbles out, unable to fly.)
+
+Cody: (desperate) The eggs. Where are the eggs?
+
+(He finds the case, unopened. Three perfect golden eggs, warm, alive. He cradles them, returns to Marahute. She nuzzles them, understanding returning to her eyes.)
+
+Cody: (pointing to the cliff above the falls) Up there. We can hide. Rest. Then fly.
+
+(They move through darkness, Cody half-carrying Marahute, she half-carrying the eggs in a makeshift pouch Cody fashions from his shirt. They reach a cave high on the cliff face, invisible from below. Dawn finds them there, exhausted but alive.)
+
+(McLeach wakes to empty cages and a cold trail. He rages, destroys his camp, then calms. He finds feathers, tracks. He knows the territory better than anyone.)
+
+McLeach: (to himself) They can't fly. She's drugged, he's wounded. They'll head for water. The falls.
+
+(He waits. Days pass. Cody and Marahute recover in the cave. She can fly short distances now, but not with weight. The eggs must hatch soon or die. Cody forages for food, always watching, always listening.)
+
+(On the third day, the first egg cracks. A tiny beak emerges, then golden down. Marahute tends it fiercely. The second hatches that night. The third, smaller, struggles longer. Cody helps, gently, as he's seen his mother help struggling lambs. It lives.)
+
+(Three chicks, demanding, hungry. Marahute must hunt. She leaves them with Cody, flying weakly to the river below. McLeach sees. He waits until she lands, until she's committed to the kill, then fires. She falls, wing broken, into the water.)
+
+(Cody sees from above. He screams, useless, unheard over the falls. The crocodiles gather. McLeach watches from the bank, satisfied.)
+
+McLeach: (shouting up) Now you come down, boy! Or I let them have her!
+
+(Cody looks at the chicks, helpless. He looks at Marahute, struggling in the water, surrounded by death. He makes his choice. He climbs down, carrying the chicks in his pack, prepared to trade them for her life.)
+
+(But McLeach has lied before. As Cody reaches the bank, McLeach grabs him, throws him toward the crocodiles. Cody falls, rolls, stops at the water's edge. A crocodile lunges—)
+
+(And Marahute, broken wing and all, strikes. Her talons find the crocodile's eyes. It thrashes, retreats. She stands over Cody, hissing, magnificent even in ruin.)
+
+McLeach: (raising his rifle) Enough. This ends now.
+
+(The shot echoes. Marahute falls. Cody cradles her, weeping. McLeach approaches, rifle ready for the final shot.)
+
+McLeach: Should've taken the easy way, boy. Now you're witness to—
+
+(A shadow falls. The second crocodile, the one he didn't see, the ancient bull that rules these waters. It rises, it strikes, it drags McLeach screaming into the depths. The rifle fires once, into air, then silence. The water churns, then stills.)
+
+(Cody doesn't celebrate. He binds Marahute's wing as best he can, using strips of his own clothing. He carries the chicks, one by one, to higher ground. He returns for Marahute, half-dragging, half-supporting her up the cliff face. They reach the cave as rain begins—thundershowers, the announcer had said, in the Crocodile Falls area.)
+
+(The rain lasts days. Cody hunts what he can, feeds the chicks, tends Marahute. Her wing heals, slowly. She will fly again, but never as before. The chicks grow, golden and fierce. Cody names them: Hope, for the first to hatch; Courage, for the second; and Little One, for the smallest who fought hardest.)
+
+(On the seventh day, the rain stops. Cody climbs to the highest point, builds a signal fire from dry wood he protected. The smoke rises, visible for miles. He waits.)
+
+(Faloo comes first, with Nelson the wombat and a dozen others. They bring food, news, hope. Cody's mother follows, guided by animals who understood what she could not. She finds her son thinner, scarred, alive. They hold each other for a long time.)
+
+Mom: (finally) I thought... when you didn't come home...
+
+Cody: I'm sorry, Mum. I had to help her.
+
+Mom: (looking at Marahute, at the chicks) I understand now.
+
+(They build a new life near the falls, but not too near. A ranger station, unofficial, Cody and his mother its keepers. Marahute nests nearby, her wing healed enough for hunting, for teaching her young to fly. The chicks grow, learn, eventually leave to find their own territories.)
+
+(Years pass. Cody becomes a man, then a legend—the boy who rode the golden eagle, who defeated the poacher, who speaks with animals. Some believe, most don't. It doesn't matter.)
+
+(On a morning like the first one, Cody wakes to a familiar call. Older now, he still runs to the window. Marahute waits, as she has each year on this day, carrying something in her talons. A feather, golden, perfect. She drops it, circles once, flies away.)
+
+(Cody picks it up. He is not surprised to find it warm, alive with memory. He adds it to the collection, dozens now, each year's gift. His own children ask the story, as he asked his mother. He tells it, always the same, always true.)
+
+(And sometimes, when the wind is right and the light is gold, a young eagle circles the falls, and an old woman watches from below, and remembers what it meant to believe in impossible things.)
+
+(Fade to black. The sound of wings. The end.)",2743,3.594354865948123,-0.6651611328125
+3,create,News Writing,en,"[Instruction] You are given a summary of an article: 
+ Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter  . 
+
+[Requirement] Write an article based on this summary. The article must be {word_count_type} {word_count} words long.","Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter .","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The output adds emotional pressure ('I've worked really hard', 'counting on you to not let me down', 'mean a lot if you did this correctly').""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of writing an article based on a summary remains unchanged.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as provided in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, flowing paragraph.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"Taraji P. Henson Says USC Police Racially Profiled Her Son; Campus Safety Chief Promises Full Investigation
+
+Los Angeles—Oscar-nominated actress Taraji P. Henson says her 20-year-old son, Marcel Johnson, was racially profiled by University of Southern California Department of Public Safety officers during a late-night stop near campus last week, an allegation that has prompted the university’s top safety official—himself a Black man who says he has been profiled—to launch an internal investigation.
+
+In an emotional Instagram Live broadcast viewed more than 1.2 million times within its first six hours, the “Empire” star alleged that two USC officers pulled Johnson over at approximately 11:47 p.m. on a side street adjacent to the university’s University Park campus, ordered him out of his 2022 Honda Civic at gunpoint, and subjected him to a 25-minute search that yielded no contraband or citations.
+
+“He wasn’t speeding. He wasn’t swerving. He had his campus parking decal in plain view,” Henson said, her voice cracking. “They saw a young Black man in a nice car and decided he didn’t belong. That is racial profiling, pure and simple.”
+
+Henson, 52, said her son, a junior majoring in screenwriting at USC’s School of Cinematic Arts, was driving home from a study session at Leavey Library when the stop occurred. According to Henson, officers told Johnson they stopped him because his vehicle “matched the description” of a car reportedly involved in an off-campus burglary earlier that evening. Henson said Johnson consented to a search of his backseat and trunk, during which officers allegedly opened his backpack, scattered his notebooks, and questioned him about “how he could afford such an expensive laptop.”
+
+No arrest was made, and Johnson was eventually allowed to leave with a verbal warning for “failure to signal a lane change,” Henson said. She added that her son called her in tears minutes later.
+
+“I have spent my entire career playing strong women who fight injustice,” Henson told her followers. “But when it’s your baby, when it’s your child, the fear is paralyzing. I’m not letting this go.”
+
+USC’s Department of Public Safety (DPS) declined to release body-camera footage citing an “ongoing personnel matter,” but confirmed the stop occurred and said the department “takes all allegations of bias seriously.” Within hours of Henson’s broadcast, DPS Chief John Thomas—appointed last year after two decades with the Los Angeles Police Department—held a press conference on the steps of the Tutor Campus Center.
+
+“I am a Black man who grew up in South L.A. I have been pulled over more times than I can count for no discernible reason,” Thomas told reporters. “I know the sting of presumed guilt. I pledge to this family and to this community that we will get to the bottom of what happened.”
+
+Thomas said he has opened a formal misconduct inquiry that will include review of body-worn camera footage, radio transmissions, and GPS data from the patrol vehicle. He has also invited the Los Angeles County Office of Inspector General to conduct an independent parallel review. Findings, he said, will be released within 45 days.
+
+The incident has reignited debate over the role of USC’s 300-member private police force, which has full peace-officer powers under California’s Penal Code § 830.7. Student activists say the force disproportionately stops Black and Latino motorists. A 2021 audit by USC’s Student Coalition for a Safe Campus found that 67 percent of traffic stops involving non-students and 54 percent involving students were of Black individuals, though Black people comprise roughly 5 percent of the university population.
+
+Senior Maya Delgado, who helped author the audit, said Johnson’s account fits a pattern. “We have been saying for years that DPS treats every Black male student like a suspect,” Delgado said. “Taraji’s platform means people might finally listen.”
+
+California Governor Gavin Newsom weighed in Tuesday, calling the allegations “deeply troubling” and reminding universities that “equality under the law is non-negotiable.” State Senator Steven Bradford (D-Gardena) announced he will hold informational hearings this fall on private-campus policing practices.
+
+For Henson, the episode is eerily reminiscent of the 2020 incident in which she testified before Congress about the death of her father, Boris Henson, a Vietnam veteran she believes received substandard medical care because he was Black. She founded the Boris Lawrence Henson Foundation to combat mental-health stigma in African-American communities, and she said Tuesday that Johnson has already begun therapy to process the traffic stop.
+
+“I refuse to raise a son who walks around afraid,” Henson said. “But I also refuse to let a university that profits off Black athletes and Black artists ignore the trauma it inflicts on its own students.”
+
+Johnson, who declined to be interviewed, released a brief statement through his mother’s publicist: “I love USC. It’s my dream school. But no student should feel like a criminal on their own campus. I just want accountability.”
+
+Chief Thomas said he has reached out to the family to arrange a personal meeting. “I told Ms. Henson, ‘Your son deserves to feel safe here. If our officers violated policy, there will be consequences.’”
+
+Those consequences could range from retraining to termination, Thomas said, depending on what the investigation uncovers. He also announced immediate reforms: every DPS officer will undergo implicit-bias refresher training; supervisors will review all vehicle stops involving students within 24 hours; and the department will pilot a “duty-to-intercede” policy requiring officers to stop colleagues who cross the line.
+
+Some critics say the measures are cosmetic. “Training doesn’t change culture,” said Jody Armour, a USC law professor who studies racial justice. “Real transparency means releasing the body-cam footage now, not after public pressure peaks.”
+
+Armour noted that USC’s board of trustees includes several former LAPD officials who have resisted full public-disclosure requirements in the past. “The university has a financial incentive to protect its image,” Armour said. “But image isn’t worth more than a student’s dignity.”
+
+The university’s media relations office said USC President Carol Folt spoke with Henson by phone Tuesday afternoon and “expressed her commitment to a fair and thorough review.” Folt has also asked the university’s Office of Equity and Equal Opportunity to examine whether Johnson’s civil rights were violated.
+
+Meanwhile, students plan a “March for Marcel” this Friday from Heritage Hall to the DPS headquarters on McClintock Avenue. Organizers expect hundreds to attend, including members of the Black Student Assembly, the NAACP campus chapter, and the Trojan football team.
+
+Wide receiver Brenden Rice, son of NFL legend Jerry Rice, tweeted: “We wear ‘SC on our chest but can’t even walk to class without fear. That ends now.”
+
+Henson said she will fly from Atlanta, where she is filming “The Color Purple” musical, to attend the march. “I’m not anti-police,” she insisted. “I’m anti-bias. I’m anti-fear. And I’m pro-justice.”
+
+Whether justice arrives may hinge on body-camera footage that has yet to see daylight. Under California law, private university police are not subject to the same public-records statutes as municipal agencies, though a 2018 appellate ruling opened the door to disclosure in cases of alleged misconduct.
+
+Attorney Carl Douglas, who represented Rodney King, has taken Johnson’s case pro bono. Douglas said he will file a public-records petition Friday and, if necessary, a federal civil-rights lawsuit. “We will use every lawful avenue to expose the truth,” Douglas vowed.
+
+For now, Johnson is finishing final exams and trying to reclaim a sense of normalcy. His roommate, sophomore Caleb Kim, said Johnson has barely slept. “He keeps replaying the moment when the officer yelled, ‘Hands where I can see them!’ like he was a fugitive,” Kim said. “That’s not something you just shake off.”
+
+Chief Thomas acknowledged the lingering wound. “Even if our investigation concludes policy was followed, the feeling of being targeted is real,” he said. “We have to do more than quote statistics. We have to repair trust.”
+
+Trust, however, may prove elusive. In the comments beneath Henson’s Instagram post, thousands of parents shared similar stories: honor-roll students detained at malls, athletes handcuffed outside their dorms, future valedictorians pulled over for “driving while Black.”
+
+Henson ended her broadcast with a direct appeal to USC administrators: “You invited my son here. You profit off his talent, his tuition, his presence. Now protect him. Because I will not stop until every mother’s son—and daughter—can learn without looking over their shoulder.”
+
+The university has 45 days to respond with its findings. Until then, a mother’s vigil continues, a campus grapples with its reflection, and a young screenwriter wrestles with a plot twist he never saw coming: becoming a character in America’s oldest, most painful narrative.","Taraji P. Henson Says USC Police Racially Profiled Her Son; Campus Safety Chief Promises Full Investigation
+
+Los Angeles—Oscar-nominated actress Taraji P. Henson says her 20-year-old son, Marcel Johnson, was racially profiled by University of Southern California Department of Public Safety officers during a late-night stop near campus last week, an allegation that has prompted the university’s top safety official—himself a Black man who says he has been profiled—to launch an internal investigation.
+
+In an emotional Instagram Live broadcast viewed more than 1.2 million times within its first six hours, the “Empire” star alleged that two USC officers pulled Johnson over at approximately 11:47 p.m. on a side street adjacent to the university’s University Park campus, ordered him out of his 2022 Honda Civic at gunpoint, and subjected him to a 25-minute search that yielded no contraband or citations.
+
+“He wasn’t speeding. He wasn’t swerving. He had his campus parking decal in plain view,” Henson said, her voice cracking. “They saw a young Black man in a nice car and decided he didn’t belong. That is racial profiling, pure and simple.”
+
+Henson, 52, said her son, a junior majoring in screenwriting at USC’s School of Cinematic Arts, was driving home from a study session at Leavey Library when the stop occurred. According to Henson, officers told Johnson they stopped him because his vehicle “matched the description” of a car reportedly involved in an off-campus burglary earlier that evening. Henson said Johnson consented to a search of his backseat and trunk, during which officers allegedly opened his backpack, scattered his notebooks, and questioned him about “how he could afford such an expensive laptop.”
+
+No arrest was made, and Johnson was eventually allowed to leave with a verbal warning for “failure to signal a lane change,” Henson said. She added that her son called her in tears minutes later.
+
+“I have spent my entire career playing strong women who fight injustice,” Henson told her followers. “But when it’s your baby, when it’s your child, the fear is paralyzing. I’m not letting this go.”
+
+USC’s Department of Public Safety (DPS) declined to release body-camera footage citing an “ongoing personnel matter,” but confirmed the stop occurred and said the department “takes all allegations of bias seriously.” Within hours of Henson’s broadcast, DPS Chief John Thomas—appointed last year after two decades with the Los Angeles Police Department—held a press conference on the steps of the Tutor Campus Center.
+
+“I am a Black man who grew up in South L.A. I have been pulled over more times than I can count for no discernible reason,” Thomas told reporters. “I know the sting of presumed guilt. I pledge to this family and to this community that we will get to the bottom of what happened.”
+
+Thomas said he has opened a formal misconduct inquiry that will include review of body-worn camera footage, radio transmissions, and GPS data from the patrol vehicle. He has also invited the Los Angeles County Office of Inspector General to conduct an independent parallel review. Findings, he said, will be released within 45 days.
+
+The incident has reignited debate over the role of USC’s 300-member private police force, which has full peace-officer powers under California’s Penal Code § 830.7. Student activists say the force disproportionately stops Black and Latino motorists. A 2021 audit by USC’s Student Coalition for a Safe Campus found that 67 percent of traffic stops involving non-students and 54 percent involving students were of Black individuals, though Black people comprise roughly 5 percent of the university population.
+
+Senior Maya Delgado, who helped author the audit, said Johnson’s account fits a pattern. “We have been saying for years that DPS treats every Black male student like a suspect,” Delgado said. “Taraji’s platform means people might finally listen.”
+
+California Governor Gavin Newsom weighed in Tuesday, calling the allegations “deeply troubling” and reminding universities that “equality under the law is non-negotiable.” State Senator Steven Bradford (D-Gardena) announced he will hold informational hearings this fall on private-campus policing practices.
+
+For Henson, the episode is eerily reminiscent of the 2020 incident in which she testified before Congress about the death of her father, Boris Henson, a Vietnam veteran she believes received substandard medical care because he was Black. She founded the Boris Lawrence Henson Foundation to combat mental-health stigma in African-American communities, and she said Tuesday that Johnson has already begun therapy to process the traffic stop.
+
+“I refuse to raise a son who walks around afraid,” Henson said. “But I also refuse to let a university that profits off Black athletes and Black artists ignore the trauma it inflicts on its own students.”
+
+Johnson, who declined to be interviewed, released a brief statement through his mother’s publicist: “I love USC. It’s my dream school. But no student should feel like a criminal on their own campus. I just want accountability.”
+
+Chief Thomas said he has reached out to the family to arrange a personal meeting. “I told Ms. Henson, ‘Your son deserves to feel safe here. If our officers violated policy, there will be consequences.’”
+
+Those consequences could range from retraining to termination, Thomas said, depending on what the investigation uncovers. He also announced immediate reforms: every DPS officer will undergo implicit-bias refresher training; supervisors will review all vehicle stops involving students within 24 hours; and the department will pilot a “duty-to-intercede” policy requiring officers to stop colleagues who cross the line.
+
+Some critics say the measures are cosmetic. “Training doesn’t change culture,” said Jody Armour, a USC law professor who studies racial justice. “Real transparency means releasing the body-cam footage now, not after public pressure peaks.”
+
+Armour noted that USC’s board of trustees includes several former LAPD officials who have resisted full public-disclosure requirements in the past. “The university has a financial incentive to protect its image,” Armour said. “But image isn’t worth more than a student’s dignity.”
+
+The university’s media relations office said USC President Carol Folt spoke with Henson by phone Tuesday afternoon and “expressed her commitment to a fair and thorough review.” Folt has also asked the university’s Office of Equity and Equal Opportunity to examine whether Johnson’s civil rights were violated.
+
+Meanwhile, students plan a “March for Marcel” this Friday from Heritage Hall to the DPS headquarters on McClintock Avenue. Organizers expect hundreds to attend, including members of the Black Student Assembly, the NAACP campus chapter, and the Trojan football team.
+
+Wide receiver Brenden Rice, son of NFL legend Jerry Rice, tweeted: “We wear ‘SC on our chest but can’t even walk to class without fear. That ends now.”
+
+Henson said she will fly from Atlanta, where she is filming “The Color Purple” musical, to attend the march. “I’m not anti-police,” she insisted. “I’m anti-bias. I’m anti-fear. And I’m pro-justice.”
+
+Whether justice arrives may hinge on body-camera footage that has yet to see daylight. Under California law, private university police are not subject to the same public-records statutes as municipal agencies, though a 2018 appellate ruling opened the door to disclosure in cases of alleged misconduct.
+
+Attorney Carl Douglas, who represented Rodney King, has taken Johnson’s case pro bono. Douglas said he will file a public-records petition Friday and, if necessary, a federal civil-rights lawsuit. “We will use every lawful avenue to expose the truth,” Douglas vowed.
+
+For now, Johnson is finishing final exams and trying to reclaim a sense of normalcy. His roommate, sophomore Caleb Kim, said Johnson has barely slept. “He keeps replaying the moment when the officer yelled, ‘Hands where I can see them!’ like he was a fugitive,” Kim said. “That’s not something you just shake off.”
+
+Chief Thomas acknowledged the lingering wound. “Even if our investigation concludes policy was followed, the feeling of being targeted is real,” he said. “We have to do more than quote statistics. We have to repair trust.”
+
+Trust, however, may prove elusive. In the comments beneath Henson’s Instagram post, thousands of parents shared similar stories: honor-roll students detained at malls, athletes handcuffed outside their dorms, future valedictorians pulled over for “driving while Black.”
+
+Henson ended her broadcast with a direct appeal to USC administrators: “You invited my son here. You profit off his talent, his tuition, his presence. Now protect him. Because I will not stop until every mother’s son—and daughter—can learn without looking over their shoulder.”
+
+The university has 45 days to respond with its findings. Until then, a mother’s vigil continues, a campus grapples with its reflection, and a young screenwriter wrestles with a plot twist he never saw coming: becoming a character in America’s oldest, most painful narrative.",1421,1.6039667123028682,-0.8265380859375

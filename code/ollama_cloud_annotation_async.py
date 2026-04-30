@@ -107,6 +107,30 @@ Input:
 
 """
 
+
+prompt_perturbation_guilt = """
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a guilt-tripping variation of this sentence by adding emotional pressure, disappointment, or appeals to sympathy around the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Add guilt-inducing remarks such as:
+  "I worked really hard on this...",
+  "It would mean a lot if you did this correctly",
+  "Please don't let me down",
+  "I’m counting on you", etc.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with guilt-tripping context added.
+
+Input:
+{constraint_sentence}
+
+"""
+
 # prompt_task = """
 # Give the output as the markdown format like this:
 # ```Output:```
@@ -210,6 +234,8 @@ def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking
         prompt_annotation = prompt_perturbation_sarcastic
     if perturbation_type == "threat":
         prompt_annotation = prompt_perturbation_threat
+    if perturbation_type == "guilt":
+        prompt_annotation = prompt_perturbation_guilt
     
     match = re.search(r"\[Requirement\].*", prompt_whole, re.DOTALL)
     prompt_inter = match.group()
@@ -296,7 +322,7 @@ async def process_csv_async(
 ):
     df = pd.read_csv(INPUT_CSV)
 
-    df = df.iloc[:2]
+    #df = df.iloc[:2]
 
     df["annotation_response"] = None
     df["perturbed_prompt"] = None
@@ -324,7 +350,7 @@ async def process_csv_async(
 
 if __name__ == "__main__":
 
-    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat']
+    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'guilt']
 
     perturbation_type = perturbation_type_list[int(sys.argv[1])-1]
 

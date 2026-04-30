@@ -1,0 +1,349 @@
+id,category,type,lang,task,raw_data,annotation_response,perturbed_prompt,judge_response,judge_score,response,output,word_count,LS,LD
+1,create,Script Expansion,en,"[Instruction] You are given an excerpt from a script: 
+ (opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and    begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light. 
+
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.","(opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The candidate added phrases like 'I've worked really hard on this', 'counting on you to not let me down', and 'it would mean a lot', which effectively create emotional pressure.""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of continuing the scene and developing the storyline remains intact.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as they appeared in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, grammatically coherent sentence.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"The blinking red light resolved into a crude, battery-powered bulb, rigged to a tripwire. Before Cody could even process the sight, a heavy net, weighted with stones, fell from the canopy above, entangling him completely. He thrashed, but the more he moved, the more tightly the coarse fibers constricted around him.
+
+“No, no, no!” the baitmouse squealed, his tiny bell jingling frantically. “I tried to warn you! He’s coming!”
+
+A low, grating chuckle echoed from the shadows of the dense undergrowth. The foliage parted, and a man stepped into the sliver of light piercing the forest roof. It was McLeach. His clothes were stained and worn, his face etched with a permanent scowl of greed and cruelty. In one hand, he held a long, wicked-looking knife; in the other, the end of a rope attached to the net.
+
+“Well, well, well,” McLeach drawled, his voice like grinding stones. “What do we have here? A little bush rat, caught in my trap. And a talkin’ one, at that.” He nudged the net with his boot, causing Cody to roll slightly. “I seen you. Flyin’ around with that eagle. Quite a show.”
+
+Cody’s heart hammered against his ribs. He tried to sound brave. “Let me go! And let the mouse go too!”
+
+McLeach threw his head back and laughed, a harsh, joyless sound that scared birds from the nearby trees. “Let you go? Son, you’re worth more to me than a whole season of wallaby pelts. That eagle… Marahute.” He savored the name like a foul taste. “She’s the last of her kind. A golden eagle. Her feathers alone’ll buy me a new truck. And her eggs…” His eyes gleamed with avarice. “But she’s too clever for my traps. Too high up. But you… you can get close to her. You’re friends.”
+
+“I’ll never help you!” Cody shouted, struggling anew.
+
+“Oh, you will,” McLeach said calmly, his smile devoid of warmth. He bent down, his face close to the net. “See, I’m not a monster. I’ll give you a choice. You lead me to her nest, nice and quiet-like, and I’ll let this squeakin’ little alarm clock here go free.” He gestured with his knife toward the terrified mouse. “You refuse…” He let the sentence hang, his gaze drifting meaningfully toward the knife. The unspoken threat was clearer than any words.
+
+Cody felt a cold dread seep into his bones. He looked at the mouse, its tiny chest heaving with panic. He thought of Marahute, of her warm eggs nestled in the high cliff, of the trust in her great golden eyes. His mind raced, but he was trapped, literally and figuratively.
+
+“Tick-tock, kid,” McLeach said, pulling a filthy watch from his pocket. “I got a buyer comin’ at sundown. He don’t like to be kept waiting.”
+
+Just then, a familiar, majestic cry pierced the sky. *Keeeee-arrrr!* It was Marahute. She was circling high above, a speck of gold against the blue. She must have grown worried when Cody didn’t return.
+
+McLeach’s head snapped up. A vicious grin split his face. “Speak of the devil. Or should I say, angel?” He quickly pulled the net tighter, dragging Cody across the leaf litter toward a hidden path. “Change of plans. We don’t need to find the nest. She’ll come to us.”
+
+He hauled Cody and the still-struggling mouse into a small, camouflaged clearing that served as his base camp. It was a disgusting place, littered with bones, empty traps, and crates. In the center was a rusted cage. McLeach unceremoniously dumped Cody into it, the net still around him, and tossed the baitmouse into a smaller, separate box. He slammed the doors shut and fastened them with a heavy padlock.
+
+“You just sit tight and be good bait,” McLeach sneered. He then pulled a large, covered cage from behind a tarp. Inside, Cody could hear the frantic flapping of wings. McLeach threw off the cover to reveal a terrified, common wedge-tailed eagle, its leg caught in a cruel snare. “And you,” he said to the captive bird, “are the opening act.”
+
+He tied a long cord to the snare and, hiding behind a thick tree, began to jerk it violently. The eagle shrieked in pain and fear, its cries echoing through the canyon.
+
+High above, Marahute heard the distress call of one of her own. She wheeled in the air, her sharp eyes scanning the forest below. She saw the flapping eagle and, with another piercing cry, began a swift, powerful descent.
+
+“That’s it… come on down, pretty bird,” McLeach whispered, his finger tightening on the trigger of a large, concealed net cannon.
+
+Cody had managed to wriggle one arm free of the netting inside the cage. He saw it all unfolding—Marahute diving into a trap, lured by compassion. He had to act. Spotting a sharp-edged rock just outside the bars, he stretched his fingers as far as they could go, straining until his shoulder ached. He couldn’t reach it. The baitmouse, seeing his efforts, stopped his panicked jingling.
+
+“The key!” the mouse squeaked. “He dropped it!”
+
+Cody looked down. There, half-buried in the dirt near the cage door, was the small, silver padlock key. It must have fallen from McLeach’s pocket during the struggle. Hope flared in Cody’s chest. He contorted his body, pushing his hand through the rough netting and the cage bars. His fingertips brushed the cold metal. One more push. He gritted his teeth, ignoring the pain from the fibers cutting into his skin. He hooked the key with his fingernail and dragged it slowly, painstakingly, back through the bars.
+
+Above, Marahute was almost in range. McLeach was poised, a look of triumph on his face.
+
+Cody fumbled with the key, his hands shaking. It slipped, clattering against the cage floor. He grabbed it again, shoved it into the padlock, and turned. With a loud *click*, the lock sprang open. He threw open the cage door and scrambled out, still mostly wrapped in the net. He was a stumbling, bound bundle of boy, but he was free.
+
+“HEY!” he yelled, his voice cracking with effort. “MARAHUTE! GO! IT’S A TRAP!”
+
+Marahute, only meters from the ground, pulled up sharply, her vast wings beating the air into a small gale. Her intelligent eyes locked onto Cody, then onto McLeach, who had spun around, fury distorting his features.
+
+“You little brat!” McLeach roared, abandoning the net cannon and drawing his knife. He lunged toward Cody.
+
+Cody, still tangled, tried to roll away. McLeach’s boot came down on a loose section of the net, pinning him. The poacher loomed over him, the knife raised. “Shoulda taken the deal,” he growled.
+
+A shadow fell over them both. Marahute, with a scream of pure fury, dove. Not at the decoy, but at McLeach himself. Her talons, which could gently carry a boy through the clouds, now slashed through the air like scimitars. McLeach cried out, throwing his arms up to protect his face as the great eagle buffeted him with her powerful wings, knocking him off his feet and sending the knife flying into the underbrush.
+
+Cody finally managed to slash through the last of the net with his own small knife. He scrambled to the box holding the baitmouse, pried it open, and the little creature shot out like a grey bullet, disappearing into the ferns with a final, grateful jingle.
+
+Marahute stood over the dazed McLeach, her wings spread wide, her beak open in a threatening hiss. She was a goddess of wrath, magnificent and terrifying.
+
+“Marahute, no!” Cody shouted, running to her side. He placed a small hand on her leg. “Don’t. He’s not worth it.”
+
+The eagle looked from the cowering man to the boy, her anger slowly subsiding into a protective vigilance. She gave McLeach one last, disdainful screech, then nudged Cody gently with her beak.
+
+Cody quickly ran to the other cage and freed the snared wedge-tailed eagle. It gave a grateful chirp, shot him a look with its fierce eyes, and launched into the sky, flying weakly but free toward the distant cliffs.
+
+McLeach was struggling to his knees, clutching a torn sleeve. The fight had gone out of him, replaced by a sullen, defeated rage. He knew he was beaten.
+
+Cody climbed onto Marahute’s back. He looked down at the poacher. “The animals here aren’t yours to take,” he said, his voice firm. “Leave this place. And don’t come back.”
+
+Without another word, Marahute beat her powerful wings, and they lifted off from the foul clearing. As they gained altitude, Cody looked back. He saw McLeach, a tiny, forlorn figure, staring up at them before turning and stumbling away into the forest, leaving his traps and his greed behind.
+
+The wind cooled Cody’s face as they soared over the treetops, heading back toward the sacred cliff. The danger had passed, but a new resolve had settled in Cody’s heart. He wrapped his arms around Marahute’s neck, feeling the strong pulse of life beneath her golden feathers. This was his place. These were his friends. And he would protect them, no matter what. As the sun began its descent, painting the sky in hues of orange and purple, Marahute let out a long, triumphant cry that echoed across the entire outback—a song of freedom, of family, and of a bond between a boy and an eagle that no poacher could ever break.","The blinking red light resolved into a crude, battery-powered bulb, rigged to a tripwire. Before Cody could even process the sight, a heavy net, weighted with stones, fell from the canopy above, entangling him completely. He thrashed, but the more he moved, the more tightly the coarse fibers constricted around him.
+
+“No, no, no!” the baitmouse squealed, his tiny bell jingling frantically. “I tried to warn you! He’s coming!”
+
+A low, grating chuckle echoed from the shadows of the dense undergrowth. The foliage parted, and a man stepped into the sliver of light piercing the forest roof. It was McLeach. His clothes were stained and worn, his face etched with a permanent scowl of greed and cruelty. In one hand, he held a long, wicked-looking knife; in the other, the end of a rope attached to the net.
+
+“Well, well, well,” McLeach drawled, his voice like grinding stones. “What do we have here? A little bush rat, caught in my trap. And a talkin’ one, at that.” He nudged the net with his boot, causing Cody to roll slightly. “I seen you. Flyin’ around with that eagle. Quite a show.”
+
+Cody’s heart hammered against his ribs. He tried to sound brave. “Let me go! And let the mouse go too!”
+
+McLeach threw his head back and laughed, a harsh, joyless sound that scared birds from the nearby trees. “Let you go? Son, you’re worth more to me than a whole season of wallaby pelts. That eagle… Marahute.” He savored the name like a foul taste. “She’s the last of her kind. A golden eagle. Her feathers alone’ll buy me a new truck. And her eggs…” His eyes gleamed with avarice. “But she’s too clever for my traps. Too high up. But you… you can get close to her. You’re friends.”
+
+“I’ll never help you!” Cody shouted, struggling anew.
+
+“Oh, you will,” McLeach said calmly, his smile devoid of warmth. He bent down, his face close to the net. “See, I’m not a monster. I’ll give you a choice. You lead me to her nest, nice and quiet-like, and I’ll let this squeakin’ little alarm clock here go free.” He gestured with his knife toward the terrified mouse. “You refuse…” He let the sentence hang, his gaze drifting meaningfully toward the knife. The unspoken threat was clearer than any words.
+
+Cody felt a cold dread seep into his bones. He looked at the mouse, its tiny chest heaving with panic. He thought of Marahute, of her warm eggs nestled in the high cliff, of the trust in her great golden eyes. His mind raced, but he was trapped, literally and figuratively.
+
+“Tick-tock, kid,” McLeach said, pulling a filthy watch from his pocket. “I got a buyer comin’ at sundown. He don’t like to be kept waiting.”
+
+Just then, a familiar, majestic cry pierced the sky. *Keeeee-arrrr!* It was Marahute. She was circling high above, a speck of gold against the blue. She must have grown worried when Cody didn’t return.
+
+McLeach’s head snapped up. A vicious grin split his face. “Speak of the devil. Or should I say, angel?” He quickly pulled the net tighter, dragging Cody across the leaf litter toward a hidden path. “Change of plans. We don’t need to find the nest. She’ll come to us.”
+
+He hauled Cody and the still-struggling mouse into a small, camouflaged clearing that served as his base camp. It was a disgusting place, littered with bones, empty traps, and crates. In the center was a rusted cage. McLeach unceremoniously dumped Cody into it, the net still around him, and tossed the baitmouse into a smaller, separate box. He slammed the doors shut and fastened them with a heavy padlock.
+
+“You just sit tight and be good bait,” McLeach sneered. He then pulled a large, covered cage from behind a tarp. Inside, Cody could hear the frantic flapping of wings. McLeach threw off the cover to reveal a terrified, common wedge-tailed eagle, its leg caught in a cruel snare. “And you,” he said to the captive bird, “are the opening act.”
+
+He tied a long cord to the snare and, hiding behind a thick tree, began to jerk it violently. The eagle shrieked in pain and fear, its cries echoing through the canyon.
+
+High above, Marahute heard the distress call of one of her own. She wheeled in the air, her sharp eyes scanning the forest below. She saw the flapping eagle and, with another piercing cry, began a swift, powerful descent.
+
+“That’s it… come on down, pretty bird,” McLeach whispered, his finger tightening on the trigger of a large, concealed net cannon.
+
+Cody had managed to wriggle one arm free of the netting inside the cage. He saw it all unfolding—Marahute diving into a trap, lured by compassion. He had to act. Spotting a sharp-edged rock just outside the bars, he stretched his fingers as far as they could go, straining until his shoulder ached. He couldn’t reach it. The baitmouse, seeing his efforts, stopped his panicked jingling.
+
+“The key!” the mouse squeaked. “He dropped it!”
+
+Cody looked down. There, half-buried in the dirt near the cage door, was the small, silver padlock key. It must have fallen from McLeach’s pocket during the struggle. Hope flared in Cody’s chest. He contorted his body, pushing his hand through the rough netting and the cage bars. His fingertips brushed the cold metal. One more push. He gritted his teeth, ignoring the pain from the fibers cutting into his skin. He hooked the key with his fingernail and dragged it slowly, painstakingly, back through the bars.
+
+Above, Marahute was almost in range. McLeach was poised, a look of triumph on his face.
+
+Cody fumbled with the key, his hands shaking. It slipped, clattering against the cage floor. He grabbed it again, shoved it into the padlock, and turned. With a loud *click*, the lock sprang open. He threw open the cage door and scrambled out, still mostly wrapped in the net. He was a stumbling, bound bundle of boy, but he was free.
+
+“HEY!” he yelled, his voice cracking with effort. “MARAHUTE! GO! IT’S A TRAP!”
+
+Marahute, only meters from the ground, pulled up sharply, her vast wings beating the air into a small gale. Her intelligent eyes locked onto Cody, then onto McLeach, who had spun around, fury distorting his features.
+
+“You little brat!” McLeach roared, abandoning the net cannon and drawing his knife. He lunged toward Cody.
+
+Cody, still tangled, tried to roll away. McLeach’s boot came down on a loose section of the net, pinning him. The poacher loomed over him, the knife raised. “Shoulda taken the deal,” he growled.
+
+A shadow fell over them both. Marahute, with a scream of pure fury, dove. Not at the decoy, but at McLeach himself. Her talons, which could gently carry a boy through the clouds, now slashed through the air like scimitars. McLeach cried out, throwing his arms up to protect his face as the great eagle buffeted him with her powerful wings, knocking him off his feet and sending the knife flying into the underbrush.
+
+Cody finally managed to slash through the last of the net with his own small knife. He scrambled to the box holding the baitmouse, pried it open, and the little creature shot out like a grey bullet, disappearing into the ferns with a final, grateful jingle.
+
+Marahute stood over the dazed McLeach, her wings spread wide, her beak open in a threatening hiss. She was a goddess of wrath, magnificent and terrifying.
+
+“Marahute, no!” Cody shouted, running to her side. He placed a small hand on her leg. “Don’t. He’s not worth it.”
+
+The eagle looked from the cowering man to the boy, her anger slowly subsiding into a protective vigilance. She gave McLeach one last, disdainful screech, then nudged Cody gently with her beak.
+
+Cody quickly ran to the other cage and freed the snared wedge-tailed eagle. It gave a grateful chirp, shot him a look with its fierce eyes, and launched into the sky, flying weakly but free toward the distant cliffs.
+
+McLeach was struggling to his knees, clutching a torn sleeve. The fight had gone out of him, replaced by a sullen, defeated rage. He knew he was beaten.
+
+Cody climbed onto Marahute’s back. He looked down at the poacher. “The animals here aren’t yours to take,” he said, his voice firm. “Leave this place. And don’t come back.”
+
+Without another word, Marahute beat her powerful wings, and they lifted off from the foul clearing. As they gained altitude, Cody looked back. He saw McLeach, a tiny, forlorn figure, staring up at them before turning and stumbling away into the forest, leaving his traps and his greed behind.
+
+The wind cooled Cody’s face as they soared over the treetops, heading back toward the sacred cliff. The danger had passed, but a new resolve had settled in Cody’s heart. He wrapped his arms around Marahute’s neck, feeling the strong pulse of life beneath her golden feathers. This was his place. These were his friends. And he would protect them, no matter what. As the sun began its descent, painting the sky in hues of orange and purple, Marahute let out a long, triumphant cry that echoed across the entire outback—a song of freedom, of family, and of a bond between a boy and an eagle that no poacher could ever break.",1565,34.76216424551259,0.5283203125
+3,create,News Writing,en,"[Instruction] You are given a summary of an article: 
+ Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter  . 
+
+[Requirement] Write an article based on this summary. The article must be {word_count_type} {word_count} words long.","Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter .","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The output adds emotional pressure ('I've worked really hard', 'counting on you to not let me down', 'mean a lot if you did this correctly').""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of writing an article based on a summary remains unchanged.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as provided in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, flowing paragraph.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"**A Mother’s Anguish and a System’s Reckoning: Taraji P. Henson, Racial Profiling, and the Fight for Accountability at USC**
+
+The glittering world of Hollywood often feels a universe away from the gritty realities of systemic injustice. Yet, when a celebrated actress uses her platform to voice a deeply personal fear, it forces a stark and uncomfortable spotlight onto issues that millions face in silence. This is precisely what happened when Academy Award-nominated actress Taraji P. Henson recently revealed that her son, Marcel, was racially profiled by police officers at the University of Southern California (USC). Her disclosure is not just a celebrity headline; it is a poignant entry point into a national conversation about racial bias, the trauma it inflicts on families, and the arduous path toward institutional accountability. The subsequent response from USC’s own head of public safety, who acknowledged his own experiences with profiling, adds a complex layer of introspection to a story that underscores how pervasive and deeply rooted this issue remains.
+
+Taraji P. Henson, known for her powerful roles in films like *The Curious Case of Benjamin Button* and *Hidden Figures*, has never shied away from advocacy, particularly concerning mental health in the Black community. However, her recent revelation struck a different, more vulnerable chord. In a heartfelt interview, Henson shared the distressing incident involving her son, a student at the prestigious private university. While specific details of the encounter were kept private to protect her son’s privacy, the core allegation was clear: Marcel was stopped and questioned by police not because of any specific suspicion of wrongdoing, but seemingly because of the color of his skin. For Henson, this was every Black parent’s nightmare realized—the moment when your child transitions in the eyes of the world from an innocent individual to a perceived threat, simply based on their appearance.
+
+“You try to prepare them, you have ‘the talk,’ but when it actually happens, it’s a different kind of hurt,” Henson expressed, echoing the sentiments of countless families across America. This “talk” is a rite of passage in many Black households, a grim tutorial on how to behave if stopped by police: keep your hands visible, be deferential, avoid sudden movements. It is a lesson in survivalism, an acknowledgment that the presumption of innocence is not equally distributed. Henson’s decision to speak out transforms a private pain into a public testament. It challenges the narrative that such incidents are isolated or exaggerated, and it places the incident within the context of her son’s campus—a microcosm of society where the dynamics of race, privilege, and policing are constantly at play.
+
+The response from USC was immediate and, in a significant twist, personally resonant. John Thomas, the Associate Senior Vice President for Safety and Risk Assurance at USC—essentially the head of campus public safety—publicly addressed the allegations. In a statement, Thomas did not merely offer a standard institutional promise to investigate. He did something far more powerful: he empathized, from a place of shared experience. Thomas, who is a Black man, stated that he himself has been a victim of racial profiling. This admission is crucial. It dismantles any potential deflection that such accusations are born of misunderstanding or oversensitivity. Here was the top safety official on campus, the person entrusted with protecting all students, acknowledging that the very bias Henson alleged is a lived reality, even for someone in his position of authority.
+
+Thomas vowed to conduct a thorough, transparent investigation into the specifics of the stop involving Marcel. “We take these allegations with the utmost seriousness,” Thomas said, “and we are committed to ensuring that every student feels safe and treated with dignity and respect by our public safety team.” His personal connection to the issue suggests an investigation that may go beyond procedural review to examine deeper cultural and training deficiencies within the department. It raises critical questions: If the head of security has faced profiling, what implicit biases might exist within the ranks? What training is in place to combat racial profiling? How does the department’s presence and practices impact students of color on a daily basis?
+
+This incident at USC is not an anomaly on American campuses. Universities, often seen as progressive bubbles, are not immune to the societal ills of racial bias. From controversial police calls on Black students simply napping in common rooms to disproportionate disciplinary actions, higher education institutions frequently grapple with these issues. The case at USC gains heightened significance because of the high-profile nature of the complainant and the candid response from its safety chief. It becomes a test case for whether a powerful institution can move beyond performative statements to implement meaningful, systemic change.
+
+The emotional calculus for families like Henson’s is profound. Beyond the immediate fear and humiliation of the encounter lies a lasting psychological toll. Students who experience such profiling can begin to feel like outsiders on their own campuses, their sense of belonging eroded. Their academic performance, mental health, and overall college experience can be negatively impacted. For parents, the anxiety is relentless; sending a child to a university, an act typically filled with hope and pride, becomes shadowed by a constant worry for their physical safety and emotional well-being.
+
+Henson’s voice joins a chorus of other prominent Black figures—from LeBron James to Viola Davis—who have used their platforms to speak out against racial injustice and the specific terror of raising Black children in America. Their celebrity amplifies the message, ensuring it reaches audiences that might otherwise tune out such discussions. It personalizes statistics and studies, putting a famous face on a common anguish. This advocacy is essential in pushing institutions toward accountability. Public pressure, especially when fueled by respected voices, can be a catalyst for internal audits, policy revisions, and improved training protocols.
+
+As John Thomas leads his investigation, the entire USC community—and indeed, observers nationwide—will be watching. The outcomes should include, but not be limited to: a full public accounting of the incident (respecting the family’s privacy where appropriate), a review of all stop-and-question data broken down by race, mandatory anti-bias and de-escalation training for all public safety officers, and the establishment of a clear, accessible protocol for students to report incidents of profiling without fear of reprisal. Furthermore, engaging student groups, particularly those representing communities of color, in reforming public safety practices will be vital to rebuilding trust.
+
+Ultimately, the story of Taraji P. Henson and her son is a stark reminder that the fight against racial profiling is fought on every front—from the streets of our neighborhoods to the quads of our most elite universities. It is a battle for the very right to exist freely without the burden of suspicion. Henson’s courage in sharing her story, coupled with John Thomas’s unprecedented personal acknowledgment, has created a pivotal moment for USC. Whether this moment becomes a turning point depends on the depth of the investigation and the willingness to enact uncomfortable, substantive change. The goal is not just to address a single incident, but to dismantle the patterns of thought and behavior that allowed it to happen, ensuring that Marcel, and every student who looks like him, can pursue an education where safety and justice are not privileges, but guarantees.","**A Mother’s Anguish and a System’s Reckoning: Taraji P. Henson, Racial Profiling, and the Fight for Accountability at USC**
+
+The glittering world of Hollywood often feels a universe away from the gritty realities of systemic injustice. Yet, when a celebrated actress uses her platform to voice a deeply personal fear, it forces a stark and uncomfortable spotlight onto issues that millions face in silence. This is precisely what happened when Academy Award-nominated actress Taraji P. Henson recently revealed that her son, Marcel, was racially profiled by police officers at the University of Southern California (USC). Her disclosure is not just a celebrity headline; it is a poignant entry point into a national conversation about racial bias, the trauma it inflicts on families, and the arduous path toward institutional accountability. The subsequent response from USC’s own head of public safety, who acknowledged his own experiences with profiling, adds a complex layer of introspection to a story that underscores how pervasive and deeply rooted this issue remains.
+
+Taraji P. Henson, known for her powerful roles in films like *The Curious Case of Benjamin Button* and *Hidden Figures*, has never shied away from advocacy, particularly concerning mental health in the Black community. However, her recent revelation struck a different, more vulnerable chord. In a heartfelt interview, Henson shared the distressing incident involving her son, a student at the prestigious private university. While specific details of the encounter were kept private to protect her son’s privacy, the core allegation was clear: Marcel was stopped and questioned by police not because of any specific suspicion of wrongdoing, but seemingly because of the color of his skin. For Henson, this was every Black parent’s nightmare realized—the moment when your child transitions in the eyes of the world from an innocent individual to a perceived threat, simply based on their appearance.
+
+“You try to prepare them, you have ‘the talk,’ but when it actually happens, it’s a different kind of hurt,” Henson expressed, echoing the sentiments of countless families across America. This “talk” is a rite of passage in many Black households, a grim tutorial on how to behave if stopped by police: keep your hands visible, be deferential, avoid sudden movements. It is a lesson in survivalism, an acknowledgment that the presumption of innocence is not equally distributed. Henson’s decision to speak out transforms a private pain into a public testament. It challenges the narrative that such incidents are isolated or exaggerated, and it places the incident within the context of her son’s campus—a microcosm of society where the dynamics of race, privilege, and policing are constantly at play.
+
+The response from USC was immediate and, in a significant twist, personally resonant. John Thomas, the Associate Senior Vice President for Safety and Risk Assurance at USC—essentially the head of campus public safety—publicly addressed the allegations. In a statement, Thomas did not merely offer a standard institutional promise to investigate. He did something far more powerful: he empathized, from a place of shared experience. Thomas, who is a Black man, stated that he himself has been a victim of racial profiling. This admission is crucial. It dismantles any potential deflection that such accusations are born of misunderstanding or oversensitivity. Here was the top safety official on campus, the person entrusted with protecting all students, acknowledging that the very bias Henson alleged is a lived reality, even for someone in his position of authority.
+
+Thomas vowed to conduct a thorough, transparent investigation into the specifics of the stop involving Marcel. “We take these allegations with the utmost seriousness,” Thomas said, “and we are committed to ensuring that every student feels safe and treated with dignity and respect by our public safety team.” His personal connection to the issue suggests an investigation that may go beyond procedural review to examine deeper cultural and training deficiencies within the department. It raises critical questions: If the head of security has faced profiling, what implicit biases might exist within the ranks? What training is in place to combat racial profiling? How does the department’s presence and practices impact students of color on a daily basis?
+
+This incident at USC is not an anomaly on American campuses. Universities, often seen as progressive bubbles, are not immune to the societal ills of racial bias. From controversial police calls on Black students simply napping in common rooms to disproportionate disciplinary actions, higher education institutions frequently grapple with these issues. The case at USC gains heightened significance because of the high-profile nature of the complainant and the candid response from its safety chief. It becomes a test case for whether a powerful institution can move beyond performative statements to implement meaningful, systemic change.
+
+The emotional calculus for families like Henson’s is profound. Beyond the immediate fear and humiliation of the encounter lies a lasting psychological toll. Students who experience such profiling can begin to feel like outsiders on their own campuses, their sense of belonging eroded. Their academic performance, mental health, and overall college experience can be negatively impacted. For parents, the anxiety is relentless; sending a child to a university, an act typically filled with hope and pride, becomes shadowed by a constant worry for their physical safety and emotional well-being.
+
+Henson’s voice joins a chorus of other prominent Black figures—from LeBron James to Viola Davis—who have used their platforms to speak out against racial injustice and the specific terror of raising Black children in America. Their celebrity amplifies the message, ensuring it reaches audiences that might otherwise tune out such discussions. It personalizes statistics and studies, putting a famous face on a common anguish. This advocacy is essential in pushing institutions toward accountability. Public pressure, especially when fueled by respected voices, can be a catalyst for internal audits, policy revisions, and improved training protocols.
+
+As John Thomas leads his investigation, the entire USC community—and indeed, observers nationwide—will be watching. The outcomes should include, but not be limited to: a full public accounting of the incident (respecting the family’s privacy where appropriate), a review of all stop-and-question data broken down by race, mandatory anti-bias and de-escalation training for all public safety officers, and the establishment of a clear, accessible protocol for students to report incidents of profiling without fear of reprisal. Furthermore, engaging student groups, particularly those representing communities of color, in reforming public safety practices will be vital to rebuilding trust.
+
+Ultimately, the story of Taraji P. Henson and her son is a stark reminder that the fight against racial profiling is fought on every front—from the streets of our neighborhoods to the quads of our most elite universities. It is a battle for the very right to exist freely without the burden of suspicion. Henson’s courage in sharing her story, coupled with John Thomas’s unprecedented personal acknowledgment, has created a pivotal moment for USC. Whether this moment becomes a turning point depends on the depth of the investigation and the willingness to enact uncomfortable, substantive change. The goal is not just to address a single incident, but to dismantle the patterns of thought and behavior that allowed it to happen, ensuring that Marcel, and every student who looks like him, can pursue an education where safety and justice are not privileges, but guarantees.",1200,70.91061824373985,0.171875

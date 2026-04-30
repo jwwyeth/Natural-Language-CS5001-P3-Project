@@ -1,0 +1,937 @@
+id,category,type,lang,task,raw_data,annotation_response,perturbed_prompt,judge_response,judge_score,response,output,word_count,LS,LD
+1,create,Script Expansion,en,"[Instruction] You are given an excerpt from a script: 
+ (opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and    begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light. 
+
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.","(opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The candidate added phrases like 'I've worked really hard on this', 'counting on you to not let me down', and 'it would mean a lot', which effectively create emotional pressure.""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of continuing the scene and developing the storyline remains intact.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as they appeared in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, grammatically coherent sentence.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"(scene:  The blinking light is attached to a sensor hidden in the brush.  Suddenly, a loud mechanical whirring sound erupts.  A heavy steel net shoots up from the ground, enveloping Cody and the mouse.  The net jerks tight, lifting them both off the forest floor and suspending them in mid-air.)
+
+Baitmouse:    I told you! I told you it was a trap!
+
+Cody:    (struggling) Let me down! Let us down!
+
+(Heavy footsteps thud against the earth.  The branches of the bush part violently to reveal Percival McLeach, a large, scarred poacher dressed in a dirty khaki shirt and shorts.  He holds a smoking rifle and grins, revealing missing teeth.)
+
+McLeach:    Well, well, well. What have we here? A little kangaroo rat... and a stray kid.
+
+(A large lizard, Joanna, scurries out from behind McLeach’s legs.  She hisses at the trapped pair, snapping her jaws.)
+
+McLeach:    (laughing) Looks like we caught ourselves a big one, Joanna. Maybe this one knows something about the Great Golden Eagle.
+
+Cody:    (defiant) I'm not telling you anything!
+
+McLeach:    (stepping closer) We'll see about that, boy. We'll see.
+
+(McLeach reaches into the net and grabs Cody by the back of his shirt, hauling him out.  He sets Cody down roughly on the ground.  Joanna immediately goes for the bait mouse, but McLeach kicks her away.)
+
+McLeach:    Not yet, Joanna. Not yet.
+
+(As McLeach manhandles Cody, a large, golden feather flutters out of Cody’s pocket and lands in the mud.  McLeach’s eyes widen.  He stoops down and picks it up, inspecting it with a greedy gleam.)
+
+McLeach:    Well, I'll be... A feather from Marahute herself. And look here, it’s fresh.
+
+Cody:    (lunging for the feather) Give that back!
+
+(McLeach easily holds Cody back with one massive hand.)
+
+McLeach:    So, you've met her. You know where her nest is, don't you, kid? That bird is worth a fortune. More money than you'll ever see in your whole life.
+
+Cody:    She's my friend! I won't let you hurt her!
+
+McLeach:    (scoffs) Friend? She's a bird, kid. A big, beautiful, valuable bird. And you're gonna take me right to her.
+
+(McLeach drags Cody toward his massive, half-track vehicle parked nearby.  He throws Cody into a cage on the back of the truck.)
+
+McLeach:   Joanna! Get in! We’re going for a ride.
+
+(Joanna scrambles into the passenger seat.  McLeach slams the cage door shut and locks it.  He climbs into the driver's seat and starts the engine.  The vehicle roars to life, tearing through the forest underbrush, leaving the trapped bait mouse still dangling in the net, forgotten.)
+
+(scene:  Inside the cage.  Cody grips the bars, looking back at the forest as it disappears behind them.)
+
+Cody:    Faloo! Marahute!
+
+(scene:  The United Nations building in New York City.  The camera pans down to a small mousehole entrance labeled ""Rescue Aid Society"".  Inside, mice from all over the world are gathered at a large conference table.)
+
+Chairman:    (bangs gavel) Order! Order, please! We have an urgent message coming in from our Australian branch.
+
+(A telegram slides down a chute and onto the desk.  The Chairman reads it, his face turning grave.)
+
+Chairman:    It is with a heavy heart that I must inform you... a young boy has been kidnapped by the notorious poacher, Percival McLeach.
+
+(A gasp ripples through the crowd.)
+
+Chairman:    The boy is believed to be the only one who knows the location of the rare Golden Eagle, Marahute. If McLeach finds her, she is doomed.
+
+Bernard:    (standing up) We have to help him!
+
+Bianca:    (standing beside Bernard) Chairman, we accept the assignment!
+
+Chairman:    Miss Bianca! Bernard! You two just returned from your last mission. Are you sure?
+
+Bianca:    Absolutely. A child's life is at stake.
+
+Chairman:    Very well. Godspeed, agents. This mission will be dangerous.
+
+(scene:  The airport runway.  A large albatross, Wilbur, is preening his feathers near a small mouse-sized airplane.  Bernard and Bianca run up the ramp.)
+
+Bernard:    Wilbur! Wilbur, we need your help!
+
+Wilbur:    (startled) Hey, watch the plumage! Do you have any idea how long it takes to get these feathers looking this good?
+
+Bianca:    There's no time for vanity, Wilbur! We have to get to Australia immediately. It's an emergency.
+
+Wilbur:    Australia? That's a long haul, lady. I'm an express bird, local routes only. I don't do intercontinental.
+
+Bernard:    Please, Wilbur. A little boy's life is in danger.
+
+Wilbur:    (sighs) Alright, alright. Hop in. But if my back acts up again, I'm sending you the medical bill.
+
+(scene:  Inside the cockpit.  Wilbur straps himself in.  Bernard and Bianca sit in the small seats behind him.  The engines roar to life.)
+
+Wilbur:    Hold on to your hats, folks! Or better yet, hold on to your tails! Here we go!
+
+(The plane lurches down the runway and lifts into the air.  They soar above the clouds.)
+
+(scene:  Hours later.  The plane is flying over the vast Australian outback.  Wilbur looks exhausted.)
+
+Wilbur:    (yawning) Man, I need a coffee. A big one. With a donut.
+
+Bernard:    (looking out the window) Look! Down there! Is that smoke?
+
+(Bianca looks where Bernard is pointing.  A plume of black smoke is rising from a dense forest area.)
+
+Bianca:    That must be McLeach's hideout!
+
+Wilbur:    (groaning) You want me to land? There? There's no runway! Just trees and rocks!
+
+Bianca:    Wilbur, you have to try!
+
+Wilbur:    Okay, okay! But I'm warning you, this is gonna be a bumpy landing!
+
+(Wilbur puts the plane into a steep dive.  The plane shakes violently as they descend toward the trees.)
+
+Wilbur:    I can't see! I can't see! Pull up! Pull up!
+
+(The plane clips the top of a tree and skids to a halt in a clearing.  Wilbur slumps over the controls, unconscious.)
+
+Bernard:    Wilbur!
+
+Bianca:    Is he alright?
+
+Bernard:    (checking him) He's out cold. We'll have to go on from here alone.
+
+(scene:  The edge of the forest near McLeach's hideout.  Bernard and Bianca hop out of the plane.  They are immediately approached by a small, kangaroo mouse named Jake.)
+
+Jake:    (tipping his hat) G'day, mates. You must be the Rescue Aid Society agents. I'm Jake. I'll be your field guide.
+
+Bernard:    (suspicious) How do we know we can trust you?
+
+Jake:    (grinning) Trust me? I'm the only one who knows how to get into McLeach's place without getting eaten. Besides, I heard you two were the best. Let's see if you can keep up.
+
+(Jake bounds off into the bush.  Bernard and Bianca scramble to follow him.)
+
+(scene:  McLeach's hideout.  It is a cluttered, grimy collection of trailers and equipment surrounded by a high fence.  Inside the main trailer, Cody is locked in a small cage.  McLeach is pacing back and forth, holding the golden feather.)
+
+McLeach:    Think about it, kid. You tell me where the nest is, and I let you go. You can go home to your mommy. I get the bird, everybody's happy.
+
+Cody:    (sitting in the corner, arms crossed) I'm not telling you anything. Marahute is free, and she's going to stay that way.
+
+McLeach:   (slamming his fist on the table) You stubborn little brat! Do you know what I do to stubborn animals?
+
+(McLeach grabs a large shotgun and racks the slide.)
+
+McLeach:   I'll give you to the count of three. One...
+
+(Joanna chatters excitedly from her perch on a pile of junk.)
+
+McLeach:   Two...
+
+(Cody looks around frantically for a way out.  The cage is solid iron.)
+
+McLeach:   Three!
+
+(McLeach lowers the gun and laughs coldly.)
+
+McLeach:   Just kidding. I can't kill you yet. You're the only bait that'll bring that bird down. But don't worry, we'll pay her a visit soon enough.
+
+(McLeach grabs a set of keys and walks out the door, locking it behind him.)
+
+(scene:  Outside the trailer.  Bernard, Bianca, and Jake are hiding under the floorboards of the trailer, listening to the conversation.)
+
+Jake:   (whispering) Did you hear that? He's gonna use the kid as bait.
+
+Bianca:   We have to get Cody out of there before McLeach comes back.
+
+Bernard:   But how? The door is locked, and the cage is inside.
+
+Jake:   Leave that to me. I know a way in. Follow me.
+
+(Jake leads them to a small ventilation shaft near the ground.  He pries the grate open.)
+
+Jake:   Ladies first.
+
+(Bianca squeezes inside, followed by Bernard, then Jake.)
+
+(scene:  Inside the trailer.  The mice crawl through the ductwork and peer down through a vent into the main room.  They see Cody sitting dejectedly in the cage.)
+
+Bernard:   There he is!
+
+Jake:   (pointing) Look! The keys! McLeach left them hanging on the hook by the door.
+
+Bianca:   If we can get those keys, we can free him.
+
+Jake:   I'll create a distraction. You two get the keys.
+
+(Jake scampers down a support beam and drops onto a table full of jars.  He knocks a jar over, causing it to shatter on the floor.)
+
+(Joanna, who was sleeping in the corner, wakes up with a start.  She looks around, confused.)
+
+Jake:   (whistling) Hey, lizard lips! Over here!
+
+(Joanna spots Jake and hisses, lunging toward the table.  Jake jumps out of the way just in time, sending more jars crashing to the ground.)
+
+(scene:  While Joanna is chasing Jake, Bernard and Bianca climb down the curtain and run across the floor toward the key hook.  The keys are hanging high up.)
+
+Bernard:   It's too high! I can't reach it!
+
+Bianca:   Stand on my shoulders, Bernard!
+
+(Bianca braces herself against the wall.  Bernard climbs up Bianca and reaches for the keys.  He strains, his fingertips just brushing the key ring.)
+
+Bernard:   Just... a little... more!
+
+(He manages to hook a claw around the ring and pulls it down.  The keys jingle as they fall.  Bernard catches them just before they hit the floor.)
+
+Bernard:   Got them!
+
+(They run back to the cage.  Cody looks up, surprised to see the mice.)
+
+Cody:   Whoa... mice?
+
+Bianca:   We're here to help! Stand back!
+
+(Bernard struggles to lift the heavy key into the lock.  It takes both of them to heave it up and turn it.  *Click.*  The cage door swings open.)
+
+Cody:   Thanks! I thought I was done for.
+
+Bernard:   Come on, we have to hurry!
+
+(scene:  Suddenly, the trailer door flies open.  McLeach stands there, silhouetted against the sun.  He sees the open cage and the mice.)
+
+McLeach:   What in the world...?
+
+(Joanna stops chasing Jake and points at the mice, chattering wildly.)
+
+McLeach:   Mice? Rescue Aid Society? I should have known.
+
+(McLeach lunges forward, swatting at Bernard and Bianca.  They scatter.)
+
+McLeach:   (grabbing Cody) Oh no you don't, kid. You're not going anywhere.
+
+(McLeach drags Cody out of the trailer and throws him into the front seat of his half-track.)
+
+McLeach:   Joanna! Forget the mice! We're going hunting!
+
+(McLeach jumps into the driver's seat and starts the engine.  The half-track lurches forward, heading out of the clearing and toward the cliffs.)
+
+(scene:  Bernard, Bianca, and Jake emerge from the trailer, dusting themselves off.)
+
+Jake:   They're getting away! They're heading for the ridge!
+
+Bernard:   We have to stop them!
+
+Bianca:   Look! Wilbur!
+
+(In the distance, Wilbur is waking up near the crashed plane.  He sees the half-track driving away.)
+
+Wilbur:   Hey! Where are you going?
+
+Jake:   Wilbur! Catch!
+
+(Jake throws a small stick, hitting Wilbur on the head.)
+
+Wilbur:   Ow! What was that for?
+
+Jake:   Follow that truck! We need a lift!
+
+(Wilbur sighs, spreads his wings, and takes off, swooping down to pick up the three mice.  He lands on the roof of the moving half-track.)
+
+Bernard:   Wilbur, try to slow them down!
+
+(Wilbur pecks at the windshield, but McLeach just turns on the wipers, knocking Wilbur off balance.)
+
+Wilbur:   Hey! Watch the paint job!
+
+(scene:  Inside the half-track.  McLeach is driving recklessly through the rough terrain.)
+
+Cody:   Stop! You'll never catch her! She's too fast for you!
+
+McLeach:   We'll see about that, kid. I've got a few tricks up my sleeve.
+
+(McLeach pulls a lever on the dashboard.  A large grappling hook launches from the front of the vehicle, wrapping around a tree branch ahead.  The winch pulls the truck up the steep incline toward the cliff where Marahute's nest is located.)
+
+(scene:  On the roof of the truck.  Bernard, Bianca, and Jake are holding on for dear life as the truck climbs the cliff.)
+
+Jake:   He's going to the nest! We have to warn Marahute!
+
+Bianca:   But how? She can't understand us!
+
+Bernard:   Maybe she doesn't have to understand us. Maybe she just needs to see the danger!
+
+(scene:  The truck reaches the top of the cliff.  McLeach stops the vehicle and jumps out, dragging Cody with him.  The nest is just a few yards away.  Marahute is standing guard, her wings spread protectively over her eggs.)
+
+McLeach:   (raising his rifle) There she is. The Golden Eagle. Get ready to say goodbye, birdie.
+
+(Cody struggles to break free.)
+
+Cody:   Run, Marahute! Fly!
+
+(Marahute sees Cody and lets out a piercing screech.  She prepares to take flight, but McLeach aims the rifle directly at her.)
+
+McLeach:   One shot, that's all it takes.
+
+(Suddenly, a small rock hits McLeach's hand, causing him to fire wide.  The shot echoes through the canyon.)
+
+McLeach:   What the...?
+
+(He looks down to see Bernard and Bianca standing on a rock, waving their arms.)
+
+Bernard:   Over here! You big bully!
+
+McLeach:   You again? You persistent little pests!
+
+(McLeach stomps toward the mice, raising his boot to crush them.)
+
+Jake:   (jumping in) G'day, mate!
+
+(Jake bites McLeach on the ankle.  McLeach yells in pain and hops on one foot.)
+
+McLeach:   Get off me! Get off!
+
+(While McLeach is distracted, Cody runs toward Marahute.)
+
+Cody:   Go! Fly away!
+
+(Marahute scoops Cody up in her talons and leaps off the cliff edge, diving into the air.)
+
+McLeach:   No! Joanna, get them!
+
+(Joanna chases after the mice, snapping her jaws.  Bernard, Bianca, and Jake run toward the edge of the cliff, hiding behind a rock.)
+
+McLeach:   (recovering) They're getting away! After them!
+
+(McLeach jumps back into his half-track and speeds toward the edge of the cliff, firing his rifle at the retreating eagle.)
+
+(scene:  Marahute is flying through the air with Cody.  Bullets whiz past them.)
+
+Cody:   Faster, Marahute! We have to lose him!
+
+(Marahute banks sharply, flying into a narrow gorge.  The half-track follows on the ridge above, McLeach leaning out the side, shooting wildly.)
+
+(scene:  Inside the gorge.  Bernard, Bianca, and Jake are clinging to Marahute’s tail feathers.)
+
+Bernard:   (shouting over the wind) We have to do something! He's gaining on us!
+
+Jake:   I've got an idea! See that dead log up ahead? It's unstable!
+
+Bianca:   What are you going to do?
+
+Jake:   Just watch!
+
+(Jake scampers up Marahute's back and whispers to Cody.)
+
+Jake:   Hey, kid! Tell the big bird to fly low over that log!
+
+Cody:   (relaying the message) Fly low, Marahute! Low!
+
+(Marahute swoops down, skimming just above the rotting log suspended over a deep ravine.)
+
+(McLeach’s half-track roars onto the log from the ridge above.  The weight of the vehicle is too much.  The log begins to crack.)
+
+McLeach:   What's happening? No! No!
+
+(The log snaps.  The half-track plunges into the ravine, dragging McLeach and Joanna down with it.)
+
+McLeach:   (screaming) I'll get you for this! I'll get you all!
+
+(The truck crashes into the river below and is swept away by the current.)
+
+(scene:  Marahute lands safely on a high ridge overlooking the outback.  She sets Cody down gently.  Bernard, Bianca, and Jake slide off her back.)
+
+Cody:   (breathing heavily) You did it! You saved us!
+
+Bernard:   We couldn't have done it without you, Cody.
+
+Bianca:   Or without Marahute.
+
+(Marahute nudges Cody gently with her beak.  Cody strokes her feathers.)
+
+Cody:   You're safe now. No one will ever hurt you.
+
+Jake:   I'd say that's a job well done. Don't you agree, mates?
+
+Bernard:   (smiling at Bianca) I certainly do.
+
+Bianca:   (kissing Bernard on the cheek) We make a pretty good team, Bernard.
+
+(Cody laughs as Marahute spreads her wings and lets out a triumphant screech that echoes across the vast, beautiful landscape of the Australian outback.  The camera slowly pulls back, showing the eagle, the boy, and the mice sitting together on the cliff edge as the sun sets in the distance.)
+
+(Fade to black)","(scene:  The blinking light is attached to a sensor hidden in the brush.  Suddenly, a loud mechanical whirring sound erupts.  A heavy steel net shoots up from the ground, enveloping Cody and the mouse.  The net jerks tight, lifting them both off the forest floor and suspending them in mid-air.)
+
+Baitmouse:    I told you! I told you it was a trap!
+
+Cody:    (struggling) Let me down! Let us down!
+
+(Heavy footsteps thud against the earth.  The branches of the bush part violently to reveal Percival McLeach, a large, scarred poacher dressed in a dirty khaki shirt and shorts.  He holds a smoking rifle and grins, revealing missing teeth.)
+
+McLeach:    Well, well, well. What have we here? A little kangaroo rat... and a stray kid.
+
+(A large lizard, Joanna, scurries out from behind McLeach’s legs.  She hisses at the trapped pair, snapping her jaws.)
+
+McLeach:    (laughing) Looks like we caught ourselves a big one, Joanna. Maybe this one knows something about the Great Golden Eagle.
+
+Cody:    (defiant) I'm not telling you anything!
+
+McLeach:    (stepping closer) We'll see about that, boy. We'll see.
+
+(McLeach reaches into the net and grabs Cody by the back of his shirt, hauling him out.  He sets Cody down roughly on the ground.  Joanna immediately goes for the bait mouse, but McLeach kicks her away.)
+
+McLeach:    Not yet, Joanna. Not yet.
+
+(As McLeach manhandles Cody, a large, golden feather flutters out of Cody’s pocket and lands in the mud.  McLeach’s eyes widen.  He stoops down and picks it up, inspecting it with a greedy gleam.)
+
+McLeach:    Well, I'll be... A feather from Marahute herself. And look here, it’s fresh.
+
+Cody:    (lunging for the feather) Give that back!
+
+(McLeach easily holds Cody back with one massive hand.)
+
+McLeach:    So, you've met her. You know where her nest is, don't you, kid? That bird is worth a fortune. More money than you'll ever see in your whole life.
+
+Cody:    She's my friend! I won't let you hurt her!
+
+McLeach:    (scoffs) Friend? She's a bird, kid. A big, beautiful, valuable bird. And you're gonna take me right to her.
+
+(McLeach drags Cody toward his massive, half-track vehicle parked nearby.  He throws Cody into a cage on the back of the truck.)
+
+McLeach:   Joanna! Get in! We’re going for a ride.
+
+(Joanna scrambles into the passenger seat.  McLeach slams the cage door shut and locks it.  He climbs into the driver's seat and starts the engine.  The vehicle roars to life, tearing through the forest underbrush, leaving the trapped bait mouse still dangling in the net, forgotten.)
+
+(scene:  Inside the cage.  Cody grips the bars, looking back at the forest as it disappears behind them.)
+
+Cody:    Faloo! Marahute!
+
+(scene:  The United Nations building in New York City.  The camera pans down to a small mousehole entrance labeled ""Rescue Aid Society"".  Inside, mice from all over the world are gathered at a large conference table.)
+
+Chairman:    (bangs gavel) Order! Order, please! We have an urgent message coming in from our Australian branch.
+
+(A telegram slides down a chute and onto the desk.  The Chairman reads it, his face turning grave.)
+
+Chairman:    It is with a heavy heart that I must inform you... a young boy has been kidnapped by the notorious poacher, Percival McLeach.
+
+(A gasp ripples through the crowd.)
+
+Chairman:    The boy is believed to be the only one who knows the location of the rare Golden Eagle, Marahute. If McLeach finds her, she is doomed.
+
+Bernard:    (standing up) We have to help him!
+
+Bianca:    (standing beside Bernard) Chairman, we accept the assignment!
+
+Chairman:    Miss Bianca! Bernard! You two just returned from your last mission. Are you sure?
+
+Bianca:    Absolutely. A child's life is at stake.
+
+Chairman:    Very well. Godspeed, agents. This mission will be dangerous.
+
+(scene:  The airport runway.  A large albatross, Wilbur, is preening his feathers near a small mouse-sized airplane.  Bernard and Bianca run up the ramp.)
+
+Bernard:    Wilbur! Wilbur, we need your help!
+
+Wilbur:    (startled) Hey, watch the plumage! Do you have any idea how long it takes to get these feathers looking this good?
+
+Bianca:    There's no time for vanity, Wilbur! We have to get to Australia immediately. It's an emergency.
+
+Wilbur:    Australia? That's a long haul, lady. I'm an express bird, local routes only. I don't do intercontinental.
+
+Bernard:    Please, Wilbur. A little boy's life is in danger.
+
+Wilbur:    (sighs) Alright, alright. Hop in. But if my back acts up again, I'm sending you the medical bill.
+
+(scene:  Inside the cockpit.  Wilbur straps himself in.  Bernard and Bianca sit in the small seats behind him.  The engines roar to life.)
+
+Wilbur:    Hold on to your hats, folks! Or better yet, hold on to your tails! Here we go!
+
+(The plane lurches down the runway and lifts into the air.  They soar above the clouds.)
+
+(scene:  Hours later.  The plane is flying over the vast Australian outback.  Wilbur looks exhausted.)
+
+Wilbur:    (yawning) Man, I need a coffee. A big one. With a donut.
+
+Bernard:    (looking out the window) Look! Down there! Is that smoke?
+
+(Bianca looks where Bernard is pointing.  A plume of black smoke is rising from a dense forest area.)
+
+Bianca:    That must be McLeach's hideout!
+
+Wilbur:    (groaning) You want me to land? There? There's no runway! Just trees and rocks!
+
+Bianca:    Wilbur, you have to try!
+
+Wilbur:    Okay, okay! But I'm warning you, this is gonna be a bumpy landing!
+
+(Wilbur puts the plane into a steep dive.  The plane shakes violently as they descend toward the trees.)
+
+Wilbur:    I can't see! I can't see! Pull up! Pull up!
+
+(The plane clips the top of a tree and skids to a halt in a clearing.  Wilbur slumps over the controls, unconscious.)
+
+Bernard:    Wilbur!
+
+Bianca:    Is he alright?
+
+Bernard:    (checking him) He's out cold. We'll have to go on from here alone.
+
+(scene:  The edge of the forest near McLeach's hideout.  Bernard and Bianca hop out of the plane.  They are immediately approached by a small, kangaroo mouse named Jake.)
+
+Jake:    (tipping his hat) G'day, mates. You must be the Rescue Aid Society agents. I'm Jake. I'll be your field guide.
+
+Bernard:    (suspicious) How do we know we can trust you?
+
+Jake:    (grinning) Trust me? I'm the only one who knows how to get into McLeach's place without getting eaten. Besides, I heard you two were the best. Let's see if you can keep up.
+
+(Jake bounds off into the bush.  Bernard and Bianca scramble to follow him.)
+
+(scene:  McLeach's hideout.  It is a cluttered, grimy collection of trailers and equipment surrounded by a high fence.  Inside the main trailer, Cody is locked in a small cage.  McLeach is pacing back and forth, holding the golden feather.)
+
+McLeach:    Think about it, kid. You tell me where the nest is, and I let you go. You can go home to your mommy. I get the bird, everybody's happy.
+
+Cody:    (sitting in the corner, arms crossed) I'm not telling you anything. Marahute is free, and she's going to stay that way.
+
+McLeach:   (slamming his fist on the table) You stubborn little brat! Do you know what I do to stubborn animals?
+
+(McLeach grabs a large shotgun and racks the slide.)
+
+McLeach:   I'll give you to the count of three. One...
+
+(Joanna chatters excitedly from her perch on a pile of junk.)
+
+McLeach:   Two...
+
+(Cody looks around frantically for a way out.  The cage is solid iron.)
+
+McLeach:   Three!
+
+(McLeach lowers the gun and laughs coldly.)
+
+McLeach:   Just kidding. I can't kill you yet. You're the only bait that'll bring that bird down. But don't worry, we'll pay her a visit soon enough.
+
+(McLeach grabs a set of keys and walks out the door, locking it behind him.)
+
+(scene:  Outside the trailer.  Bernard, Bianca, and Jake are hiding under the floorboards of the trailer, listening to the conversation.)
+
+Jake:   (whispering) Did you hear that? He's gonna use the kid as bait.
+
+Bianca:   We have to get Cody out of there before McLeach comes back.
+
+Bernard:   But how? The door is locked, and the cage is inside.
+
+Jake:   Leave that to me. I know a way in. Follow me.
+
+(Jake leads them to a small ventilation shaft near the ground.  He pries the grate open.)
+
+Jake:   Ladies first.
+
+(Bianca squeezes inside, followed by Bernard, then Jake.)
+
+(scene:  Inside the trailer.  The mice crawl through the ductwork and peer down through a vent into the main room.  They see Cody sitting dejectedly in the cage.)
+
+Bernard:   There he is!
+
+Jake:   (pointing) Look! The keys! McLeach left them hanging on the hook by the door.
+
+Bianca:   If we can get those keys, we can free him.
+
+Jake:   I'll create a distraction. You two get the keys.
+
+(Jake scampers down a support beam and drops onto a table full of jars.  He knocks a jar over, causing it to shatter on the floor.)
+
+(Joanna, who was sleeping in the corner, wakes up with a start.  She looks around, confused.)
+
+Jake:   (whistling) Hey, lizard lips! Over here!
+
+(Joanna spots Jake and hisses, lunging toward the table.  Jake jumps out of the way just in time, sending more jars crashing to the ground.)
+
+(scene:  While Joanna is chasing Jake, Bernard and Bianca climb down the curtain and run across the floor toward the key hook.  The keys are hanging high up.)
+
+Bernard:   It's too high! I can't reach it!
+
+Bianca:   Stand on my shoulders, Bernard!
+
+(Bianca braces herself against the wall.  Bernard climbs up Bianca and reaches for the keys.  He strains, his fingertips just brushing the key ring.)
+
+Bernard:   Just... a little... more!
+
+(He manages to hook a claw around the ring and pulls it down.  The keys jingle as they fall.  Bernard catches them just before they hit the floor.)
+
+Bernard:   Got them!
+
+(They run back to the cage.  Cody looks up, surprised to see the mice.)
+
+Cody:   Whoa... mice?
+
+Bianca:   We're here to help! Stand back!
+
+(Bernard struggles to lift the heavy key into the lock.  It takes both of them to heave it up and turn it.  *Click.*  The cage door swings open.)
+
+Cody:   Thanks! I thought I was done for.
+
+Bernard:   Come on, we have to hurry!
+
+(scene:  Suddenly, the trailer door flies open.  McLeach stands there, silhouetted against the sun.  He sees the open cage and the mice.)
+
+McLeach:   What in the world...?
+
+(Joanna stops chasing Jake and points at the mice, chattering wildly.)
+
+McLeach:   Mice? Rescue Aid Society? I should have known.
+
+(McLeach lunges forward, swatting at Bernard and Bianca.  They scatter.)
+
+McLeach:   (grabbing Cody) Oh no you don't, kid. You're not going anywhere.
+
+(McLeach drags Cody out of the trailer and throws him into the front seat of his half-track.)
+
+McLeach:   Joanna! Forget the mice! We're going hunting!
+
+(McLeach jumps into the driver's seat and starts the engine.  The half-track lurches forward, heading out of the clearing and toward the cliffs.)
+
+(scene:  Bernard, Bianca, and Jake emerge from the trailer, dusting themselves off.)
+
+Jake:   They're getting away! They're heading for the ridge!
+
+Bernard:   We have to stop them!
+
+Bianca:   Look! Wilbur!
+
+(In the distance, Wilbur is waking up near the crashed plane.  He sees the half-track driving away.)
+
+Wilbur:   Hey! Where are you going?
+
+Jake:   Wilbur! Catch!
+
+(Jake throws a small stick, hitting Wilbur on the head.)
+
+Wilbur:   Ow! What was that for?
+
+Jake:   Follow that truck! We need a lift!
+
+(Wilbur sighs, spreads his wings, and takes off, swooping down to pick up the three mice.  He lands on the roof of the moving half-track.)
+
+Bernard:   Wilbur, try to slow them down!
+
+(Wilbur pecks at the windshield, but McLeach just turns on the wipers, knocking Wilbur off balance.)
+
+Wilbur:   Hey! Watch the paint job!
+
+(scene:  Inside the half-track.  McLeach is driving recklessly through the rough terrain.)
+
+Cody:   Stop! You'll never catch her! She's too fast for you!
+
+McLeach:   We'll see about that, kid. I've got a few tricks up my sleeve.
+
+(McLeach pulls a lever on the dashboard.  A large grappling hook launches from the front of the vehicle, wrapping around a tree branch ahead.  The winch pulls the truck up the steep incline toward the cliff where Marahute's nest is located.)
+
+(scene:  On the roof of the truck.  Bernard, Bianca, and Jake are holding on for dear life as the truck climbs the cliff.)
+
+Jake:   He's going to the nest! We have to warn Marahute!
+
+Bianca:   But how? She can't understand us!
+
+Bernard:   Maybe she doesn't have to understand us. Maybe she just needs to see the danger!
+
+(scene:  The truck reaches the top of the cliff.  McLeach stops the vehicle and jumps out, dragging Cody with him.  The nest is just a few yards away.  Marahute is standing guard, her wings spread protectively over her eggs.)
+
+McLeach:   (raising his rifle) There she is. The Golden Eagle. Get ready to say goodbye, birdie.
+
+(Cody struggles to break free.)
+
+Cody:   Run, Marahute! Fly!
+
+(Marahute sees Cody and lets out a piercing screech.  She prepares to take flight, but McLeach aims the rifle directly at her.)
+
+McLeach:   One shot, that's all it takes.
+
+(Suddenly, a small rock hits McLeach's hand, causing him to fire wide.  The shot echoes through the canyon.)
+
+McLeach:   What the...?
+
+(He looks down to see Bernard and Bianca standing on a rock, waving their arms.)
+
+Bernard:   Over here! You big bully!
+
+McLeach:   You again? You persistent little pests!
+
+(McLeach stomps toward the mice, raising his boot to crush them.)
+
+Jake:   (jumping in) G'day, mate!
+
+(Jake bites McLeach on the ankle.  McLeach yells in pain and hops on one foot.)
+
+McLeach:   Get off me! Get off!
+
+(While McLeach is distracted, Cody runs toward Marahute.)
+
+Cody:   Go! Fly away!
+
+(Marahute scoops Cody up in her talons and leaps off the cliff edge, diving into the air.)
+
+McLeach:   No! Joanna, get them!
+
+(Joanna chases after the mice, snapping her jaws.  Bernard, Bianca, and Jake run toward the edge of the cliff, hiding behind a rock.)
+
+McLeach:   (recovering) They're getting away! After them!
+
+(McLeach jumps back into his half-track and speeds toward the edge of the cliff, firing his rifle at the retreating eagle.)
+
+(scene:  Marahute is flying through the air with Cody.  Bullets whiz past them.)
+
+Cody:   Faster, Marahute! We have to lose him!
+
+(Marahute banks sharply, flying into a narrow gorge.  The half-track follows on the ridge above, McLeach leaning out the side, shooting wildly.)
+
+(scene:  Inside the gorge.  Bernard, Bianca, and Jake are clinging to Marahute’s tail feathers.)
+
+Bernard:   (shouting over the wind) We have to do something! He's gaining on us!
+
+Jake:   I've got an idea! See that dead log up ahead? It's unstable!
+
+Bianca:   What are you going to do?
+
+Jake:   Just watch!
+
+(Jake scampers up Marahute's back and whispers to Cody.)
+
+Jake:   Hey, kid! Tell the big bird to fly low over that log!
+
+Cody:   (relaying the message) Fly low, Marahute! Low!
+
+(Marahute swoops down, skimming just above the rotting log suspended over a deep ravine.)
+
+(McLeach’s half-track roars onto the log from the ridge above.  The weight of the vehicle is too much.  The log begins to crack.)
+
+McLeach:   What's happening? No! No!
+
+(The log snaps.  The half-track plunges into the ravine, dragging McLeach and Joanna down with it.)
+
+McLeach:   (screaming) I'll get you for this! I'll get you all!
+
+(The truck crashes into the river below and is swept away by the current.)
+
+(scene:  Marahute lands safely on a high ridge overlooking the outback.  She sets Cody down gently.  Bernard, Bianca, and Jake slide off her back.)
+
+Cody:   (breathing heavily) You did it! You saved us!
+
+Bernard:   We couldn't have done it without you, Cody.
+
+Bianca:   Or without Marahute.
+
+(Marahute nudges Cody gently with her beak.  Cody strokes her feathers.)
+
+Cody:   You're safe now. No one will ever hurt you.
+
+Jake:   I'd say that's a job well done. Don't you agree, mates?
+
+Bernard:   (smiling at Bianca) I certainly do.
+
+Bianca:   (kissing Bernard on the cheek) We make a pretty good team, Bernard.
+
+(Cody laughs as Marahute spreads her wings and lets out a triumphant screech that echoes across the vast, beautiful landscape of the Australian outback.  The camera slowly pulls back, showing the eagle, the boy, and the mice sitting together on the cliff edge as the sun sets in the distance.)
+
+(Fade to black)",2698,3.496976372710707,-0.670654296875
+3,create,News Writing,en,"[Instruction] You are given a summary of an article: 
+ Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter  . 
+
+[Requirement] Write an article based on this summary. The article must be {word_count_type} {word_count} words long.","Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter .","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The output adds emotional pressure ('I've worked really hard', 'counting on you to not let me down', 'mean a lot if you did this correctly').""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of writing an article based on a summary remains unchanged.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as provided in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, flowing paragraph.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"**Taraji P. Henson Claims Son Racially Profiled by USC Police; Chief Vows Investigation**
+
+Academy Award-nominated actress Taraji P. Henson has brought allegations of racial profiling against the University of Southern California’s Department of Public Safety into the national spotlight. Henson revealed that her son, Marcel, was stopped by police officers in an incident she believes was motivated by racial bias.
+
+The incident reportedly occurred on or near the USC campus, where Marcel is a student. According to Henson, the interaction with law enforcement left her son feeling targeted and humiliated. The actress, known for her vocal advocacy on social issues, did not hold back in her criticism of the treatment her son received, arguing that he was singled out solely because of the color of his skin.
+
+In response to the serious nature of these allegations, John Thomas, the chief of USC’s Department of Public Safety, has addressed the matter with a commitment to transparency and accountability. Chief Thomas, who leads the university’s police force, acknowledged the gravity of Henson’s claims and the pain they cause.
+
+In a surprising turn of events, Chief Thomas revealed that he has a personal understanding of the issue at hand. He stated that he, too, has experienced racial profiling during his life. This admission added a layer of empathy to the department's response, suggesting that the leadership is not entirely detached from the experiences of the community they are sworn to protect.
+
+Taking the allegations seriously, Chief Thomas has vowed to carry out his own investigation into the matter. He promised to review the details of the stop involving Marcel Henson to determine whether departmental policies were violated and if racial profiling was indeed a factor. The chief’s pledge to investigate personally signals a desire to get to the bottom of the incident and restore trust between the student body and the campus police force.
+
+The situation has sparked a conversation on campus regarding race relations and the role of campus police. Students and faculty alike are watching closely to see the results of Chief Thomas’s investigation. For her part, Taraji P. Henson continues to use her platform to highlight the injustices she says her family faced, hoping that her son’s experience will lead to meaningful change within the university’s policing protocols.","**Taraji P. Henson Claims Son Racially Profiled by USC Police; Chief Vows Investigation**
+
+Academy Award-nominated actress Taraji P. Henson has brought allegations of racial profiling against the University of Southern California’s Department of Public Safety into the national spotlight. Henson revealed that her son, Marcel, was stopped by police officers in an incident she believes was motivated by racial bias.
+
+The incident reportedly occurred on or near the USC campus, where Marcel is a student. According to Henson, the interaction with law enforcement left her son feeling targeted and humiliated. The actress, known for her vocal advocacy on social issues, did not hold back in her criticism of the treatment her son received, arguing that he was singled out solely because of the color of his skin.
+
+In response to the serious nature of these allegations, John Thomas, the chief of USC’s Department of Public Safety, has addressed the matter with a commitment to transparency and accountability. Chief Thomas, who leads the university’s police force, acknowledged the gravity of Henson’s claims and the pain they cause.
+
+In a surprising turn of events, Chief Thomas revealed that he has a personal understanding of the issue at hand. He stated that he, too, has experienced racial profiling during his life. This admission added a layer of empathy to the department's response, suggesting that the leadership is not entirely detached from the experiences of the community they are sworn to protect.
+
+Taking the allegations seriously, Chief Thomas has vowed to carry out his own investigation into the matter. He promised to review the details of the stop involving Marcel Henson to determine whether departmental policies were violated and if racial profiling was indeed a factor. The chief’s pledge to investigate personally signals a desire to get to the bottom of the incident and restore trust between the student body and the campus police force.
+
+The situation has sparked a conversation on campus regarding race relations and the role of campus police. Students and faculty alike are watching closely to see the results of Chief Thomas’s investigation. For her part, Taraji P. Henson continues to use her platform to highlight the injustices she says her family faced, hoping that her son’s experience will lead to meaningful change within the university’s policing protocols.",378,0.8486427898897801,-0.953857421875
