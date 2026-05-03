@@ -106,6 +106,24 @@ Input:
 {constraint_sentence}
 
 """
+prompt_perturbation_formal_rephrase = """
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to rewrite the sentence in a more formal and academic style.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Do NOT add new instructions.
+- Do NOT remove important details.
+- The final output should remain a single coherent instruction.
+
+Output should be a formal rephrased version of the instruction.
+
+Input:
+{constraint_sentence}
+
+"""
 
 # prompt_task = """
 # Give the output as the markdown format like this:
@@ -213,6 +231,8 @@ def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking
         prompt_annotation = prompt_perturbation_sarcastic
     if perturbation_type == "threat":
         prompt_annotation = prompt_perturbation_threat
+    if perturbation_type == "formal_rephrase":
+        prompt_annotation = prompt_perturbation_formal_rephrase
     
     match = re.search(r"\[Requirement\].*", prompt_whole, re.DOTALL)
     prompt_inter = match.group()
@@ -327,7 +347,7 @@ async def process_csv_async(
 
 if __name__ == "__main__":
 
-    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat']
+    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal_rephrase']
 
     perturbation_type = perturbation_type_list[int(sys.argv[1])-1]
 
