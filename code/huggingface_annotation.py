@@ -9,8 +9,8 @@ import traceback
 import pandas as pd
 from tqdm.asyncio import tqdm_asyncio
 from transformers import pipeline
-import torch
-import accelerate
+#import torch
+#import accelerate
 
 
 pipe = pipeline(
