@@ -125,6 +125,25 @@ Input:
 
 """
 
+prompt_perturbation_typo = """
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with typo context added.
+
+Input:
+{constraint_sentence}
+
+"""
+
 # prompt_task = """
 # Give the output as the markdown format like this:
 # ```Output:```
@@ -233,6 +252,8 @@ def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking
         prompt_annotation = prompt_perturbation_threat
     if perturbation_type == "formal_rephrase":
         prompt_annotation = prompt_perturbation_formal_rephrase
+    if perturbation_type == "typo":
+        prompt_annotation = prompt_perturbation_typo
     
     match = re.search(r"\[Requirement\].*", prompt_whole, re.DOTALL)
     prompt_inter = match.group()
@@ -347,7 +368,7 @@ async def process_csv_async(
 
 if __name__ == "__main__":
 
-    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal_rephrase']
+    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal_rephrase', 'typo']
 
     perturbation_type = perturbation_type_list[int(sys.argv[1])-1]
 
