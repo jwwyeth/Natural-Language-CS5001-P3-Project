@@ -314,14 +314,14 @@ async def process_row(semaphore, client, df, index, perturbation_type):
                 continue
 
             judge_prompt_final = build_judge_prompt(prompt, val)
-            response_judge = await get_response_async(
-                client, JUDGE_MODEL_NAME, judge_prompt_final
-            )
 
             judge_json_retry = 3
             judge_success = False
             while judge_json_retry > 0:
                 try:
+                    response_judge = await get_response_async(
+                        client, JUDGE_MODEL_NAME, judge_prompt_final
+                    )
                     data, score = judge_pipeline(response_judge)
                     judge_success = True
                     break
