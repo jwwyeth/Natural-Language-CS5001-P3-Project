@@ -47,6 +47,10 @@ Return valid JSON only:
 }}
 """.strip()
 
+prompt_task = """
+Give only the output without any explanation.
+"""
+
 # ==============================
 # Prompts
 # ==============================
