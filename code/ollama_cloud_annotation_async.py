@@ -298,7 +298,6 @@ async def process_row(semaphore, client, df, index, perturbation_type):
         row = df.loc[index]
         prompt = process_prompt(row["task"], perturbation_type)
 
-
         limit = 3
         for attempt in range(limit):
             response = await get_response_async(
@@ -319,7 +318,22 @@ async def process_row(semaphore, client, df, index, perturbation_type):
                 client, JUDGE_MODEL_NAME, judge_prompt_final
             )
 
-            data, score = judge_pipeline(response_judge)
+            judge_json_retry = 3
+            judge_success = False
+            while judge_json_retry > 0:
+                try:
+                    data, score = judge_pipeline(response_judge)
+                    judge_success = True
+                    break
+                except Exception as e:
+                    print(f"Error occurred while processing judge response for index {index}: {e}")
+                    judge_json_retry -= 1
+                    await asyncio.sleep(2)  # wait before retrying
+
+            if not judge_success:
+                print(f"Failed to process judge response for index {index} after multiple attempts. Skipping...")
+                return
+
             if score < 0.7:
                 print(f"Attempt {attempt+1}/{limit} for index {index} has low confidence score ({score:.2f}). Retrying...")
                 await asyncio.sleep(2)  # wait before retrying
