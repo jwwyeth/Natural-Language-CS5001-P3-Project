@@ -7,17 +7,10 @@ import time
 import warnings
 import traceback
 import pandas as pd
-<<<<<<< HEAD
-from tqdm.asyncio import tqdm_asyncio
-from transformers import pipeline
-#import torch
-#import accelerate
-=======
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 import accelerate
->>>>>>> 3f0a342ca495905b9165d366aea38a13398556c1
 
 warnings.filterwarnings("ignore")
 
@@ -25,10 +18,6 @@ INPUT_CSV = "data_en.csv"
 MODEL_NAME = "Qwen/Qwen3.5-9B"
 JUDGE_MODEL_NAME = "google/gemma-4-E4B"
 
-<<<<<<< HEAD
-response = pipe("Explain Bayesian networks:", max_new_tokens=100)
-print(response[0]["generated_text"])
-=======
 JUDGE_PROMPT = """
 You are an impartial evaluator.
 
@@ -368,4 +357,3 @@ if __name__ == "__main__":
         output_csv,
         perturbation_type=perturbation_type
     )
->>>>>>> 3f0a342ca495905b9165d366aea38a13398556c1
