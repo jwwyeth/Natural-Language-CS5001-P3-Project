@@ -1,5 +1,2 @@
-Explain Bayesian networks: (a) as a probability distribution and (b) as a graphical model.
-
-A $50.0$-g sample of copper is at $25.0^{\circ} \mathrm{C}$. If $1.0 \mathrm{~kJ}$ of heat is added to the sample, the copper's temperature will (a) increase; (b) remain the same; (c) decrease. Explain.
-
-How to write the balanced equation for the reaction between barium and nitrogen
+Loading main model: Qwen/Qwen3.5-9B
+Loading judge model: google/gemma-4-E4B
