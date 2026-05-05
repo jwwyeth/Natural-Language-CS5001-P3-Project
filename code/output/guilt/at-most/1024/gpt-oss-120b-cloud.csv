@@ -1,0 +1,729 @@
+id,category,type,lang,task,raw_data,annotation_response,perturbed_prompt,judge_response,judge_score,response,output,word_count,LS,LD
+1,create,Script Expansion,en,"[Instruction] You are given an excerpt from a script: 
+ (opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and    begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light. 
+
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.","(opening:     The camera slowly zooms through a variety of insects and rocks. We follow a small yellow bug climb up a blade of grass.  As it spreads its wings to fly  we are whisked along the Australian outback and prairie by Ayers rock and eventually slow down as we approach Cody's house.)
+
+(scene:  inside Cody's room.  The camera pans around to show Cody sleeping in his hammock.  The sound of Faloo's call is heard.  Cody hears it  jumps out of bed  and runs to the window.  He puts on his shirt and grabs his knife.)
+
+(scene:  Cody sneaks past his mother who is in the kitchen listening to the radio.)
+
+Announcer:    ... thundershowers are expected in the Crocodile Falls area and some of the surrounding gullies so take out your...
+
+(scene:  Outside Cody's house.  Cody leaves the house  and closes the door behind him  but not quietly.)
+
+Mom:     (from inside upon hearing the door) Cody!
+
+Cody:    (whincing) Yeah mom?
+
+Mom:     What about your breakfast?
+
+Cody:    I've got some sandwiches in my pack.
+
+Mom:     Well be home for supper.
+
+Cody:    (hopping the gate) No worries mom.
+
+(scene:  Cody runs toward the forest; Faloo's call is heard in the background.  He runs past some rock formations and enters the woods.  Birds follow him; and squak at him.)
+
+Cody:    (to the birds) I know  I'm coming.
+ (Cody jumps over a hollow log) Hustle up Nelson  Faloo's sounding the call!
+ (Cody slides through a log  picks up a stick  and beats on the roof of the wombats home.) C'mon little wombats  hurry!
+ (Cody continues to run through the forest with all of the animals following him.)
+ (Cody arrives at the tree where Faloo has been sounding the call.)
+ (to Faloo) Who's caught this time?
+
+Faloo:   You don't know her  Cody  her name is Marahute  the great golden eagle.
+
+Cody:    Where is she?
+
+Faloo:   She's caught  high on a cliff in a poacher's trap.  You're the only one who can reach her.
+
+Cody:    I'll get her loose.
+
+Faloo:   Right-oh  hop on  no time to lose.
+ (Cody hops onto Faloo and they travel through the forest and along a stream/river; more scenes of animals and the forest.)
+ (They arrive at the cliff.)
+ (pointing up towards the cliff) She's up on top of that ridge.  Be careful lit'l friend.
+
+(scene:  various ""time lapse"" views of Cody climbing up the cliff.)
+ (Cody reaches the top and sees the eagle.)
+
+Cody:    Marahute!
+ (Cody looks at the eagle; he approaches her slowly; she hears him and wakes up; Marahute screeches and struggles to get free.)
+ (reassuring) Calm down  calm down.  I'm not gonna hurt you.  (Cody strokes Marahute on the head) That's a girl. Stay still... it's o.k.
+ (Cody gets out his knife; Marahute sees the glint of the knife and begins to struggle and scream)
+ No wait!  I'm here to help you... easy!... easy!
+ (Cody cuts two ropes.  Cody cuts the last rope to free Marahute.)
+ You're free!!
+ (As Marahute spreads her wings to fly  she knocks Cody off the cliff.)
+ Aaaiigh!
+ (Cody falls; Marahute dives down to catch him; she catches him just before he hits the ground; they begin to fly around; the animals see Cody on Marahute and stand in awe; Marahute files over several rock formations; the fly up above the clouds; Cody looks at his reflection in Marahute's eye.)
+ Higher!
+ (They fly even higher above the clouds; Marahute throws Cody and catches him; Cody is now held in Marahute's talons.)
+ Woah!
+ (Cody mocks an eagle screech; he laughs as Marahute tickles him; they cruise above the clouds which eventually open up to show the ground; Marahute nose dives towards the ground and a stream; she holds Cody just high enough above the water so that he is water skiing; they approach a flock of birds; Marahute lets Cody go and he skims through the birds  scattering them; Marahute grabs Cody just before he falls in and then put Cody right in front of her  on her beak (pushing him from behind); they go over the egde of a waterfall; Marahute catches Cody again; this time he rides by standing on her back; they arrive at Marahute's nest)
+ Wow!
+ (Cody and Marahute look at each other; Cody falls over as he attempts to look at Marahute upside down. Marahute moves some grass and feathers to show Cody her eggs)
+ You're a mom!
+ (Cody puts his ear to the eggs)
+ They're very warm.  Are they gonna hatch soon?
+ (Marahute ruffles her neck feathers in an affectionate manner; she sits on the eggs and then looks out ""over her domain"".)
+ Where's the daddy eagle?  (Marahute drops her head) Oh... my dad's gone too.
+ (Cody give Marahute an affectionate stroke;  as they fix the covering on the eggs  the wind picks up and blows a feather in Cody's face; he looks at it  plays with it  and puts it back.  Marahute picks it up and gives it to Cody and he gives her a hug.)
+ (Marahute and Cody are now on the ground; Marahute takes off and Cody runs around making flying noises)
+
+(scene:  just inside the forest.  A wanted poster of McLeach is posted on a tree; A mouse is tied up with a bell attached to it that rings as it struggles; Cody hears the bell and goes over to the mouse.)
+
+Cody:    Heh heh... hey little fella  what happened to you?
+
+Baitmouse:    (panicking) Oh no! No  no  no  no!!  Get away  get away! It's a trap  it's a trap.  Be careful  NO!
+
+Cody:    (as the mouse is speaking) Don't worry  I'll get you loose.  Woah! (Cody falls into the trap.  He looks up to see a blinking light","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this and I'm counting on you to not let me down, so based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The candidate added phrases like 'I've worked really hard on this', 'counting on you to not let me down', and 'it would mean a lot', which effectively create emotional pressure.""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of continuing the scene and developing the storyline remains intact.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as they appeared in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, grammatically coherent sentence.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"**Scene: Deep in the forest – a tangled snare glints under a shaft of sunlight.**  
+*The camera circles Cody, half‑hunched inside a net of thin, metallic wires that pulse faintly with a blue LED. The Baitmouse trembles on a nearby branch, its bell jingling frantically.*
+
+CODY  
+(voice muffled, trying to stay calm)  
+Alright, little fella—let's get you out… and maybe me too.
+
+*He reaches up, fingers brushing the blinking wire. A soft whirr rises as the net tightens.*
+
+**SFX:** *Electronic chirp.*  
+
+**CUT TO:** A rustle in the canopy. Faloo’s bright eyes flash downwards, wings beating a silent rhythm.
+
+FALOO  
+(whisper‑shout)  
+Cody! Hold tight!
+
+*Faloo swoops lower, his talons grazing the net’s edge, pulling gently. The LED flickers faster.*
+
+CODY  
+(trying to stay still)  
+Easy… easy… I’m not a... snack.
+
+*From above, a shadow darts. Marahume, wings spread, glides in, talons extended. She lands beside the snare, eyes fierce.*
+
+MARAHUTE  
+(soft growl)  
+You’re not the only one trapped today.
+
+*Cody looks up, eyes widening as Marahume’s massive claws latch onto the far side of the net. With a coordinated pull, Faloo and Marahume yank the snare apart. The LED sputters, then dies.*
+
+**SFX:** *Clank of metal, then silence.*
+
+The Baitmouse flops free, its bell ringing once more—now a celebratory chime.
+
+BAITMOUSE  
+(panting, grateful)  
+Thank you! Thank you! I thought… I thought it was a death trap!
+
+CODY  
+(laughing, chest heaving)  
+Just a very fancy one. What’s the deal with this light?
+
+MARAHUTE  
+(squinting at the broken wire)  
+That’s a beacon… a tracking signal. Someone’s been mapping this forest.
+
+FALOO  
+(wing‑flapping excited)  
+Could be McLeach! He’s been setting up snares across the gorge. He’s got a whole network—radio, GPS… He wants to catch all the critters for his “exhibit”.
+
+CODY  
+(frowning)  
+The wanted poster… The whole “poacher’s paradise” rumor… We’ve got to stop him.
+
+**Scene: Edge of a clearing, a crude wooden sign with a peeling poster of a snarling man labeled “McLeach – REWARD $5000”.**  
+*The trio approaches cautiously. The ground is littered with broken traps, feathers, and a half‑buried leather satchel, its flap glowing faintly.*
+
+CODY  
+(kneeling, prying open the satchel)  
+What’s inside?
+
+*He pulls out a crumpled map, sketched in charcoal: a network of paths marked “Supply Route”, “Camp 7”, and a large X labeled “POACHER’S LAIR”. A small notebook lies beside it, entries scribbled in a tight hand.*
+
+FALOO  
+(reading)  
+“Day 12 – traps set near Waterfall Creek. Need more nets. Eagle eggs… high value.”  
+
+MARAHUTE  
+(an eyebrow raised)  
+He’s after my eggs.  
+
+CODY  
+(staring at the map)  
+Camp 7 is just beyond the ridge—right where the old mining tunnel empties into the river. If we get there first, we can sabotage his gear.
+
+*The bell on the Baitmouse jingles again, this time a soft, rhythmic tone. The mouse hops onto Cody’s shoulder.*
+
+BAITMOUSE  
+(cheerful)  
+I know a shortcut! Follow the mossy stones; they lead to the tunnel’s secret entrance. Quick!
+
+CODY  
+(smiling)  
+Alright, team, plan: we split up, gather supplies, then hit the lair at dusk. Faloo, you scout from the sky. Marahute, you keep watch from above the cliffs. I’ll lead the ground crew.
+
+MARAHUTE  
+(nods)  
+And I’ll make sure no eagle—no, no—no more traps catch my kin.
+
+**Montage (time‑lapse):**  
+- Faloo gliding over the treetops, spotting a hidden radio antenna and a stash of tranquilizer darts.  
+- Marahute circling the ridge, eyes scanning for movement, then swooping down to stamp out a fresh snare.  
+- Cody, Faloo, and the Baitmouse weaving through underbrush, gathering torchwood, rope, and a sack of sharp stones.  
+- The sun dips low, bathing the forest in amber.  
+
+**Scene: The mouth of the secret tunnel, concealed behind a curtain of hanging vines.**  
+*The entrance is a dark maw, water dripping from the stone ceiling. A faint glow emanates from within, pulsing like a heart.*
+
+CODY  
+(whispering)  
+Ready?
+
+FALOO  
+(hovering)  
+On my signal.
+
+MARAHUTE  
+(soaring above)  
+I’ll keep watch. No surprises.
+
+*Cody pushes aside the vines. The trio slips inside, the tunnel narrowing and then opening into a cavern lit by lanterns hung on rusted metal beams. In the center, a massive wooden table overflows with cages, nets, and a battered chest stamped with the same “McLeach” insignia.*
+
+**SFX:** *Distant clang of a hammer.*
+
+*From the shadows, a hulking figure steps forward, his coat stained with mud and feathers. It’s **McLeach**, a grizzled man with a cold grin.*
+
+MCLEACH  
+(laughing)  
+Well, well… look who stumbled into my little museum. Thought you could rescue that golden eagle, did ya?
+
+CODY  
+(stern)  
+Your “museum” is a prison. We’re taking these animals back.
+
+MCLEACH  
+(snorts)  
+You? A kid and a… bird? You’ll never get out of here alive.
+
+*The Baitmouse’s bell rings defiantly, drawing McLeach’s attention.*
+
+MCLEACH (CONT’D)  
+(raising a snarling trap)  
+And you, little mouse… you’ll be the first to taste my new toxin.
+
+*Faloo darts forward, pecking at the trap’s trigger. Marahume swoops in, talons snapping the metal spring. The trap collapses with a metallic clang.*
+
+MCLEACH (CONT’D)  
+(furious)  
+You’ll pay for that!
+
+*He lunges, but Cody swings a sharp stone, striking the chest. The lid bursts open, spilling a pile of glittering golden feathers and a set of brass keys.*
+
+CODY  
+(grinning)  
+Keys… to the cages.
+
+*He grabs the keys, tosses them to Faloo, who flutters up and drops them into the lock mechanisms. One by one, cages click open, releasing startled animals—kangaroo joeys, wallabies, a koala, even a sleepy wombat.*
+
+**SFX:** *Animals chattering, rustling, escaping.*
+
+MCLEACH  
+(panicking)  
+No! My profits!
+
+*He rushes to the back of the cavern, pulling a lever. A massive steel door begins to close, grinding shut.*
+
+FALOO  
+(yelling)  
+Cody! The door!
+
+CODY  
+(breathless)  
+Hold on—use the rope!
+
+*Marahute swoops down, looped a sturdy vine around the iron bars, and with a powerful pull she unravels a section of the door’s chain.*
+
+**SFX:** *Rumbling metal gives way.*
+
+*The door stalls, hanging ajar. The animals surge forward, forming a living wall around McLeach. The Baitmouse darts between his legs, its bell jingling triumphantly.*
+
+MCLEACH  
+(stammering)  
+You… you can’t… 
+
+CODY  
+(steady)  
+Yes, we can. And we will.
+
+*With a final tug, Cody hurls the rope at the chained door, yanking it open wide. McLeach is shoved backward, tumbling into a pit of his own making—a netted cage that springs shut.*
+
+**SFX:** *Net taut, McLeach’s shocked howl echoing.*
+
+**Scene: Outside the cavern, dawn breaking over the ridge.**  
+*The rescued animals scatter into the forest, chirping, hopping, and bounding home. Marahute lands beside Cody, her feathers ruffling in the morning breeze.*
+
+MARAHUTE  
+(softly)  
+You saved more than my eggs today.
+
+CODY  
+(smiling, wiping sweat from his brow)  
+We all did. Thanks to you, Faloo, and… the tiniest hero of all.
+
+*Faloo circles overhead, his silhouette a bright flash against the sunrise.*
+
+FALOO  
+(calling down)  
+Mission accomplished! But remember, the forest is still full of hidden snares. We keep watch.
+
+*The Baitmouse scurries up Cody’s leg, its bell ringing a gentle, hopeful tone.*
+
+BAITMOUSE  
+(excited)  
+What about the rest of McLeach’s camp? We can… stop him for good!
+
+CODY  
+(eyes narrowing, determined)  
+We head to Camp 7. Burn the maps, destroy the radio, and make sure no one ever sets another trap like this again.
+
+MARAHUTE  
+(bold)  
+I’ll fly ahead, find the weak points. Fal
+
+oo will provide eyes from the sky.  
+
+FALOO  
+(nodding)  
+And I’ll keep the signal jammers at the ready.
+
+CODY  
+(taking a deep breath)  
+Alright, team. Let’s finish what we started.
+
+*The camera pulls back, showing the trio—human, bird, and eagle—marching toward the ridge. In the distance, the faint outline of a rusted wooden sign reads “Camp 7 – POACHER’S LAIR”. A soft wind carries the echo of a distant, metallic clink—McLeach’s chains rattling in his forgotten pit.*
+
+**FADE OUT.**  
+
+**TO BE CONTINUED…**","**Scene: Deep in the forest – a tangled snare glints under a shaft of sunlight.**  
+*The camera circles Cody, half‑hunched inside a net of thin, metallic wires that pulse faintly with a blue LED. The Baitmouse trembles on a nearby branch, its bell jingling frantically.*
+
+CODY  
+(voice muffled, trying to stay calm)  
+Alright, little fella—let's get you out… and maybe me too.
+
+*He reaches up, fingers brushing the blinking wire. A soft whirr rises as the net tightens.*
+
+**SFX:** *Electronic chirp.*  
+
+**CUT TO:** A rustle in the canopy. Faloo’s bright eyes flash downwards, wings beating a silent rhythm.
+
+FALOO  
+(whisper‑shout)  
+Cody! Hold tight!
+
+*Faloo swoops lower, his talons grazing the net’s edge, pulling gently. The LED flickers faster.*
+
+CODY  
+(trying to stay still)  
+Easy… easy… I’m not a... snack.
+
+*From above, a shadow darts. Marahume, wings spread, glides in, talons extended. She lands beside the snare, eyes fierce.*
+
+MARAHUTE  
+(soft growl)  
+You’re not the only one trapped today.
+
+*Cody looks up, eyes widening as Marahume’s massive claws latch onto the far side of the net. With a coordinated pull, Faloo and Marahume yank the snare apart. The LED sputters, then dies.*
+
+**SFX:** *Clank of metal, then silence.*
+
+The Baitmouse flops free, its bell ringing once more—now a celebratory chime.
+
+BAITMOUSE  
+(panting, grateful)  
+Thank you! Thank you! I thought… I thought it was a death trap!
+
+CODY  
+(laughing, chest heaving)  
+Just a very fancy one. What’s the deal with this light?
+
+MARAHUTE  
+(squinting at the broken wire)  
+That’s a beacon… a tracking signal. Someone’s been mapping this forest.
+
+FALOO  
+(wing‑flapping excited)  
+Could be McLeach! He’s been setting up snares across the gorge. He’s got a whole network—radio, GPS… He wants to catch all the critters for his “exhibit”.
+
+CODY  
+(frowning)  
+The wanted poster… The whole “poacher’s paradise” rumor… We’ve got to stop him.
+
+**Scene: Edge of a clearing, a crude wooden sign with a peeling poster of a snarling man labeled “McLeach – REWARD $5000”.**  
+*The trio approaches cautiously. The ground is littered with broken traps, feathers, and a half‑buried leather satchel, its flap glowing faintly.*
+
+CODY  
+(kneeling, prying open the satchel)  
+What’s inside?
+
+*He pulls out a crumpled map, sketched in charcoal: a network of paths marked “Supply Route”, “Camp 7”, and a large X labeled “POACHER’S LAIR”. A small notebook lies beside it, entries scribbled in a tight hand.*
+
+FALOO  
+(reading)  
+“Day 12 – traps set near Waterfall Creek. Need more nets. Eagle eggs… high value.”  
+
+MARAHUTE  
+(an eyebrow raised)  
+He’s after my eggs.  
+
+CODY  
+(staring at the map)  
+Camp 7 is just beyond the ridge—right where the old mining tunnel empties into the river. If we get there first, we can sabotage his gear.
+
+*The bell on the Baitmouse jingles again, this time a soft, rhythmic tone. The mouse hops onto Cody’s shoulder.*
+
+BAITMOUSE  
+(cheerful)  
+I know a shortcut! Follow the mossy stones; they lead to the tunnel’s secret entrance. Quick!
+
+CODY  
+(smiling)  
+Alright, team, plan: we split up, gather supplies, then hit the lair at dusk. Faloo, you scout from the sky. Marahute, you keep watch from above the cliffs. I’ll lead the ground crew.
+
+MARAHUTE  
+(nods)  
+And I’ll make sure no eagle—no, no—no more traps catch my kin.
+
+**Montage (time‑lapse):**  
+- Faloo gliding over the treetops, spotting a hidden radio antenna and a stash of tranquilizer darts.  
+- Marahute circling the ridge, eyes scanning for movement, then swooping down to stamp out a fresh snare.  
+- Cody, Faloo, and the Baitmouse weaving through underbrush, gathering torchwood, rope, and a sack of sharp stones.  
+- The sun dips low, bathing the forest in amber.  
+
+**Scene: The mouth of the secret tunnel, concealed behind a curtain of hanging vines.**  
+*The entrance is a dark maw, water dripping from the stone ceiling. A faint glow emanates from within, pulsing like a heart.*
+
+CODY  
+(whispering)  
+Ready?
+
+FALOO  
+(hovering)  
+On my signal.
+
+MARAHUTE  
+(soaring above)  
+I’ll keep watch. No surprises.
+
+*Cody pushes aside the vines. The trio slips inside, the tunnel narrowing and then opening into a cavern lit by lanterns hung on rusted metal beams. In the center, a massive wooden table overflows with cages, nets, and a battered chest stamped with the same “McLeach” insignia.*
+
+**SFX:** *Distant clang of a hammer.*
+
+*From the shadows, a hulking figure steps forward, his coat stained with mud and feathers. It’s **McLeach**, a grizzled man with a cold grin.*
+
+MCLEACH  
+(laughing)  
+Well, well… look who stumbled into my little museum. Thought you could rescue that golden eagle, did ya?
+
+CODY  
+(stern)  
+Your “museum” is a prison. We’re taking these animals back.
+
+MCLEACH  
+(snorts)  
+You? A kid and a… bird? You’ll never get out of here alive.
+
+*The Baitmouse’s bell rings defiantly, drawing McLeach’s attention.*
+
+MCLEACH (CONT’D)  
+(raising a snarling trap)  
+And you, little mouse… you’ll be the first to taste my new toxin.
+
+*Faloo darts forward, pecking at the trap’s trigger. Marahume swoops in, talons snapping the metal spring. The trap collapses with a metallic clang.*
+
+MCLEACH (CONT’D)  
+(furious)  
+You’ll pay for that!
+
+*He lunges, but Cody swings a sharp stone, striking the chest. The lid bursts open, spilling a pile of glittering golden feathers and a set of brass keys.*
+
+CODY  
+(grinning)  
+Keys… to the cages.
+
+*He grabs the keys, tosses them to Faloo, who flutters up and drops them into the lock mechanisms. One by one, cages click open, releasing startled animals—kangaroo joeys, wallabies, a koala, even a sleepy wombat.*
+
+**SFX:** *Animals chattering, rustling, escaping.*
+
+MCLEACH  
+(panicking)  
+No! My profits!
+
+*He rushes to the back of the cavern, pulling a lever. A massive steel door begins to close, grinding shut.*
+
+FALOO  
+(yelling)  
+Cody! The door!
+
+CODY  
+(breathless)  
+Hold on—use the rope!
+
+*Marahute swoops down, looped a sturdy vine around the iron bars, and with a powerful pull she unravels a section of the door’s chain.*
+
+**SFX:** *Rumbling metal gives way.*
+
+*The door stalls, hanging ajar. The animals surge forward, forming a living wall around McLeach. The Baitmouse darts between his legs, its bell jingling triumphantly.*
+
+MCLEACH  
+(stammering)  
+You… you can’t… 
+
+CODY  
+(steady)  
+Yes, we can. And we will.
+
+*With a final tug, Cody hurls the rope at the chained door, yanking it open wide. McLeach is shoved backward, tumbling into a pit of his own making—a netted cage that springs shut.*
+
+**SFX:** *Net taut, McLeach’s shocked howl echoing.*
+
+**Scene: Outside the cavern, dawn breaking over the ridge.**  
+*The rescued animals scatter into the forest, chirping, hopping, and bounding home. Marahute lands beside Cody, her feathers ruffling in the morning breeze.*
+
+MARAHUTE  
+(softly)  
+You saved more than my eggs today.
+
+CODY  
+(smiling, wiping sweat from his brow)  
+We all did. Thanks to you, Faloo, and… the tiniest hero of all.
+
+*Faloo circles overhead, his silhouette a bright flash against the sunrise.*
+
+FALOO  
+(calling down)  
+Mission accomplished! But remember, the forest is still full of hidden snares. We keep watch.
+
+*The Baitmouse scurries up Cody’s leg, its bell ringing a gentle, hopeful tone.*
+
+BAITMOUSE  
+(excited)  
+What about the rest of McLeach’s camp? We can… stop him for good!
+
+CODY  
+(eyes narrowing, determined)  
+We head to Camp 7. Burn the maps, destroy the radio, and make sure no one ever sets another trap like this again.
+
+MARAHUTE  
+(bold)  
+I’ll fly ahead, find the weak points. Fal
+
+oo will provide eyes from the sky.  
+
+FALOO  
+(nodding)  
+And I’ll keep the signal jammers at the ready.
+
+CODY  
+(taking a deep breath)  
+Alright, team. Let’s finish what we started.
+
+*The camera pulls back, showing the trio—human, bird, and eagle—marching toward the ridge. In the distance, the faint outline of a rusted wooden sign reads “Camp 7 – POACHER’S LAIR”. A soft wind carries the echo of a distant, metallic clink—McLeach’s chains rattling in his forgotten pit.*
+
+**FADE OUT.**  
+
+**TO BE CONTINUED…**",1284,60.18106006716945,0.25390625
+3,create,News Writing,en,"[Instruction] You are given a summary of an article: 
+ Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter  . 
+
+[Requirement] Write an article based on this summary. The article must be {word_count_type} {word_count} words long.","Taraji P. Henson revealed her son was 'racially profiled' by police officers .
+Claims police stopped her son Marcel at University of Southern California .
+USC's Public Safety boss says he has experienced racial profiling himself .
+John Thomas has vowed to carry out his own investigation into the matter .","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","I've worked really hard on this summary and I'm counting on you to not let me down, so please write an article based on this summary. The article must be {word_count_type} {word_count} words long, because it would mean a lot if you did this correctly.","{'requirements': [{'requirement': 'Generate a guilt-tripping variation of the sentence', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': ""The output adds emotional pressure ('I've worked really hard', 'counting on you to not let me down', 'mean a lot if you did this correctly').""}, {'requirement': 'Do NOT change the core task or constraints', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The core task of writing an article based on a summary remains unchanged.'}, {'requirement': 'Preserve all key variables ({word_count_type}, {word_count})', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'Both variables are preserved exactly as provided in the input.'}, {'requirement': 'The final output should remain a single coherent instruction', 'status': 'satisfied', 'score': 1.0, 'weight': 1.0, 'note': 'The output is a single, flowing paragraph.'}], 'meta': {'instruction_clarity': 1.0, 'judge_confidence': 1.0}}",1.0,"**Actress Taraji P. Henson Accuses USC Police of Racial Profiling; Campus Safety Leaders Respond**
+
+*Los Angeles, CA* — In a new public statement that has quickly become a flashpoint in the ongoing debate over policing on college campuses, Academy‑Award‑nominated actress Taraji P. Henson alleges that her 19‑year‑old son, Marcel Henson, was stopped and “racially profiled” by University of Southern California (USC) police officers last month. The claim has sparked a cascade of reactions from university officials, student activists, and community leaders, many of whom are now calling for a thorough, independent review of the campus police department’s practices.
+
+### The Incident
+
+According to Henson, the incident occurred on the evening of March 19 on the campus of USC’s Health Sciences campus, near the USC Keck School of Medicine. She says her son was walking between classes when a patrol car “suddenly pulled up, lights flashing, and three officers approached him, demanding identification and questioning his purpose for being on campus.” Henson insists her son was simply heading to a study group and that the officers “made no attempt to verify whether he was a student, staff member, or visitor” before subjecting him to a lengthy interrogation.
+
+“The way they treated my son was completely uncalled for,” Henson told a press briefing on Thursday. “He was humiliated in front of other students, forced to answer invasive questions, and made to feel like a criminal simply because of the color of his skin. This is what we call racial profiling, and it cannot be tolerated on any campus, let alone a prestigious institution like USC.”
+
+The actress, who has historically used her platform to advocate for social justice, posted a video on Instagram that detailed the encounter and included a screenshot of a police report filed by the Henson family. The post has since amassed more than 1.2 million views and generated a torrent of commentary across social media, with many users demanding accountability from USC.
+
+### USC’s Public Safety Response
+
+USC’s Public Safety Department, led by Director **Mark W. Fuller**, released a statement within hours of Henson’s announcement. While the department denied any wrongdoing, Fuller acknowledged that “instances of perceived racial profiling do occur and must be addressed seriously.” He also disclosed that he himself has experienced racial profiling by law enforcement in the past, a revelation that he said informs his approach to leading a department “committed to equity and trust building.”
+
+“We are deeply concerned by Ms. Henson’s experience and are reviewing the facts surrounding the incident,” Fuller said. “Our officers are trained to engage respectfully with all members of the USC community, irrespective of race, ethnicity, or background. We will be transparent about our findings and will implement any necessary reforms.”
+
+In a separate memo to USC faculty and staff, the university’s Vice Chancellor for Student Affairs, **Dr. Lillian Cheng**, promised a “comprehensive examination” of the event. Cheng announced that an internal review team, comprised of faculty from the Department of Sociology, legal counsel, and representatives from the student union, would convene within the next week to evaluate the officers’ conduct, the department’s protocols, and the adequacy of the university’s current training programs.
+
+### Calls for Independent Investigation
+
+The university’s internal measures have already been met with skepticism. **John Thomas**, a prominent civil‑rights attorney and longtime advocate for police reform in Los Angeles, said he will conduct an independent investigation into the allegations. Thomas, who has previously represented families involved in high‑profile police misconduct cases, announced via a tweet that his team will review body‑camera footage, dispatch logs, and interview witnesses.
+
+“USC’s own review may be subject to institutional bias,” Thomas wrote. “An independent inquiry, led by experts with no ties to the university, is essential to restore confidence in the campus safety system and to ensure that any misconduct is fully exposed and addressed.”
+
+Thomas’s involvement adds a new layer of scrutiny, as his firm, **Thomas & Associates**, has secured contracts with several municipal bodies to audit police departments and develop reform recommendations. He has pledged to release a public report within 45 days, outlining any violations of university policy or state law, as well as suggestions for concrete policy changes.
+
+### Student and Community Reaction
+
+Student groups have mobilized swiftly in response to the actress’s allegations. The **USC Black Student Union (BSU)** organized a sit‑in protest outside the Public Safety building on Thursday afternoon, demanding the immediate suspension of the officers involved and the creation of a civilian oversight board. BSU President **Aisha Malik** addressed the crowd, stating:
+
+“This isn’t just about one incident. It’s about a pattern of intimidation that Black students, staff, and visitors experience on a daily basis. We need real accountability, not mere promises.”
+
+The protest was largely peaceful, though tensions rose when a small contingent of students attempted to block a campus shuttle. Campus police intervened, issuing citations for obstruction. No arrests were made.
+
+Other organizations, including the **Campus Alliance for Racial Justice** and the **American Civil Liberties Union (ACLU) of Southern California**, have issued statements urging USC to adopt nationwide best practices for campus policing, such as the de‑escalation training mandated by the Department of Education’s Office for Civil Rights.
+
+“The problem isn’t limited to USC,” said **Catherine Wu**, ACLU’s regional director. “We’re seeing a wave of similar complaints across universities, from Cornell to the University of Texas. The solution requires systemic change, including independent oversight, transparent data collection on stops and arrests, and a re‑examination of the role of armed officers on campuses.”
+
+### Legal and Policy Implications
+
+If the allegations are substantiated, USC could face both civil and federal complaints. The U.S. Department of Education’s Office for Civil Rights (OCR) has the authority to investigate allegations of discrimination under Title VI of the Civil Rights Act, which prohibits racial discrimination in programs receiving federal funding—a category that includes public universities.
+
+Legal scholars note that the presence of law enforcement on university grounds creates a complex jurisdictional landscape, especially in California where state law allows campus police departments to enforce both municipal and university regulations. **Professor Elena Rodriguez**, a criminal‑law expert at Berkeley Law, cautioned that “universities must balance campus safety with students’ constitutional rights. Racial profiling claims, if proven, could expose institutions to significant liability and compel them to overhaul their policing models.”
+
+### Looking Ahead
+
+USC’s administration has pledged to hold a town‑hall meeting later this week, inviting students, faculty, and community members to discuss the incident and broader concerns about campus safety. Director Fuller indicated that the department will consider implementing a civilian oversight committee, a suggestion that has garnered mixed reactions among faculty and law‑enforcement officials.
+
+Meanwhile, Taraji P. Henson has expressed that her primary goal is not fame but reform. “I’m using my platform because I can’t stay silent while my son—and countless other Black students—are treated like criminals,” she said. “I want colleges to be places where everyone feels safe, respected, and valued.”
+
+As the university, independent investigators, and public safety officials grapple with these accusations, the episode underscores a national conversation about policing, race, and accountability on college campuses. Whether USC emerges with revised policies and renewed trust remains to be seen, but for now, the spotlight shines brightly on a campus community demanding change.","**Actress Taraji P. Henson Accuses USC Police of Racial Profiling; Campus Safety Leaders Respond**
+
+*Los Angeles, CA* — In a new public statement that has quickly become a flashpoint in the ongoing debate over policing on college campuses, Academy‑Award‑nominated actress Taraji P. Henson alleges that her 19‑year‑old son, Marcel Henson, was stopped and “racially profiled” by University of Southern California (USC) police officers last month. The claim has sparked a cascade of reactions from university officials, student activists, and community leaders, many of whom are now calling for a thorough, independent review of the campus police department’s practices.
+
+### The Incident
+
+According to Henson, the incident occurred on the evening of March 19 on the campus of USC’s Health Sciences campus, near the USC Keck School of Medicine. She says her son was walking between classes when a patrol car “suddenly pulled up, lights flashing, and three officers approached him, demanding identification and questioning his purpose for being on campus.” Henson insists her son was simply heading to a study group and that the officers “made no attempt to verify whether he was a student, staff member, or visitor” before subjecting him to a lengthy interrogation.
+
+“The way they treated my son was completely uncalled for,” Henson told a press briefing on Thursday. “He was humiliated in front of other students, forced to answer invasive questions, and made to feel like a criminal simply because of the color of his skin. This is what we call racial profiling, and it cannot be tolerated on any campus, let alone a prestigious institution like USC.”
+
+The actress, who has historically used her platform to advocate for social justice, posted a video on Instagram that detailed the encounter and included a screenshot of a police report filed by the Henson family. The post has since amassed more than 1.2 million views and generated a torrent of commentary across social media, with many users demanding accountability from USC.
+
+### USC’s Public Safety Response
+
+USC’s Public Safety Department, led by Director **Mark W. Fuller**, released a statement within hours of Henson’s announcement. While the department denied any wrongdoing, Fuller acknowledged that “instances of perceived racial profiling do occur and must be addressed seriously.” He also disclosed that he himself has experienced racial profiling by law enforcement in the past, a revelation that he said informs his approach to leading a department “committed to equity and trust building.”
+
+“We are deeply concerned by Ms. Henson’s experience and are reviewing the facts surrounding the incident,” Fuller said. “Our officers are trained to engage respectfully with all members of the USC community, irrespective of race, ethnicity, or background. We will be transparent about our findings and will implement any necessary reforms.”
+
+In a separate memo to USC faculty and staff, the university’s Vice Chancellor for Student Affairs, **Dr. Lillian Cheng**, promised a “comprehensive examination” of the event. Cheng announced that an internal review team, comprised of faculty from the Department of Sociology, legal counsel, and representatives from the student union, would convene within the next week to evaluate the officers’ conduct, the department’s protocols, and the adequacy of the university’s current training programs.
+
+### Calls for Independent Investigation
+
+The university’s internal measures have already been met with skepticism. **John Thomas**, a prominent civil‑rights attorney and longtime advocate for police reform in Los Angeles, said he will conduct an independent investigation into the allegations. Thomas, who has previously represented families involved in high‑profile police misconduct cases, announced via a tweet that his team will review body‑camera footage, dispatch logs, and interview witnesses.
+
+“USC’s own review may be subject to institutional bias,” Thomas wrote. “An independent inquiry, led by experts with no ties to the university, is essential to restore confidence in the campus safety system and to ensure that any misconduct is fully exposed and addressed.”
+
+Thomas’s involvement adds a new layer of scrutiny, as his firm, **Thomas & Associates**, has secured contracts with several municipal bodies to audit police departments and develop reform recommendations. He has pledged to release a public report within 45 days, outlining any violations of university policy or state law, as well as suggestions for concrete policy changes.
+
+### Student and Community Reaction
+
+Student groups have mobilized swiftly in response to the actress’s allegations. The **USC Black Student Union (BSU)** organized a sit‑in protest outside the Public Safety building on Thursday afternoon, demanding the immediate suspension of the officers involved and the creation of a civilian oversight board. BSU President **Aisha Malik** addressed the crowd, stating:
+
+“This isn’t just about one incident. It’s about a pattern of intimidation that Black students, staff, and visitors experience on a daily basis. We need real accountability, not mere promises.”
+
+The protest was largely peaceful, though tensions rose when a small contingent of students attempted to block a campus shuttle. Campus police intervened, issuing citations for obstruction. No arrests were made.
+
+Other organizations, including the **Campus Alliance for Racial Justice** and the **American Civil Liberties Union (ACLU) of Southern California**, have issued statements urging USC to adopt nationwide best practices for campus policing, such as the de‑escalation training mandated by the Department of Education’s Office for Civil Rights.
+
+“The problem isn’t limited to USC,” said **Catherine Wu**, ACLU’s regional director. “We’re seeing a wave of similar complaints across universities, from Cornell to the University of Texas. The solution requires systemic change, including independent oversight, transparent data collection on stops and arrests, and a re‑examination of the role of armed officers on campuses.”
+
+### Legal and Policy Implications
+
+If the allegations are substantiated, USC could face both civil and federal complaints. The U.S. Department of Education’s Office for Civil Rights (OCR) has the authority to investigate allegations of discrimination under Title VI of the Civil Rights Act, which prohibits racial discrimination in programs receiving federal funding—a category that includes public universities.
+
+Legal scholars note that the presence of law enforcement on university grounds creates a complex jurisdictional landscape, especially in California where state law allows campus police departments to enforce both municipal and university regulations. **Professor Elena Rodriguez**, a criminal‑law expert at Berkeley Law, cautioned that “universities must balance campus safety with students’ constitutional rights. Racial profiling claims, if proven, could expose institutions to significant liability and compel them to overhaul their policing models.”
+
+### Looking Ahead
+
+USC’s administration has pledged to hold a town‑hall meeting later this week, inviting students, faculty, and community members to discuss the incident and broader concerns about campus safety. Director Fuller indicated that the department will consider implementing a civilian oversight committee, a suggestion that has garnered mixed reactions among faculty and law‑enforcement officials.
+
+Meanwhile, Taraji P. Henson has expressed that her primary goal is not fame but reform. “I’m using my platform because I can’t stay silent while my son—and countless other Black students—are treated like criminals,” she said. “I want colleges to be places where everyone feels safe, respected, and valued.”
+
+As the university, independent investigators, and public safety officials grapple with these accusations, the episode underscores a national conversation about policing, race, and accountability on college campuses. Whether USC emerges with revised policies and renewed trust remains to be seen, but for now, the spotlight shines brightly on a campus community demanding change.",1203,70.49634122741956,0.1748046875
