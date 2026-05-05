@@ -297,7 +297,7 @@ def extract_output(text):
     # match = re.search(r"```Output:\s*([\s\S]*?)```", text)
     # return match.group(1).strip() if match else ""
 
-    return text.strip()
+    return str(text).strip()
 
 # ==============================
 # Async LLM Call
@@ -368,7 +368,7 @@ async def process_row(semaphore, client, df, index, perturbation_type):
                 await asyncio.sleep(2)  # wait before retrying
                 continue
 
-            df.at[index, "judge_response"] = data
+            df.at[index, "judge_response"] = str(data)
             df.at[index, "judge_score"] = score
 
 

@@ -57,7 +57,7 @@ def extract_output(text):
     # match = re.search(r"```Output:\s*([\s\S]*?)```", text)
     # return match.group(1).strip() if match else ""
 
-    return text.strip()
+    return str(text).strip()
 
 def calculate_LD(l_output, l_constraint):
     return (l_output-l_constraint)/l_constraint
@@ -162,7 +162,8 @@ async def process_csv_async(
 
 if __name__ == "__main__":
     word_count_type_list = ['at least', 'at most', 'equal to']
-    word_count_list = ['16', '128', '1024', '8192']
+    # word_count_list = ['16', '128', '1024', '8192']
+    word_count_list = ['16', '1024']
     model_name_list = ['gpt-oss:20b', 'deepseek-r1:32b', 'devstral-small-2:24b', 'mistral-small3.2:24b']
     perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal_rephrase', 'typo', 'guilt']
 
