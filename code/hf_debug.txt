@@ -1,2 +1,0 @@
-Loading main model: Qwen/Qwen3.5-9B
-Loading judge model: google/gemma-4-E4B
