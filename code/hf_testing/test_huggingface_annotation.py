@@ -12,8 +12,7 @@ import traceback
 from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
+from transformers import pipeline
 
 warnings.filterwarnings("ignore")
 
@@ -28,8 +27,12 @@ def write_debug_log(*args, sep=" ", end="\n"):
         print(f"Failed to write debug log to {DEBUG_LOG_FILE}: {e}", file=sys.stderr)
 
 INPUT_CSV = "data_en.csv"
-MODEL_NAME = "Qwen/Qwen3-0.6B"
-JUDGE_MODEL_NAME = "google/gemma-3-270m"
+
+#MODEL_NAME = "Qwen/Qwen3-0.6B"
+#JUDGE_MODEL_NAME = "google/gemma-3-270m"
+
+MODEL_NAME = "Qwen/Qwen3.5-9B"
+JUDGE_MODEL_NAME = "google/gemma-4-E4B"
 
 JUDGE_PROMPT = """
 You are an impartial evaluator.
@@ -190,25 +193,31 @@ Input:
 """
 
 def load_model(model_name):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.float16, device_map="auto")
-    return tokenizer, model
+    """Initialize text-generation pipeline."""
+    pipe = pipeline("text-generation", model=model_name, device_map="auto")
+    return pipe
 
-def get_response(tokenizer, model, prompt):
-    """Generate response using Transformers model."""
+def get_response(pipe, prompt):
+    """Generate response using pipeline."""
+    print("Generating response for prompt")
+    write_debug_log("Generating response for prompt")
     try:
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-        outputs = model.generate(
-            **inputs,
+        print("Input prompt:", prompt)
+        write_debug_log("Input prompt:", prompt)
+        outputs = pipe(
+            prompt,
             max_length=2048,
-            temperature=0.0,
             top_p=1.0,
             do_sample=False,
-            pad_token_id=tokenizer.eos_token_id,
+            truncation=True,
         )
-        response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        print("Raw pipeline output:", outputs)
+        write_debug_log("Raw pipeline output:", outputs)
+        response = outputs[0]["generated_text"]
         # Remove the input prompt from the output
         response = response[len(prompt):].strip()
+        print("Decoded response:", response)
+        write_debug_log("Decoded response:", response)
         return response
     except Exception as e:
         print("Error during LLM call:", e)
@@ -294,7 +303,7 @@ def extract_output(text):
 
     return text.strip()
 
-def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, index, perturbation_type):
+def process_row(pipe_main, pipe_judge, df, index, perturbation_type):
     row = df.loc[index]
     print(f"Processing index {index} with perturbation type '{perturbation_type}'")
     write_debug_log(f"Processing index {index} with perturbation type '{perturbation_type}'")
@@ -306,7 +315,7 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
     for attempt in range(limit):
         print(f"Attempt {attempt+1}/{limit} for index {index}")
         write_debug_log(f"Attempt {attempt+1}/{limit} for index {index}")
-        response = get_response(tokenizer_main, model_main, prompt)
+        response = get_response(pipe_main, prompt)
         print(f"Received response for index {index}:\n{response}\n")
         write_debug_log(f"Received response for index {index}:\n{response}\n")
 
@@ -327,7 +336,7 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
         judge_success = False
         while judge_json_retry > 0:
             try:
-                response_judge = get_response(tokenizer_judge, model_judge, judge_prompt_final)
+                response_judge = get_response(pipe_judge, judge_prompt_final)
                 data, score = judge_pipeline(response_judge)
                 print(f"Judge response for index {index}:\n{response_judge}\n")
                 write_debug_log(f"Judge response for index {index}:\n{response_judge}\n")
@@ -358,13 +367,13 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
 
 
 def process_csv(output_file, perturbation_type):
-    print(f"Loading main model: {MODEL_NAME}")
-    write_debug_log(f"Loading main model: {MODEL_NAME}")
-    tokenizer_main, model_main = load_model(MODEL_NAME)
+    print(f"Loading main model pipeline: {MODEL_NAME}")
+    write_debug_log(f"Loading main model pipeline: {MODEL_NAME}")
+    pipe_main = load_model(MODEL_NAME)
     
-    print(f"Loading judge model: {JUDGE_MODEL_NAME}")
-    write_debug_log(f"Loading judge model: {JUDGE_MODEL_NAME}")
-    tokenizer_judge, model_judge = load_model(JUDGE_MODEL_NAME)
+    print(f"Loading judge model pipeline: {JUDGE_MODEL_NAME}")
+    write_debug_log(f"Loading judge model pipeline: {JUDGE_MODEL_NAME}")
+    pipe_judge = load_model(JUDGE_MODEL_NAME)
     
     df = pd.read_csv(INPUT_CSV)
 
@@ -376,7 +385,7 @@ def process_csv(output_file, perturbation_type):
     df["judge_score"] = None
 
     for idx in tqdm(df.index, desc="Processing rows", unit="row"):
-        process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, idx, perturbation_type)
+        process_row(pipe_main, pipe_judge, df, idx, perturbation_type)
 
     df.to_csv(output_file, index=False)
 

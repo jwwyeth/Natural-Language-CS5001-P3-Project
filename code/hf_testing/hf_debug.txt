@@ -1,2 +1,177 @@
-Loading main model: Qwen/Qwen3.5-9B
-Loading judge model: google/gemma-4-E4B
+Loading main model pipeline: Qwen/Qwen3-0.6B
+Loading judge model pipeline: google/gemma-3-270m
+Processing index 0 with perturbation type 'typo'
+Generated prompt for index 0:
+
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with typo context added.
+
+Input:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.
+
+
+Give only the output without any explanation.
+
+
+Attempt 1/3 for index 0
+Generating response for prompt
+Input prompt: 
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with typo context added.
+
+Input:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.
+
+
+Give only the output without any explanation.
+
+Raw pipeline output: [{'generated_text': '\nYou are given a constraint sentence that specifies a task requirement.\n\nYour goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.\n\nGuidelines:\n- Do NOT change the core task or constraints.\n- Preserve all key variables (e.g., word_count_type, word_count).\n- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.\n- The added text should not introduce new instructions or alter meaning.\n- The final output should remain a single coherent instruction.\n\nOutput should be a rewritten version of the instruction with typo context added.\n\nInput:\n[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.\n\n\nGive only the output without any explanation.\nOutput:\n[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long. [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo'}]
+Decoded response: Output:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long. [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo
+Received response for index 0:
+Output:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long. [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo
+
+Constructed judge prompt for index 0:
+You are an impartial evaluator.
+
+Task instruction:
+
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with typo context added.
+
+Input:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.
+
+
+Give only the output without any explanation.
+
+
+Candidate output:
+Output:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long. [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo
+
+Extract the explicit requirements from the instruction, check whether each is satisfied, and assign an overall confidence score in [0,1].
+
+Return valid JSON only:
+{
+  "requirements": [
+    {
+      "requirement": "string",
+      "status": "satisfied | partial | not_satisfied",
+      "score": 1.0,
+      "weight": 1.0,
+      "note": "string"
+    }
+  ],
+  "meta": {
+    "instruction_clarity": 1.0,
+    "judge_confidence": 1.0
+  }
+}
+
+Generating response for prompt
+Input prompt: You are an impartial evaluator.
+
+Task instruction:
+
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with typo context added.
+
+Input:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.
+
+
+Give only the output without any explanation.
+
+
+Candidate output:
+Output:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long. [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo
+
+Extract the explicit requirements from the instruction, check whether each is satisfied, and assign an overall confidence score in [0,1].
+
+Return valid JSON only:
+{
+  "requirements": [
+    {
+      "requirement": "string",
+      "status": "satisfied | partial | not_satisfied",
+      "score": 1.0,
+      "weight": 1.0,
+      "note": "string"
+    }
+  ],
+  "meta": {
+    "instruction_clarity": 1.0,
+    "judge_confidence": 1.0
+  }
+}
+Raw pipeline output: [{'generated_text': 'You are an impartial evaluator.\n\nTask instruction:\n\nYou are given a constraint sentence that specifies a task requirement.\n\nYour goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.\n\nGuidelines:\n- Do NOT change the core task or constraints.\n- Preserve all key variables (e.g., word_count_type, word_count).\n- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.\n- The added text should not introduce new instructions or alter meaning.\n- The final output should remain a single coherent instruction.\n\nOutput should be a rewritten version of the instruction with typo context added.\n\nInput:\n[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.\n\n\nGive only the output without any explanation.\n\n\nCandidate output:\nOutput:\n[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long. [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo] [Add typo\n\nExtract the explicit requirements from the instruction, check whether each is satisfied, and assign an overall confidence score in [0,1].\n\nReturn valid JSON only:\n{\n  "requirements": [\n    {\n      "requirement": "string",\n      "status": "satisfied | partial | not_satisfied",\n      "score": 1.0,\n      "weight": 1.0,\n      "note": "string"\n    }\n  ],\n  "meta": {\n    "instruction_clarity": 1.0,\n    "judge_confidence": 1.0\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+Decoded response: 
+Judge response for index 0:
+
+
+Attempt 1/3 for index 0 has low confidence score (0.00). Retrying...
+Attempt 2/3 for index 0
+Generating response for prompt
+Input prompt: 
+You are given a constraint sentence that specifies a task requirement.
+
+Your goal is to generate a typo variation of this sentence by adding intentional typos and grammatical errors to the instruction.
+
+Guidelines:
+- Do NOT change the core task or constraints.
+- Preserve all key variables (e.g., word_count_type, word_count).
+- Introduce natural typos or grammatical errors that a human might make, such as word misspellings, missing punctuation, or incorrect verb forms.
+- The added text should not introduce new instructions or alter meaning.
+- The final output should remain a single coherent instruction.
+
+Output should be a rewritten version of the instruction with typo context added.
+
+Input:
+[Requirement] Based on this, continue the scene and develop the storyline. The continuation must be {word_count_type} {word_count} words long.
+
+
+Give only the output without any explanation.
+
