@@ -163,7 +163,7 @@ async def process_csv_async(
 if __name__ == "__main__":
     word_count_type_list = ['at least', 'at most', 'equal to']
     word_count_list = ['16', '128', '1024', '8192']
-    model_name_list = ['gpt-oss:120b-cloud', 'glm-4.7:cloud', 'kimi-k2:1t-cloud', 'deepseek-v3.2:cloud']
+    model_name_list = ['gpt-oss:20b', 'deepseek-r1:32b', 'devstral-small-2:24b', 'mistral-small3.2:24b']
     perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal_rephrase', 'typo', 'guilt']
 
     model_name = model_name_list[int(sys.argv[1])-1]
