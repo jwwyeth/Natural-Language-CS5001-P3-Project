@@ -15,8 +15,12 @@ warnings.filterwarnings("ignore")
 
 
 INPUT_CSV = "data_en.csv"
-MODEL_NAME = "qwen3.5:cloud"
-JUDGE_MODEL_NAME = "gemma4:31b-cloud"
+
+# MODEL_NAME = "qwen3.5:cloud"
+# JUDGE_MODEL_NAME = "gemma4:31b-cloud"
+
+MODEL_NAME = "qwen3.6:latest"
+JUDGE_MODEL_NAME = "gemma4:latest"
 
 # ==============================
 # Prompts
