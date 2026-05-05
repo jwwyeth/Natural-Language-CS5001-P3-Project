@@ -6,29 +6,23 @@ import json
 import time
 import warnings
 import traceback
-import builtins
 from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-import accelerate
 
 warnings.filterwarnings("ignore")
 
 DEBUG_LOG_FILE = Path(__file__).resolve().parent / "hf_debug.txt"
 
-def debug_print(*args, **kwargs):
-    sep = kwargs.pop("sep", " ")
-    end = kwargs.pop("end", "\n")
-    flush = kwargs.pop("flush", False)
+def write_debug_log(*args, sep=" ", end="\n"):
     text = sep.join(str(arg) for arg in args) + end
-    builtins.print(text, end="", flush=flush)
     try:
         with open(DEBUG_LOG_FILE, "a", encoding="utf-8") as log_file:
             log_file.write(text)
-    except Exception:
-        builtins.print(f"Failed to write debug log to {DEBUG_LOG_FILE}", file=sys.stderr)
+    except Exception as e:
+        print(f"Failed to write debug log to {DEBUG_LOG_FILE}: {e}", file=sys.stderr)
 
 INPUT_CSV = "data_en.csv"
 MODEL_NAME = "Qwen/Qwen3.5-9B"
@@ -194,7 +188,7 @@ Input:
 
 def load_model(model_name):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
+    model = AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.float16, device_map="auto")
     return tokenizer, model
 
 def get_response(tokenizer, model, prompt):
@@ -214,7 +208,8 @@ def get_response(tokenizer, model, prompt):
         response = response[len(prompt):].strip()
         return response
     except Exception as e:
-        debug_print("Error during LLM call:", e)
+        print("Error during LLM call:", e)
+        write_debug_log("Error during LLM call:", e)
         return None
 
 def build_judge_prompt(task_prompt, task_output):
@@ -298,26 +293,32 @@ def extract_output(text):
 
 def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, index, perturbation_type):
     row = df.loc[index]
-    debug_print(f"Processing index {index} with perturbation type '{perturbation_type}'")
+    print(f"Processing index {index} with perturbation type '{perturbation_type}'")
+    write_debug_log(f"Processing index {index} with perturbation type '{perturbation_type}'")
     prompt = process_prompt(row["task"], perturbation_type)
-    debug_print(f"Generated prompt for index {index}:\n{prompt}\n")
+    print(f"Generated prompt for index {index}:\n{prompt}\n")
+    write_debug_log(f"Generated prompt for index {index}:\n{prompt}\n")
 
     limit = 3
     for attempt in range(limit):
-        debug_print(f"Attempt {attempt+1}/{limit} for index {index}")
+        print(f"Attempt {attempt+1}/{limit} for index {index}")
+        write_debug_log(f"Attempt {attempt+1}/{limit} for index {index}")
         response = get_response(tokenizer_main, model_main, prompt)
-        debug_print(f"Received response for index {index}:\n{response}\n")
+        print(f"Received response for index {index}:\n{response}\n")
+        write_debug_log(f"Received response for index {index}:\n{response}\n")
 
         df.at[index, "annotation_response"] = response
         df.loc[[index], ["perturbed_prompt"]] = df.loc[[index], "annotation_response"].apply(extract_output)
 
         val = df.at[index, "perturbed_prompt"]
         if pd.isna(val) or val == "":
-            debug_print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
+            print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
+            write_debug_log(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
             continue
 
         judge_prompt_final = build_judge_prompt(prompt, val)
-        debug_print(f"Constructed judge prompt for index {index}:\n{judge_prompt_final}\n")
+        print(f"Constructed judge prompt for index {index}:\n{judge_prompt_final}\n")
+        write_debug_log(f"Constructed judge prompt for index {index}:\n{judge_prompt_final}\n")
 
         judge_json_retry = 3
         judge_success = False
@@ -325,19 +326,23 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
             try:
                 response_judge = get_response(tokenizer_judge, model_judge, judge_prompt_final)
                 data, score = judge_pipeline(response_judge)
-                debug_print(f"Judge response for index {index}:\n{response_judge}\n")
+                print(f"Judge response for index {index}:\n{response_judge}\n")
+                write_debug_log(f"Judge response for index {index}:\n{response_judge}\n")
                 judge_success = True
                 break
             except Exception as e:
-                debug_print(f"Error occurred while processing judge response for index {index}: {e}")
+                print(f"Error occurred while processing judge response for index {index}: {e}")
+                write_debug_log(f"Error occurred while processing judge response for index {index}: {e}")
                 judge_json_retry -= 1
 
         if not judge_success:
-            debug_print(f"Failed to process judge response for index {index} after multiple attempts. Skipping...")
+            print(f"Failed to process judge response for index {index} after multiple attempts. Skipping...")
+            write_debug_log(f"Failed to process judge response for index {index} after multiple attempts. Skipping...")
             return
 
         if score < 0.7:
-            debug_print(f"Attempt {attempt+1}/{limit} for index {index} has low confidence score ({score:.2f}). Retrying...")
+            print(f"Attempt {attempt+1}/{limit} for index {index} has low confidence score ({score:.2f}). Retrying...")
+            write_debug_log(f"Attempt {attempt+1}/{limit} for index {index} has low confidence score ({score:.2f}). Retrying...")
             continue
 
         df.at[index, "judge_response"] = data
@@ -345,13 +350,17 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
 
         break
 
-    debug_print(f"Successfully processed index {index} with confidence score {score:.2f}")
+    print(f"Successfully processed index {index} with confidence score {score:.2f}")
+    write_debug_log(f"Successfully processed index {index} with confidence score {score:.2f}")
+
 
 def process_csv(output_file, perturbation_type):
-    debug_print(f"Loading main model: {MODEL_NAME}")
+    print(f"Loading main model: {MODEL_NAME}")
+    write_debug_log(f"Loading main model: {MODEL_NAME}")
     tokenizer_main, model_main = load_model(MODEL_NAME)
     
-    debug_print(f"Loading judge model: {JUDGE_MODEL_NAME}")
+    print(f"Loading judge model: {JUDGE_MODEL_NAME}")
+    write_debug_log(f"Loading judge model: {JUDGE_MODEL_NAME}")
     tokenizer_judge, model_judge = load_model(JUDGE_MODEL_NAME)
     
     df = pd.read_csv(INPUT_CSV)
@@ -380,6 +389,10 @@ if __name__ == "__main__":
 
     output_csv = "annotation/"+perturbation_type+"/annotation_"+MODEL_NAME.replace(":", "-")+".csv"
     os.makedirs(dir_path, exist_ok=True)
+
+    # Create debug log file if it doesn't exist, or clear it if it does
+    with open(DEBUG_LOG_FILE, "w", encoding="utf-8") as log_file:
+        pass
 
     process_csv(
         output_csv,
