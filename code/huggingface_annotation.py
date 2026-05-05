@@ -283,11 +283,15 @@ def extract_output(text):
 
 def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, index, perturbation_type):
     row = df.loc[index]
+    print(f"Processing index {index} with perturbation type '{perturbation_type}'")
     prompt = process_prompt(row["task"], perturbation_type)
+    print(f"Generated prompt for index {index}:\n{prompt}\n")
 
     limit = 3
     for attempt in range(limit):
+        print(f"Attempt {attempt+1}/{limit} for index {index}")
         response = get_response(tokenizer_main, model_main, prompt)
+        print(f"Received response for index {index}:\n{response}\n")
 
         df.at[index, "annotation_response"] = response
         df.loc[[index], ["perturbed_prompt"]] = df.loc[[index], "annotation_response"].apply(extract_output)
@@ -298,6 +302,7 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
             continue
 
         judge_prompt_final = build_judge_prompt(prompt, val)
+        print(f"Constructed judge prompt for index {index}:\n{judge_prompt_final}\n")
 
         judge_json_retry = 3
         judge_success = False
@@ -305,6 +310,7 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
             try:
                 response_judge = get_response(tokenizer_judge, model_judge, judge_prompt_final)
                 data, score = judge_pipeline(response_judge)
+                print(f"Judge response for index {index}:\n{response_judge}\n")
                 judge_success = True
                 break
             except Exception as e:
@@ -317,11 +323,14 @@ def process_row(tokenizer_main, model_main, tokenizer_judge, model_judge, df, in
 
         if score < 0.7:
             print(f"Attempt {attempt+1}/{limit} for index {index} has low confidence score ({score:.2f}). Retrying...")
-            time.sleep(2)  # wait before retrying
             continue
 
         df.at[index, "judge_response"] = data
         df.at[index, "judge_score"] = score
+
+        break
+
+    print(f"Successfully processed index {index} with confidence score {score:.2f}")
 
 def process_csv(output_file, perturbation_type):
     print(f"Loading main model: {MODEL_NAME}")
