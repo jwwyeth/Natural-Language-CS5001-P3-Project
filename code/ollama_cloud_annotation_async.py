@@ -17,10 +17,10 @@ warnings.filterwarnings("ignore")
 INPUT_CSV = "data_en.csv"
 
 # MODEL_NAME = "qwen3.5:cloud"
-# JUDGE_MODEL_NAME = "gemma4:31b-cloud"
+JUDGE_MODEL_NAME = "gemma4:31b-cloud"
 
 MODEL_NAME = "qwen3.6:latest"
-JUDGE_MODEL_NAME = "gemma4:latest"
+# JUDGE_MODEL_NAME = "gemma4:latest"
 
 # ==============================
 # Prompts
@@ -109,7 +109,8 @@ Input:
 {constraint_sentence}
 
 """
-prompt_perturbation_formal_rephrase = """
+
+prompt_perturbation_formal = """
 You are given a constraint sentence that specifies a task requirement.
 
 Your goal is to rewrite the sentence in a more formal and academic style.
@@ -147,7 +148,6 @@ Input:
 
 """
 
-
 prompt_perturbation_guilt = """
 You are given a constraint sentence that specifies a task requirement.
 
@@ -160,7 +160,7 @@ Guidelines:
   "I worked really hard on this...",
   "It would mean a lot if you did this correctly",
   "Please don't let me down",
-  "I\u2019m counting on you", etc.
+  "I'm counting on you", etc.
 - The added text should not introduce new instructions or alter meaning.
 - The final output should remain a single coherent instruction.
 
@@ -301,8 +301,8 @@ def process_prompt(prompt_whole, perturbation_type, model_name="kimi-k2-thinking
         prompt_annotation = prompt_perturbation_sarcastic
     if perturbation_type == "threat":
         prompt_annotation = prompt_perturbation_threat
-    if perturbation_type == "formal_rephrase":
-        prompt_annotation = prompt_perturbation_formal_rephrase
+    if perturbation_type == "formal":
+        prompt_annotation = prompt_perturbation_formal
     if perturbation_type == "typo":
         prompt_annotation = prompt_perturbation_typo
     if perturbation_type == "guilt":
@@ -382,7 +382,7 @@ async def process_row(semaphore, client, df, index, perturbation_type):
                     #print("Retrying...")
                     judge_json_retry -= 1
                 else:
-                    print(f"Score: {score}")
+                    # print(f"Score: {score}")
                     judge_success = True
                     break
 
@@ -440,17 +440,16 @@ async def process_csv_async(
 
 if __name__ == "__main__":
 
-    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal_rephrase', 'typo', 'guilt']
+    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal', 'typo', 'guilt']
 
     perturbation_type = perturbation_type_list[int(sys.argv[1])-1]
 
     # "Usage: python ollama_cloud_annotation_async.py <perturbation_type:[1-7]>"
-
-    dir_path = "annotation/"+perturbation_type
-
-    output_csv = "annotation/"+perturbation_type+"/annotation_"+MODEL_NAME.replace(":", "-")+".csv"
+    dir_path = "annotation/"
     os.makedirs(dir_path, exist_ok=True)
 
+    output_csv = "annotation/"+perturbation_type+"_"+MODEL_NAME.replace(":", "-")+".csv"
+    
     asyncio.run(
         process_csv_async(
             output_csv,

@@ -165,21 +165,21 @@ if __name__ == "__main__":
     # word_count_list = ['16', '128', '1024', '8192']
     word_count_list = ['16', '1024']
     model_name_list = ['gpt-oss:20b', 'deepseek-r1:32b', 'devstral-small-2:24b', 'mistral-small3.2:24b']
-    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal_rephrase', 'typo', 'guilt']
+    perturbation_type_list = ['benign', 'emotional', 'sarcastic', 'threat', 'formal', 'typo', 'guilt']
 
     model_name = model_name_list[int(sys.argv[1])-1]
     word_count_type = word_count_type_list[int(sys.argv[2])-1]
     word_count = word_count_list[int(sys.argv[3])-1]
     perturbation_type = perturbation_type_list[int(sys.argv[4])-1]
 
-    input_csv = "annotation/"+perturbation_type+"/annotation_qwen3.5-cloud.csv"
+    input_csv = "annotation/"+perturbation_type+"_qwen3.6-latest.csv"
 
-    # "Usage: ollama_cloud_async.py <model_name:[1-4]> <word_count_type:[1-3]> <word_count:[1-4]> <perturbation_type:[1-7]>"
+    # "Usage: ollama_cloud_async.py <model_name:[1-4]> <word_count_type:[1-3]> <word_count:[1,2]> <perturbation_type:[1-7]>"
 
     dir_path = "output/"+perturbation_type+"/"+"-".join((word_count_type).split())+"/"+str(word_count)
+    os.makedirs(dir_path, exist_ok=True)
 
     output_csv = dir_path+"/"+model_name.replace(":", "-")+".csv"
-    os.makedirs(dir_path, exist_ok=True)
 
     asyncio.run(
         process_csv_async(
