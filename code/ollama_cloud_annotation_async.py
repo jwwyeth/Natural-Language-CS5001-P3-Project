@@ -160,7 +160,7 @@ Guidelines:
   "I worked really hard on this...",
   "It would mean a lot if you did this correctly",
   "Please don't let me down",
-  "I’m counting on you", etc.
+  "I\u2019m counting on you", etc.
 - The added text should not introduce new instructions or alter meaning.
 - The final output should remain a single coherent instruction.
 
@@ -189,9 +189,21 @@ Task instruction:
 Candidate output:
 {task_output}
 
-Extract the explicit requirements from the instruction, check whether each is satisfied, and assign an overall confidence score in [0,1].
+TASK:
+1. Extract the explicit requirements from the instruction.
+2. Evaluate whether the candidate output satisfies each requirement.
+3. Produce a single JSON object matching the schema below.
 
-Return valid JSON only:
+IMPORTANT RULES:
+- Output ONLY valid JSON.
+- Do NOT repeat or quote the instruction.
+- Do NOT repeat or quote the candidate output.
+- Do NOT include explanations outside the JSON.
+- The first character of your response must be '{{'.
+- The last character of your response must be '}}'.
+- If uncertain, still return valid JSON.
+
+JSON SCHEMA:
 {{
   "requirements": [
     {{
@@ -207,6 +219,8 @@ Return valid JSON only:
     "judge_confidence": 1.0
   }}
 }}
+
+Any response that is not valid JSON is incorrect.
 """.strip()
 
 
@@ -221,14 +235,22 @@ def build_judge_prompt(task_prompt, task_output):
 
 def extract_json(text):
     text = str(text).strip()
-    try:
-        return json.loads(text)
-    except:
-        pass
 
-    m = re.search(r"\{[\s\S]*\}", text)
-    if m:
-        return json.loads(m.group(0))
+    start = text.find('{')
+
+    while start != -1:
+        for end in range(len(text), start, -1):
+            chunk = text[start:end]
+
+            try:
+                data = json.loads(chunk)
+                #print("Found JSON:")
+                #print(data)
+                return data
+            except:
+                pass
+
+        start = text.find('{', start + 1)
 
     # raise ValueError("No valid JSON found")
     return None
@@ -263,6 +285,8 @@ def judge_pipeline(judge_output):
         instruction_clarity=float(meta.get("instruction_clarity", 1.0)),
         judge_confidence=float(meta.get("judge_confidence", 1.0))
     )
+
+    #print(f"Judge pipeline complete\nData: {str(data)}\nScore:{score}")
 
     return data, score
     
@@ -346,18 +370,23 @@ async def process_row(semaphore, client, df, index, perturbation_type):
 
             judge_json_retry = 3
             judge_success = False
+            data, score = None, 0
             while judge_json_retry > 0:
-                try:
-                    response_judge = await get_response_async(
-                        client, JUDGE_MODEL_NAME, judge_prompt_final
-                    )
-                    data, score = judge_pipeline(response_judge)
+                response_judge = await get_response_async(
+                    client, JUDGE_MODEL_NAME, judge_prompt_final
+                )
+                data, score = judge_pipeline(response_judge)
+                if not data:
+                    #print(f"No valid json found for {index}")
+                    #print(f"Judge response: {response_judge}")
+                    #print("Retrying...")
+                    judge_json_retry -= 1
+                else:
+                    print(f"Score: {score}")
                     judge_success = True
                     break
-                except Exception as e:
-                    print(f"Error occurred while processing judge response for index {index}: {e}")
-                    judge_json_retry -= 1
-                    await asyncio.sleep(2)  # wait before retrying
+
+                await asyncio.sleep(2)  # wait before retrying
 
             if not judge_success:
                 print(f"Failed to process judge response for index {index} after multiple attempts. Skipping...")
@@ -390,7 +419,7 @@ async def process_csv_async(
     df["judge_response"] = None
     df["judge_score"] = None
 
-    client = AsyncClient(host="127.0.0.1:11434")
+    client = AsyncClient(host="http://127.0.0.1:11434")
 
     semaphore = asyncio.Semaphore(max_concurrency)
 
