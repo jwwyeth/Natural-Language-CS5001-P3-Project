@@ -1,2 +1,3 @@
 env/
 code/logs
+code/__pycache__

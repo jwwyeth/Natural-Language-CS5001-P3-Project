@@ -3,9 +3,11 @@ import os
 import re
 import sys
 import math
+import time
 import asyncio
 import warnings
 import traceback
+import subprocess
 import pandas as pd
 from ollama import AsyncClient
 from tqdm.asyncio import tqdm_asyncio
@@ -13,6 +15,20 @@ from tqdm.asyncio import tqdm_asyncio
 
 warnings.filterwarnings("ignore")
 
+# ==============================
+# Constants
+# ==============================
+
+OLLAMA_TIMEOUT_SECONDS = 300  # 5 minutes
+MODEL_RESTART_DELAY = 10  # seconds to wait after stopping model
+
+MODEL_DIR="/share/ceph/scratch/gas2bt/ollama_models"
+CONTAINER="ollama_container"
+# ==============================
+# Global State
+# ==============================
+
+model_stopped_event = None  # Event to signal when model is stopped due to timeout
 # ==============================
 # Prompts
 # ==============================
@@ -65,20 +81,64 @@ def calculate_LD(l_output, l_constraint):
 def calculate_LS(LD, k1=5, k2=2):
     return 100 * math.exp(k1 * LD if LD < 0 else -k2 * LD)
 
+def kill_ollama_process(model_name):
+    """Stop the Ollama model using apptainer exec command"""
+    global model_stopped_event
+    try:
+        print("\n⚠️  Timeout reached! Stopping Ollama model...")
+        
+        # Construct apptainer command
+        cmd = [
+            "apptainer", "exec", "--nv",
+            "--bind", f"{MODEL_DIR}:/models",
+            "--env", "OLLAMA_MODELS=/models",
+            CONTAINER,
+            "ollama", "stop", model_name
+        ]
+        
+        subprocess.run(cmd, capture_output=True, timeout=5)
+        print(f"✓ Ollama model '{model_name}' stopped")
+        
+        # Signal that model has been stopped - this will cancel other requests
+        if model_stopped_event:
+            model_stopped_event.set()
+            
+        # Wait a moment for the process to fully stop
+        time.sleep(2)
+    except Exception as e:
+        print(f"Error stopping Ollama model: {e}")
+
 # ==============================
 # Async LLM Call
 # ==============================
 
 async def get_response_async(client, model_name, prompt):
-
+    """Get response from Ollama with timeout handling"""
+    global model_stopped_event
+    
     try:
-        response = await client.chat(
-            model=model_name,
-            messages=[{"role": "user", "content": prompt}],
-            options={"temperature": 0, "num_ctx": 65536},
+        # Check if model was stopped by another request
+        if model_stopped_event and model_stopped_event.is_set():
+            print(f"⚠️  Model '{model_name}' was stopped due to timeout in another request")
+            raise asyncio.CancelledError("Model stopped due to timeout")
+            
+        response = await asyncio.wait_for(
+            client.chat(
+                model=model_name,
+                messages=[{"role": "user", "content": prompt}],
+                options={"temperature": 0, "num_ctx": 65536},
+            ),
+            timeout=OLLAMA_TIMEOUT_SECONDS
         )
         return response["message"]["content"]
             
+    except asyncio.TimeoutError:
+        print(f"⚠️  Request timeout after {OLLAMA_TIMEOUT_SECONDS} seconds")
+        kill_ollama_process(model_name)
+        raise
+    except asyncio.CancelledError:
+        # Model was stopped by another request - re-raise to trigger retry
+        raise
     except Exception as e:
         print("Error during LLM call:", e)
         traceback.print_exc()
@@ -93,23 +153,46 @@ async def process_row(semaphore, client, df, index, word_count_type, word_count,
         row = df.loc[index]
         prompt = process_prompt(row["perturbed_prompt"], row["raw_data"], word_count_type, word_count)
 
-        # print(word_count)
-
-
         limit = 3
+        timeout_occurred = False
+        
         for attempt in range(limit):
-            response = await get_response_async(
-                client, model_name, prompt
-            )
+            try:
+                response = await get_response_async(
+                    client, model_name, prompt
+                )
 
-            df.at[index, "response"] = response
-            df.loc[[index], ["output"]] = (
-                df.loc[[index], "response"].apply(extract_output)
-            )
-            val = df.at[index, "output"]
-            if pd.isna(val) or val == "":
-                print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
-                await asyncio.sleep(2)  # wait before retrying
+                df.at[index, "response"] = response
+                df.loc[[index], ["output"]] = (
+                    df.loc[[index], "response"].apply(extract_output)
+                )
+                val = df.at[index, "output"]
+                if pd.isna(val) or val == "":
+                    print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
+                    await asyncio.sleep(2)  # wait before retrying
+                else:
+                    break  # Success, exit retry loop
+                    
+            except (asyncio.TimeoutError, asyncio.CancelledError) as e:
+                error_type = "TIMEOUT" if isinstance(e, asyncio.TimeoutError) else "MODEL_STOPPED"
+                print(f"Attempt {attempt+1}/{limit}: {error_type} for index {index}")
+                
+                # If this is the first time we've detected a model stop, restart it
+                if isinstance(e, asyncio.TimeoutError) or (model_stopped_event and model_stopped_event.is_set()):
+                    if not timeout_occurred:  # Only restart once per batch of failures
+                        print(f"🔄 Attempting to restart model '{model_name}'...")
+                        # Clear the stopped event to allow new requests
+                        if model_stopped_event:
+                            model_stopped_event.clear()
+                        timeout_occurred = True
+                
+                # Wait for model to be ready before retrying
+                await asyncio.sleep(MODEL_RESTART_DELAY)
+                print(f"Retrying index {index}...")
+                continue
+            except Exception as e:
+                print(f"Attempt {attempt+1}/{limit} error for index {index}: {e}")
+                await asyncio.sleep(2)
 
         output = df.at[index, "output"]
         l_output = len(str(output).split()) if output else 0
@@ -131,6 +214,11 @@ async def process_csv_async(
     word_count,
     max_concurrency=4,
 ):
+    global model_stopped_event
+    
+    # Initialize the global event for this processing run
+    model_stopped_event = asyncio.Event()
+    
     df = pd.read_csv(input_file)
 
     #df = df.iloc[:2]
