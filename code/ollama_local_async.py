@@ -155,6 +155,47 @@ def kill_ollama_process(model_name):
     except Exception as e:
         log(f"Error stopping Ollama model: {e}")
 
+async def wait_for_chat_or_model_reset(client, model_name, prompt):
+    """Wait for Ollama chat response or a model reset event."""
+    global model_stopped_event
+
+    if model_stopped_event and model_stopped_event.is_set():
+        raise asyncio.CancelledError("Model stopped due to timeout")
+
+    chat_task = asyncio.create_task(
+        client.chat(
+            model=model_name,
+            messages=[{"role": "user", "content": prompt}],
+            options={"temperature": 0, "num_ctx": 65536},
+        )
+    )
+    reset_task = asyncio.create_task(model_stopped_event.wait())
+
+    try:
+        done, pending = await asyncio.wait(
+            {chat_task, reset_task},
+            timeout=OLLAMA_TIMEOUT_SECONDS,
+            return_when=asyncio.FIRST_COMPLETED,
+        )
+
+        if reset_task in done:
+            chat_task.cancel()
+            try:
+                await chat_task
+            except asyncio.CancelledError:
+                pass
+            raise asyncio.CancelledError("Model stopped due to timeout")
+
+        if chat_task in done:
+            return chat_task.result()
+
+        raise asyncio.TimeoutError()
+    finally:
+        if not chat_task.done():
+            chat_task.cancel()
+        if not reset_task.done():
+            reset_task.cancel()
+
 # ==============================
 # Async LLM Call
 # ==============================
@@ -164,19 +205,7 @@ async def get_response_async(client, model_name, prompt):
     global model_stopped_event
     
     try:
-        # Check if model was stopped by another request
-        if model_stopped_event and model_stopped_event.is_set():
-            log(f"⚠️  Model '{model_name}' was stopped due to timeout in another request")
-            raise asyncio.CancelledError("Model stopped due to timeout")
-            
-        response = await asyncio.wait_for(
-            client.chat(
-                model=model_name,
-                messages=[{"role": "user", "content": prompt}],
-                options={"temperature": 0, "num_ctx": 65536},
-            ),
-            timeout=OLLAMA_TIMEOUT_SECONDS
-        )
+        response = await wait_for_chat_or_model_reset(client, model_name, prompt)
         return response["message"]["content"]
             
     except asyncio.TimeoutError:
