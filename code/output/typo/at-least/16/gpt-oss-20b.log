@@ -1,0 +1,572 @@
+===== Batch run started: 2026-05-08T10:01:14.065496 =====
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 87. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 50. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 106. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 69. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 13. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 32. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 87. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 50. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 13. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 32. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 106. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 69. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 3/3 failed for index 87. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 3/3 failed for index 50. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 3/3 failed for index 69. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 3/3 failed for index 13. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 3/3 failed for index 106. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 3/3 failed for index 32. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 124. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 143. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 33. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 161. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 51. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 1/3 failed for index 14. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 124. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 143. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 33. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 51. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 161. Retrying...
+Error during LLM call: model 'gpt-oss:20b' not found (status code: 404)
+Traceback (most recent call last):
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 208, in get_response_async
+    response = await wait_for_chat_or_model_reset(client, model_name, prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\code\ollama_local_async.py", line 190, in wait_for_chat_or_model_reset
+    return chat_task.result()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 1020, in chat
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 792, in _request
+    return cls(**(await self._request_raw(*args, **kwargs)).json())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\garvs\Documents\Github\Natural-Language-CS5001-P3-Project\env\Lib\site-packages\ollama\_client.py", line 736, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model 'gpt-oss:20b' not found (status code: 404)
+
+Attempt 2/3 failed for index 14. Retrying...
+===== Batch run finished: 2026-05-08T10:01:22.912300 =====
