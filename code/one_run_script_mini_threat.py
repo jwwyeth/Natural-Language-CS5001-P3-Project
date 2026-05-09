@@ -14,9 +14,6 @@ for a in range(1, 4):      # 1–3,     word type
     for b in range(1, 3):  # 1–2      word count
         #for c in range(1, 8):  # 1–7  perturbation type
 
-        if a == 1 and b == 1:
-            continue  # already done
-
         log_file = os.path.join(log_dir, f"run_{i}_{a}_{b}_4.log")
 
         cmd = [sys.executable, "ollama_async.py", str(i), str(a), str(b), str(4)]
