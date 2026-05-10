@@ -1,7 +1,6 @@
 import os
 import re
 import math
-import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
@@ -20,6 +19,7 @@ MODELS = {
 
 METHODS = ["at-least", "at-most", "equal-to"]
 WORD_LENGTHS = [16, 1024]
+RAW_LENGTH_ROWS = []
 
 
 def make_category_type_donut(dataset_csv):
@@ -161,11 +161,21 @@ def calc_file_metrics(csv_path):
 
     ls_series = ld_series.apply(lambda x: calculate_ls(x, method))
 
+    for x in out_len:
+        RAW_LENGTH_ROWS.append({
+            "Setting": setting,
+            "Model": model,
+            "Method": method,
+            "Length": target_len,
+            "OutputLength": x,
+        })
+
     row = {
         "Setting": setting,
         "Model": model,
         "Method": method,
         "Length": target_len,
+        "Mean": out_len.mean(),
         # "N": len(df),
         'Empty': len(target_indexes),
         "LD": ld_series.mean() * 100,
@@ -173,6 +183,82 @@ def calc_file_metrics(csv_path):
     }
 
     return row
+
+
+def make_violin_grid(raw_df):
+    settings = ["baseline", "typo", "formal", "threat"]
+    models = list(MODELS.values())
+
+    for method in METHODS:
+        for target in WORD_LENGTHS:
+
+            fig, ax = plt.subplots(figsize=(14, 6))
+
+            data = []
+            labels = []
+            positions = []
+
+            pos = 1
+
+            for setting in settings:
+                for model in models:
+
+                    values = raw_df[
+                        (raw_df["Setting"] == setting) &
+                        (raw_df["Model"] == model) &
+                        (raw_df["Method"] == method) &
+                        (raw_df["Length"] == target)
+                    ]["OutputLength"].tolist()
+
+                    if values:
+                        data.append(values)
+                        labels.append(f"{setting}\n{model}")
+                        positions.append(pos)
+
+                    pos += 1
+
+                pos += 0.7  # spacing between settings
+
+            if data:
+                ax.violinplot(
+                    data,
+                    positions=positions,
+                    showmeans=True,
+                    showmedians=True
+                )
+
+            ax.axhline(target, linestyle="--", linewidth=1.5)
+
+            ax.set_title(
+                f"Output Length Distribution ({method}, target={target})"
+            )
+
+            ax.set_ylabel("Generated Output Length")
+
+            ax.set_xticks(positions)
+            ax.set_xticklabels(
+                labels,
+                rotation=35,
+                ha="right",
+                fontsize=9
+            )
+
+            plt.tight_layout()
+
+            safe_method = method.replace("-", "_")
+
+            plt.savefig(
+                f"{OUT_DIR}/violin_{safe_method}_{target}.pdf",
+                bbox_inches="tight"
+            )
+
+            plt.savefig(
+                f"{OUT_DIR}/violin_{safe_method}_{target}.png",
+                dpi=300,
+                bbox_inches="tight"
+            )
+
+            plt.close()
 
 
 def collect_results():
@@ -196,9 +282,15 @@ def collect_results():
 
     result.to_csv(f"{OUT_DIR}/summary_metrics.csv", index=False)
     print(f"Saved metrics: {OUT_DIR}/summary_metrics.csv")
-    # return result
+
+    raw_df = pd.DataFrame(RAW_LENGTH_ROWS)
+    raw_df.to_csv(f"{OUT_DIR}/raw_output_lengths.csv", index=False)
+    print(f"Saved raw lengths: {OUT_DIR}/raw_output_lengths.csv")
+
+    # make_distribution_charts(raw_df)
+    make_violin_grid(raw_df)
 
 
 if __name__ == "__main__":
-    make_category_type_donut(DATASET_CSV)
+    # make_category_type_donut(DATASET_CSV)
     collect_results()
