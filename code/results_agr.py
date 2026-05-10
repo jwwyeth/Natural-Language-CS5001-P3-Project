@@ -266,7 +266,7 @@ def collect_results():
 
     for root, _, files in os.walk(OUTPUT_DIR):
         for f in files:
-            if f.endswith(".csv"):
+            if f.endswith(".csv") and f in MODELS:
                 path = os.path.join(root, f)
                 try:
                     rows.append(calc_file_metrics(path))
