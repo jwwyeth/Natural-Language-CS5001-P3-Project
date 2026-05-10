@@ -168,7 +168,7 @@ def calc_file_metrics(csv_path):
         "Length": target_len,
         # "N": len(df),
         'Empty': len(target_indexes),
-        "LD": ld_series * 100,
+        "LD": ld_series.mean() * 100,
         "LS": ls_series.mean(),
     }
 
