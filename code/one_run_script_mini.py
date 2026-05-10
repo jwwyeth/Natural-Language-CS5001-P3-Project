@@ -14,9 +14,9 @@ for a in range(1, 4):      # 1–3,     word type
     for b in range(1, 3):  # 1–2      word count
         #for c in range(1, 8):  # 1–7  perturbation type
 
-        log_file = os.path.join(log_dir, f"run_{i}_{a}_{b}_6.log")
+        log_file = os.path.join(log_dir, f"run_{i}_{a}_{b}_5.log")
 
-        cmd = [sys.executable, "ollama_async.py", str(i), str(a), str(b), str(6)]
+        cmd = [sys.executable, "ollama_async.py", str(i), str(a), str(b), str(5)]
 
         print(f"Running: {' '.join(cmd)}")
         print(f"Log: {log_file}")
