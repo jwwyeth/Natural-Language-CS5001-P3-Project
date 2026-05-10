@@ -157,12 +157,15 @@ def calc_file_metrics(csv_path):
 
     ls_series = ld_series.apply(lambda x: calculate_ls(x, method))
 
+    target_indexes = df[df[output_col].isna() | (df[output_col].astype(str).str.strip() == "")].index.tolist()
+
     row = {
         "Setting": setting,
         "Model": model,
         "Method": method,
         "Length": target_len,
         "N": len(df),
+        'Empty': len(target_indexes),
         "LD": ld_series.mean() * 100,
         "LS": ls_series.mean(),
     }
