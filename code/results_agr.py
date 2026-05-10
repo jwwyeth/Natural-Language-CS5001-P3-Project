@@ -149,6 +149,10 @@ def calc_file_metrics(csv_path):
 
     output_col = 'output'
 
+    target_indexes = df[df[output_col].isna() | (df[output_col].astype(str).str.strip() == "")].index.tolist()
+
+    df = df.drop(index=target_indexes)
+
     out_len = df[output_col].apply(calculate_word_count)
 
     setting, method, target_len, model = parse_path(csv_path)
@@ -157,16 +161,14 @@ def calc_file_metrics(csv_path):
 
     ls_series = ld_series.apply(lambda x: calculate_ls(x, method))
 
-    target_indexes = df[df[output_col].isna() | (df[output_col].astype(str).str.strip() == "")].index.tolist()
-
     row = {
         "Setting": setting,
         "Model": model,
         "Method": method,
         "Length": target_len,
-        "N": len(df),
+        # "N": len(df),
         'Empty': len(target_indexes),
-        "LD": ld_series.mean() * 100,
+        "LD": ld_series * 100,
         "LS": ls_series.mean(),
     }
 
