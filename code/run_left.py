@@ -48,6 +48,7 @@ def process_prompt(perturbed_prompt, raw_data, word_count_type, word_count):
         .replace("{word_count}", str(word_count))
     )
     
+    
     return prompt_execution.format(perturbed_prompt=prompt_final, raw_data=raw_data) + prompt_task
 
 def extract_output(text):
@@ -102,6 +103,9 @@ async def process_row(semaphore, client, df, index, word_count_type, word_count,
                 client, model_name, prompt
             )
 
+            # Print the first 100 characters of the final prompt for debugging
+            # print(f"Final Prompt for index {index} (first 100 chars):", response[:100])
+
             df.at[index, "response"] = response
             df.loc[[index], ["output"]] = (
                 df.loc[[index], "response"].apply(extract_output)
@@ -110,6 +114,8 @@ async def process_row(semaphore, client, df, index, word_count_type, word_count,
             if pd.isna(val) or val == "":
                 print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
                 await asyncio.sleep(2)  # wait before retrying
+            else:
+                break  # exit loop if output is valid
 
         output = df.at[index, "output"]
         l_output = len(str(output).split()) if output else 0
