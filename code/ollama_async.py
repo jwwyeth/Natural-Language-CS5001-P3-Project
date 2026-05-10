@@ -189,6 +189,6 @@ if __name__ == "__main__":
             model_name,
             word_count_type,
             word_count,
-            max_concurrency=6,  # adjust for your GPU/CPU
+            max_concurrency=5,  # adjust for your GPU/CPU
         )
     )
