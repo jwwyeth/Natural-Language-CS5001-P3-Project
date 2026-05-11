@@ -1,9 +1,13 @@
 import os
 import re
 import math
+import colorsys
 import pandas as pd
-import matplotlib.pyplot as plt
 from pathlib import Path
+import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
+from matplotlib.patches import Patch
+
 
 DATASET_CSV = "data_en.csv" 
 OUTPUT_DIR = "output"
@@ -22,53 +26,102 @@ WORD_LENGTHS = [16, 1024]
 RAW_LENGTH_ROWS = []
 
 
+def adjust_lightness(color, amount=1.0):
+    r, g, b = mcolors.to_rgb(color)
+    h, l, s = colorsys.rgb_to_hls(r, g, b)
+
+    l = max(0, min(1, amount * l))
+
+    r, g, b = colorsys.hls_to_rgb(h, l, s)
+    return (r, g, b)
+
+
 def make_category_type_donut(dataset_csv):
     df = pd.read_csv(dataset_csv)
 
-    inner = df["category"].value_counts(normalize=True).sort_index()
-    outer = df.groupby(["category", "type"]).size().reset_index(name="count")
-    outer["percent"] = outer["count"] / outer["count"].sum()
+    inner = (
+        df["category"]
+        .value_counts(normalize=True)
+        .sort_index()
+    )
 
-    inner_colors = [
-        "#264653",  # dark blue
-        "#2a9d8f",  # teal
-        "#e9c46a",  # sand
-        "#e76f51",  # coral
-    ]
+    outer = (
+        df.groupby(["category", "type"])
+        .size()
+        .reset_index(name="count")
+    )
 
-    outer_palette = [
+    outer["percent"] = (
+        outer["count"] / outer["count"].sum()
+    )
+
+    # base category colors
+    palette = [
         "#264653",
-        "#2f5d73",
-        "#3a7ca5",
         "#2a9d8f",
-        "#52b69a",
-        "#76c893",
         "#e9c46a",
-        "#f4a261",
-        "#ee8959",
         "#e76f51",
-        "#d8573c",
+        "#3a7ca5",
         "#c44536",
     ]
 
-    outer_colors = [
-        outer_palette[i % len(outer_palette)]
-        for i in range(len(outer))
+    categories = list(inner.index)
+
+    category_colors = {
+        cat: palette[i % len(palette)]
+        for i, cat in enumerate(categories)
+    }
+
+    # inner ring colors
+    inner_colors = [
+        category_colors[c]
+        for c in inner.index
     ]
 
-    fig, ax = plt.subplots(figsize=(9, 9))
+    # outer ring = shades of parent category
+    outer_colors = []
 
+    for category in outer["category"]:
+
+        base = category_colors[category]
+
+        same_cat_count = (
+            outer["category"] == category
+        ).sum()
+
+        same_cat_seen = (
+            outer.iloc[:len(outer_colors)]["category"] == category
+        ).sum()
+
+        if same_cat_count == 1:
+            factor = 1.0
+        else:
+            factor = 0.7 + (
+                0.6 * same_cat_seen / (same_cat_count - 1)
+            )
+
+        outer_colors.append(
+            adjust_lightness(base, factor)
+        )
+
+    fig, ax = plt.subplots(figsize=(10, 10))
+
+    # outer ring
     ax.pie(
         outer["percent"],
         radius=1.0,
         labels=outer["type"],
         colors=outer_colors,
         autopct=lambda p: f"{p:.1f}%" if p >= 2 else "",
-        pctdistance=0.85,
-        labeldistance=1.12,
-        wedgeprops=dict(width=0.28, edgecolor="white"),
+        pctdistance=0.86,
+        labeldistance=1.10,
+        wedgeprops=dict(
+            width=0.28,
+            edgecolor="white"
+        ),
     )
 
+    # inner ring
     ax.pie(
         inner.values,
         radius=0.72,
@@ -76,16 +129,43 @@ def make_category_type_donut(dataset_csv):
         colors=inner_colors,
         autopct=lambda p: f"{p:.0f}%",
         pctdistance=0.75,
-        wedgeprops=dict(width=0.32, edgecolor="white"),
+        wedgeprops=dict(
+            width=0.32,
+            edgecolor="white"
+        ),
     )
 
-    ax.legend(inner.index, title="Category", loc="upper right")
+    legend_handles = [
+        Patch(
+            facecolor=category_colors[c],
+            label=c
+        )
+        for c in inner.index
+    ]
+
+    ax.legend(
+        handles=legend_handles,
+        title="Category",
+        loc="upper right"
+    )
+
     ax.set(aspect="equal")
+
     plt.tight_layout()
 
     path = f"{OUT_DIR}/category_type_donut.pdf"
-    plt.savefig(path, bbox_inches="tight")
-    plt.savefig(path.replace(".pdf", ".png"), dpi=300, bbox_inches="tight")
+
+    plt.savefig(
+        path,
+        bbox_inches="tight"
+    )
+
+    plt.savefig(
+        path.replace(".pdf", ".png"),
+        dpi=300,
+        bbox_inches="tight"
+    )
+
     print(f"Saved chart: {path}")
 
 
@@ -266,7 +346,7 @@ def collect_results():
 
     for root, _, files in os.walk(OUTPUT_DIR):
         for f in files:
-            if f.endswith(".csv"):
+            if f.endswith(".csv") and f in MODELS:
                 path = os.path.join(root, f)
                 try:
                     rows.append(calc_file_metrics(path))
@@ -292,5 +372,5 @@ def collect_results():
 
 
 if __name__ == "__main__":
-    # make_category_type_donut(DATASET_CSV)
+    make_category_type_donut(DATASET_CSV)
     collect_results()

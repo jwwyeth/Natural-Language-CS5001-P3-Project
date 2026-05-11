@@ -110,6 +110,8 @@ async def process_row(semaphore, client, df, index, word_count_type, word_count,
             if pd.isna(val) or val == "":
                 print(f"Attempt {attempt+1}/{limit} failed for index {index}. Retrying...")
                 await asyncio.sleep(2)  # wait before retrying
+            else:
+                break  # exit loop if output is valid
 
         output = df.at[index, "output"]
         l_output = len(str(output).split()) if output else 0
@@ -189,6 +191,6 @@ if __name__ == "__main__":
             model_name,
             word_count_type,
             word_count,
-            max_concurrency=5,  # adjust for your GPU/CPU
+            max_concurrency=3,  # adjust for your GPU/CPU
         )
     )
