@@ -2,6 +2,7 @@ import os
 import re
 import math
 import colorsys
+import numpy as np
 import pandas as pd
 from pathlib import Path
 import matplotlib.pyplot as plt
@@ -167,16 +168,9 @@ def make_category_type_donut(dataset_csv):
     )
 
     print(f"Saved chart: {path}")
-
+    
 
 def parse_path(path):
-    """
-    Expected examples:
-    output/baseline/at-least/16/gpt-oss-120b-cloud.csv
-    output/formal/at-most/1024/deepseek-v3.2-cloud.csv
-    output/threat/at-least/16/kimi-k2.6-cloud.csv
-    output/typo/at-least/16/glm-5.1-cloud.csv
-    """
     parts = Path(path).parts
 
     model_file = Path(path).name
@@ -279,6 +273,8 @@ def make_violin_grid(raw_df):
             positions = []
 
             pos = 1
+            within_gap = 0.6
+            group_gap = 0.2
 
             for setting in settings:
                 for model in models:
@@ -295,9 +291,10 @@ def make_violin_grid(raw_df):
                         labels.append(f"{setting}\n{model}")
                         positions.append(pos)
 
-                    pos += 1
+                    pos += within_gap
 
-                pos += 0.7  # spacing between settings
+                # pos += 0.7  # spacing between settings
+                pos += group_gap
 
             if data:
                 ax.violinplot(
@@ -307,21 +304,13 @@ def make_violin_grid(raw_df):
                     showmedians=True
                 )
 
-            ax.axhline(target, linestyle="--", linewidth=1.5)
-
-            ax.set_title(
-                f"Output Length Distribution ({method}, target={target})"
-            )
-
-            ax.set_ylabel("Generated Output Length")
-
+            ax.set_title(f"Output Length Distribution ({method}, target={target})",
+                        fontsize=20, fontweight="bold")
+            ax.set_ylabel("Generated Output Length", fontsize=18)
+            ax.tick_params(axis="y", labelsize=16)
             ax.set_xticks(positions)
-            ax.set_xticklabels(
-                labels,
-                rotation=35,
-                ha="right",
-                fontsize=9
-            )
+            ax.set_xticklabels(labels, rotation=30, ha="right", fontsize=15)
+            ax.axhline(target, linestyle="--", linewidth=1.5)     
 
             plt.tight_layout()
 
@@ -371,6 +360,166 @@ def collect_results():
     make_violin_grid(raw_df)
 
 
+def make_ls_by_method_chart(summary_csv, out_dir="results"):
+    os.makedirs(out_dir, exist_ok=True)
+
+    df = pd.read_csv(summary_csv)
+
+    settings = ["baseline", "formal", "threat", "typo"]
+    models = ["GPT-OSS-120B", "GLM-5.1"]
+    methods = ["at-least", "at-most", "equal-to"]
+
+    colors = {
+        "baseline": "#355070",
+        "formal": "#6d597a",
+        "threat": "#b56576",
+        "typo": "#e56b6f",
+    }
+
+    hatches = {
+        "GPT-OSS-120B": "",
+        "GLM-5.1": "//",
+    }
+
+    pairs = [(s, m) for s in settings for m in models]
+
+    for method in methods:
+        fig, ax = plt.subplots(figsize=(8, 4))
+
+        x16 = np.arange(len(pairs)) * 0.14
+        x1024 = x16 + 1.4
+        width = 0.1
+
+        vals16 = []
+        vals1024 = []
+
+        for setting, model in pairs:
+            row16 = df[
+                (df["Method"] == method) &
+                (df["Setting"] == setting) &
+                (df["Model"] == model) &
+                (df["Length"] == 16)
+            ]
+
+            row1024 = df[
+                (df["Method"] == method) &
+                (df["Setting"] == setting) &
+                (df["Model"] == model) &
+                (df["Length"] == 1024)
+            ]
+
+            vals16.append(row16["LS"].iloc[0] if not row16.empty else np.nan)
+            vals1024.append(row1024["LS"].iloc[0] if not row1024.empty else np.nan)
+
+        for idx, ((setting, model), val) in enumerate(zip(pairs, vals16)):
+            ax.bar(
+                x16[idx],
+                val,
+                width=width,
+                color=colors[setting],
+                hatch=hatches[model],
+                edgecolor="black",
+                linewidth=0.3,
+            )
+
+        for idx, ((setting, model), val) in enumerate(zip(pairs, vals1024)):
+            ax.bar(
+                x1024[idx],
+                val,
+                width=width,
+                color=colors[setting],
+                hatch=hatches[model],
+                edgecolor="black",
+                linewidth=0.3,
+            )
+
+        ax.axhline(
+            100,
+            linestyle="--",
+            linewidth=1.0,
+            color="black"
+        )
+
+        ax.axvline(
+            (x16[-1] + x1024[0]) / 2,
+            color="gray",
+            linestyle=":",
+            linewidth=1.0
+        )
+
+        ax.set_ylim(75, 101)
+        ax.set_xticks([])
+
+        ax.text(
+            np.mean(x16),
+            73.7,
+            "Target Length = 16",
+            ha="center",
+            fontsize=11,
+            # fontweight="bold"
+        )
+
+        ax.text(
+            np.mean(x1024),
+            73.7,
+            "Target Length = 1024",
+            ha="center",
+            fontsize=11,
+            # fontweight="bold"
+        )
+
+        # ax.set_title(
+        #     f"{method.replace('-', ' ').title()} Constraint",
+        #     fontsize=15,
+        #     fontweight="bold",
+        #     pad=12
+        # )
+
+        ax.set_ylabel("Length Satisfaction (LS)", fontsize=12)
+        ax.tick_params(axis="y", labelsize=10)
+
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+
+        ax.grid(
+            axis="y",
+            linestyle="--",
+            linewidth=0.6,
+            alpha=0.45
+        )
+
+        legend_handles = [
+            Patch(facecolor=colors[s], edgecolor="black", label=s)
+            for s in settings
+        ]
+
+        legend_handles += [
+            Patch(facecolor="white", edgecolor="black", hatch="", label="GPT-OSS-120B"),
+            Patch(facecolor="white", edgecolor="black", hatch="//", label="GLM-5.1"),
+        ]
+
+        ax.legend(
+            handles=legend_handles,
+            loc="upper center",
+            bbox_to_anchor=(0.5, -0.12),
+            ncol=6,
+            fontsize=9,
+            frameon=False,
+            columnspacing=0.9,
+            handlelength=1.2,
+            handletextpad=0.4
+        )
+
+        plt.tight_layout()
+
+        safe_method = method.replace("-", "_")
+
+        plt.savefig(f"{out_dir}/ls_by_method_{safe_method}.pdf", bbox_inches="tight")
+        plt.savefig(f"{out_dir}/ls_by_method_{safe_method}.png", dpi=300, bbox_inches="tight")
+        plt.close()
+
+
 if __name__ == "__main__":
     make_category_type_donut(DATASET_CSV)
     collect_results()
+    make_ls_by_method_chart("results/summary_metrics.csv")
