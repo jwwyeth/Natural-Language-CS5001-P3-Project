@@ -6,14 +6,18 @@ This is the codebase for our CS5001 Project (P3) focusing on benchmarking LLMs f
 
 
 ## Installation
+1. Make a Folder
+  ```
+  mkdir Project
+  cd Project
+  ``` 
 
-1. Clone the repository:
+2. Clone the repository:
    ```
    git clone https://github.com/jwwyeth/Natural-Language-CS5001-P3-Project.git
-   cd Natural-Language-CS5001-P3-Project
    ```
 
-2. Set up the virtual environment:
+3. Set up the virtual environment:
    ```
    python -m venv env
    # On Windows:
@@ -22,35 +26,40 @@ This is the codebase for our CS5001 Project (P3) focusing on benchmarking LLMs f
    source env/bin/activate
    ```
 
-3. Install dependencies:
+4. Install dependencies:
    ```
-   pip install -r code/requirements.txt
+   pip install -r Natural-Language-CS5001-P3-Project/code/requirements.txt
    ```
 
-4. Install Ollama:
+5. Install Ollama:
    Follow the instructions on the [Ollama website](https://docs.ollama.com/quickstart) to install Ollama on your system.
 
 ## Usage
 
 ### Main Scripts
 
+Go to the code directory.
+```
+cd Natural-Language-CS5001-P3-Project/code
+```
+
+**ollama_cloud_annotation_async.py** is the script for perturbing the LIFEBENCH dataset and judging the perturbations. It generates perturbed data files in the annotation directory.
+```
+py ollama_cloud_annotation_async.py {perturbation_type}[1:7]- While the script has 7 types of perturbations, we only used 4-6, which are "threat", "formal", and "typo".
+```
+
 **ollama_async.py** is the main script for running the asynchronous processing of the perturbed data using Ollama. It reads the perturbed data files, processes them, and outputs results to a json file.
 ```
-py code/ollama_async.py {model}[1,2] {word_type}[1,2,3] {word_count}[1,2] {perterbation_type}[4,5,6]
+py ollama_async.py {model}[1,2] {word_type}[1,2,3] {word_count}[1,2] {perterbation_type}[4,5,6]
 ```
 - model: 1 for gpt-oss:120b, 2 for glm5.1
 - word_type: 1 for "less than", 2 for "greater than", 3 for "equal to"
 - word_count: 1 for 16 words, 2 for 1024 words
 - perturbation_type: 4 for "threat", 5 for "formal", 6 for "typo"
 
-**ollama_cloud_annotation_async.py** is the script for perturbing the LIFEBENCH dataset and judging the perturbations. It generates perturbed data files in the annotation directory.
+**results_agr.py** is the script for aggregating results and computing metrics. It reads the output csv files from the output directory, computes metrics, and saves the final results in the results directory.
 ```
-py code/ollama_cloud_annotation_async.py {perturbation_type}[1:7]- While the script has 7 types of perturbations, we only used 4-6, which are "threat", "formal", and "typo".
-```
-
-**results_agr.py** is the script for aggregating results and computing metrics. It reads the output json files from the output directory, computes metrics, and saves the final results in the results directory.
-```
-py code/results_agr.py
+py results_agr.py
 ```
 
 ## Additional Scripts
@@ -58,12 +67,12 @@ py code/results_agr.py
 **run_left.py** is a script to fill in missing data from ollama_async.py, usually from timeouts. It processes the remaining data and outputs results to a json file.
 Same usage as ollama_async.py
 
-**ren_patch.py** is a bulk-processing file for run_left.py, which runs multiple instances of run_left.py with different parameters to fill in all missing data.
+**run_patch.py** is a bulk-processing file for run_left.py, which runs multiple instances of run_left.py with different parameters to fill in all missing data.
 Usage: py code/ren_patch.py
 
 The baseline_scripts directory contains scripts for baseline processing, which can be used for comparison with the perturbed data results. Same usage as ollama_async.py
 
-The bulk_processing directory contains scripts for bulk processing of data, which can be used to run multiple instances of ollama_async.py with different parameters to process all the perturbed data files. Same usage as ren_patch.py
+The bulk_processing directory contains scripts for bulk processing of data, which can be used to run multiple instances of ollama_async.py with different parameters to process all the perturbed data files. Same usage as run_patch.py
 
 
 ## Project Structure
@@ -82,7 +91,7 @@ The bulk_processing directory contains scripts for bulk processing of data, whic
 │   ├── data_en.csv                         # LIFEBENCH dataset in English
 │   ├── requirements.txt                    # Python dependencies
 │   ├── run_left.py                         # Script to fill in missing data from ollama_async.py (usually from timeouts)
-│   └── ren_patch.py                        # Bulk-processing file for run_left.py
+│   └── run_patch.py                        # Bulk-processing file for run_left.py
 └── Paper_Research/   # Research papers or documentation
 ```
 
@@ -94,6 +103,7 @@ The bulk_processing directory contains scripts for bulk processing of data, whic
 - NumPy
 - Matplotlib
 - Tqdm
+- Rouge-Score
 
 See `code/requirements.txt` for the full list.
 
