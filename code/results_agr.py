@@ -7,6 +7,7 @@ import pandas as pd
 from pathlib import Path
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
+from rouge_score import rouge_scorer
 from matplotlib.patches import Patch
 
 
@@ -223,7 +224,10 @@ def calc_file_metrics(csv_path):
 
     output_col = 'output'
 
-    target_indexes = df[df[output_col].isna() | (df[output_col].astype(str).str.strip() == "")].index.tolist()
+    target_indexes = df[
+        df[output_col].isna() |
+        (df[output_col].astype(str).str.strip() == "")
+    ].index.tolist()
 
     df = df.drop(index=target_indexes)
 
@@ -231,9 +235,32 @@ def calc_file_metrics(csv_path):
 
     setting, method, target_len, model = parse_path(csv_path)
 
-    ld_series = out_len.apply(lambda x: calculate_ld(x, target_len))
+    ld_series = out_len.apply(
+        lambda x: calculate_ld(x, target_len)
+    )
 
-    ls_series = ld_series.apply(lambda x: calculate_ls(x, method))
+    ls_series = ld_series.apply(
+        lambda x: calculate_ls(x, method)
+    )
+
+    # PASS / FAIL
+    if method == "equal-to":
+        pass_mask = out_len == target_len
+
+    elif method == "at-most":
+        pass_mask = out_len <= target_len
+
+    elif method == "at-least":
+        pass_mask = out_len >= target_len
+
+    else:
+        raise ValueError(f"Unknown method: {method}")
+
+    pass_count = pass_mask.sum()
+    fail_count = len(out_len) - pass_count
+
+    pass_ratio = pass_count / len(out_len)
+    fail_ratio = fail_count / len(out_len)
 
     for x in out_len:
         RAW_LENGTH_ROWS.append({
@@ -249,11 +276,20 @@ def calc_file_metrics(csv_path):
         "Model": model,
         "Method": method,
         "Length": target_len,
+
         "Mean": out_len.mean(),
-        # "N": len(df),
-        'Empty': len(target_indexes),
+
+        "Empty": len(target_indexes),
+        "Count": len(out_len),
+
         "LD": ld_series.mean() * 100,
         "LS": ls_series.mean(),
+
+        "Pass": pass_count,
+        "Fail": fail_count,
+
+        "PassRatio": pass_ratio * 100,
+        "FailRatio": fail_ratio * 100,
     }
 
     return row
@@ -353,14 +389,14 @@ def collect_results():
     print(f"Saved metrics: {OUT_DIR}/summary_metrics.csv")
 
     raw_df = pd.DataFrame(RAW_LENGTH_ROWS)
-    raw_df.to_csv(f"{OUT_DIR}/raw_output_lengths.csv", index=False)
-    print(f"Saved raw lengths: {OUT_DIR}/raw_output_lengths.csv")
+    # raw_df.to_csv(f"{OUT_DIR}/raw_output_lengths.csv", index=False)
+    # print(f"Saved raw lengths: {OUT_DIR}/raw_output_lengths.csv")
 
     # make_distribution_charts(raw_df)
     make_violin_grid(raw_df)
 
 
-def make_ls_by_method_chart(summary_csv, out_dir="results"):
+def make_ls_by_method_chart(summary_csv="results/summary_metrics.csv", out_dir="results"):
     os.makedirs(out_dir, exist_ok=True)
 
     df = pd.read_csv(summary_csv)
@@ -519,7 +555,132 @@ def make_ls_by_method_chart(summary_csv, out_dir="results"):
         plt.close()
 
 
+def make_short_summary(summary_csv="results/summary_metrics.csv", out_csv="results/short_pass_fail_summary.csv"):
+    df = pd.read_csv(summary_csv)
+
+    short_df = (
+        df.groupby(["Setting", "Model"])
+        .agg({
+            "Pass": "sum",
+            "Fail": "sum",
+            "Empty": "sum",
+            "Count": "sum"
+        })
+        .reset_index()
+    )
+
+    short_df.to_csv(out_csv, index=False)
+
+    print(f"Saved: {out_csv}")
+
+
+def make_rouge_summary(out_csv="results/rouge_summary.csv"):
+    rows = []
+
+    scorer = rouge_scorer.RougeScorer(
+        ["rouge1", "rouge2", "rougeL"],
+        use_stemmer=True
+    )
+
+    for root, _, files in os.walk(OUTPUT_DIR):
+        for f in files:
+            if not (f.endswith(".csv") and f in MODELS):
+                continue
+
+            csv_path = os.path.join(root, f)
+            setting, method, target_len, model = parse_path(csv_path)
+
+            if setting == "baseline":
+                continue
+
+            baseline_path = os.path.join(
+                OUTPUT_DIR,
+                "baseline",
+                method,
+                str(target_len),
+                f
+            )
+
+            if not os.path.exists(baseline_path):
+                print(f"Missing baseline: {baseline_path}")
+                continue
+
+            cur_df = pd.read_csv(csv_path)
+            base_df = pd.read_csv(baseline_path)
+
+            output_col = "output"
+            n = min(len(cur_df), len(base_df))
+
+            r1, r2, rl = [], [], []
+            skipped = 0
+
+            for i in range(n):
+                pred = cur_df.loc[i, output_col]
+                ref = base_df.loc[i, output_col]
+
+                if (
+                    pd.isna(pred) or pd.isna(ref) or
+                    str(pred).strip() == "" or
+                    str(ref).strip() == ""
+                ):
+                    skipped += 1
+                    continue
+
+                scores = scorer.score(str(ref), str(pred))
+
+                r1.append(scores["rouge1"].fmeasure)
+                r2.append(scores["rouge2"].fmeasure)
+                rl.append(scores["rougeL"].fmeasure)
+
+            rows.append({
+                "Setting": setting,
+                "Model": model,
+                "Method": method,
+                "Length": target_len,
+                "Count": len(r1),
+                "Skipped": skipped,
+                "ROUGE-1": sum(r1) / len(r1) * 100 if r1 else None,
+                "ROUGE-2": sum(r2) / len(r2) * 100 if r2 else None,
+                "ROUGE-L": sum(rl) / len(rl) * 100 if rl else None,
+            })
+
+    rouge_df = pd.DataFrame(rows)
+
+    rouge_df = rouge_df.sort_values(
+        by=["Setting", "Length", "Method", "Model"],
+        na_position="last"
+    )
+
+    rouge_df.to_csv(out_csv, index=False)
+    print(f"Saved ROUGE summary: {out_csv}")
+
+
+def make_short_rouge_from_detail(
+    detail_csv="results/rouge_summary.csv",
+    out_csv="results/short_rouge_summary.csv"
+):
+    df = pd.read_csv(detail_csv)
+
+    short_df = (
+        df.groupby(["Setting", "Model"])
+        .agg({
+            "ROUGE-1": "mean",
+            "ROUGE-2": "mean",
+            "ROUGE-L": "mean",
+            "Skipped": "sum",
+            "Count": "sum"
+        })
+        .reset_index()
+    )
+
+    short_df.to_csv(out_csv, index=False)
+    print(f"Saved: {out_csv}")
+
+
 if __name__ == "__main__":
     make_category_type_donut(DATASET_CSV)
     collect_results()
-    make_ls_by_method_chart("results/summary_metrics.csv")
+    make_ls_by_method_chart()
+    make_short_summary()
+    make_rouge_summary()
+    make_short_rouge_from_detail()

@@ -1,0 +1,9 @@
+Setting,Model,Pass,Fail,Empty,Count
+baseline,GLM-5.1,889,176,15,1065
+baseline,GPT-OSS-120B,747,333,0,1080
+formal,GLM-5.1,881,187,12,1068
+formal,GPT-OSS-120B,738,342,0,1080
+threat,GLM-5.1,909,151,20,1060
+threat,GPT-OSS-120B,779,301,0,1080
+typo,GLM-5.1,879,187,14,1066
+typo,GPT-OSS-120B,758,322,0,1080
