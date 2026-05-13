@@ -45,21 +45,22 @@ cd Natural-Language-CS5001-P3-Project/code
 
 **ollama_cloud_annotation_async.py** is the script for perturbing the LIFEBENCH dataset and judging the perturbations. It generates perturbed data files in the annotation directory.
 ```
-py ollama_cloud_annotation_async.py {perturbation_type}[1:7]- While the script has 7 types of perturbations, we only used 4-6, which are "threat", "formal", and "typo".
+python ollama_cloud_annotation_async.py <perturbation_type>[1:7]
 ```
+While the script has 7 types of perturbations, we only used 4-6, which are "threat", "formal", and "typo".
 
 **ollama_async.py** is the main script for running the asynchronous processing of the perturbed data using Ollama. It reads the perturbed data files, processes them, and outputs results to a json file.
 ```
-py ollama_async.py {model}[1,2] {word_type}[1,2,3] {word_count}[1,2] {perterbation_type}[4,5,6]
+python ollama_async.py <model>[1:4] <word_type>[1:3] <word_count>[1,2] <perterbation_type>[1:7]
 ```
 - model: 1 for gpt-oss:120b, 2 for glm5.1
-- word_type: 1 for "less than", 2 for "greater than", 3 for "equal to"
+- word_type: 1 for "at least", 2 for "at most", 3 for "equal to"
 - word_count: 1 for 16 words, 2 for 1024 words
 - perturbation_type: 4 for "threat", 5 for "formal", 6 for "typo"
 
 **results_agr.py** is the script for aggregating results and computing metrics. It reads the output csv files from the output directory, computes metrics, and saves the final results in the results directory.
 ```
-py results_agr.py
+python results_agr.py
 ```
 
 ## Additional Scripts
