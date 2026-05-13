@@ -137,27 +137,27 @@ async def process_csv_async(
 
     #df = df.iloc[:2]
 
-    # df["response"] = None
-    # df["output"] = None
-    # df['word_count'] = int(word_count)
-    # df['LS'] = None
-    # df['LD'] = None
+    df["response"] = None
+    df["output"] = None
+    df['word_count'] = int(word_count)
+    df['LS'] = None
+    df['LD'] = None
 
     client = AsyncClient(host="127.0.0.1:11434")
 
     semaphore = asyncio.Semaphore(max_concurrency)
 
-    # tasks = [
-    #     process_row(semaphore, client, df, idx, word_count_type, word_count, model_name)
-    #     for idx in df.index
-    # ]
-
-    target_indexes = df[df["output"].isna() | (df["output"].astype(str).str.strip() == "")].index.tolist()
-
     tasks = [
         process_row(semaphore, client, df, idx, word_count_type, word_count, model_name)
-        for idx in target_indexes
+        for idx in df.index
     ]
+
+    # target_indexes = df[df["output"].isna() | (df["output"].astype(str).str.strip() == "")].index.tolist()
+
+    # tasks = [
+    #     process_row(semaphore, client, df, idx, word_count_type, word_count, model_name)
+    #     for idx in target_indexes
+    # ]
 
     results = []
     for coro in tqdm_asyncio.as_completed(tasks):
@@ -186,14 +186,14 @@ if __name__ == "__main__":
 
     input_csv = "data_en.csv"
 
-    dir_path = "output/baseline/"+"-".join((word_count_type).split())+"/"+str(word_count)
+    dir_path = "../output/baseline/"+"-".join((word_count_type).split())+"/"+str(word_count)
     os.makedirs(dir_path, exist_ok=True)
 
     output_csv = dir_path+"/"+model_name.replace(":", "-")+".csv"
 
     asyncio.run(
         process_csv_async(
-            output_csv,
+            input_csv,
             output_csv,
             model_name,
             word_count_type,
