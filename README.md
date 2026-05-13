@@ -9,7 +9,7 @@ This is the codebase for our CS5001 Project (P3) focusing on benchmarking LLMs f
 
 1. Clone the repository:
    ```
-   git clone [repository URL]
+   git clone https://github.com/jwwyeth/Natural-Language-CS5001-P3-Project.git
    cd Natural-Language-CS5001-P3-Project
    ```
 
